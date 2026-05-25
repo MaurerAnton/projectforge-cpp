@@ -1,6 +1,6 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
 #pragma once
-// Calendar event management
+// SIPgate telephony integration
 #include "org/projectforge/business/BaseDao.hpp"
 #include <string>
 #include <vector>
@@ -9,11 +9,11 @@
 #include <map>
 #include <nlohmann/json.hpp>
 
-namespace org::projectforge::business::calendar {
+namespace org::projectforge::business::sipgate {
 
 // ======== DOMAIN ENTITIES AND SERVICES ========
 
-struct CalendarConfig {
+struct SipgateConfig {
     bool enabled = true;
     std::string name;
     std::string description;
@@ -28,7 +28,7 @@ struct CalendarConfig {
     }
 };
 
-struct CalendarEntry {
+struct SipgateEntry {
     DECLARE_ENTITY_FIELDS();
     std::string title;
     std::string content;
@@ -57,23 +57,23 @@ struct CalendarEntry {
     }
 };
 
-class CalendarDao : public BaseDao<CalendarEntry> {
+class SipgateDao : public BaseDao<SipgateEntry> {
 public:
-    explicit CalendarDao(Storage& s) : BaseDao<CalendarEntry>(s) {}
+    explicit SipgateDao(Storage& s) : BaseDao<SipgateEntry>(s) {}
     
-    std::vector<CalendarEntry> getByOwner(int64_t uid) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<SipgateEntry> getByOwner(int64_t uid) {
+        auto all=getAll(); std::vector<SipgateEntry> r;
         for(auto& e:all) if(!e.deleted && e.ownerId==uid) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getByStatus(const std::string& s) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<SipgateEntry> getByStatus(const std::string& s) {
+        auto all=getAll(); std::vector<SipgateEntry> r;
         for(auto& e:all) if(!e.deleted && e.status==s) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getRecent(int limit=50) {
+    std::vector<SipgateEntry> getRecent(int limit=50) {
         auto all=getAll();
         std::sort(all.begin(),all.end(),[](auto& a,auto& b){return a.timestamp>b.timestamp;});
         if((int)all.size()>limit) all.resize(limit);
@@ -92,27 +92,27 @@ public:
 };
 
 // ======== DOMAIN SERVICE ========
-class CalendarService {
+class SipgateService {
 public:
-    static CalendarService& instance() { static CalendarService svc; return svc; }
+    static SipgateService& instance() { static SipgateService svc; return svc; }
     
     void init() { initialized_=true; }
     bool isInitialized() const { return initialized_; }
     
-    bool processEntry(const CalendarEntry& entry) {
-        spdlog::info("calendar: Processing entry: {}", entry.title);
+    bool processEntry(const SipgateEntry& entry) {
+        spdlog::info("sipgate: Processing entry: {}", entry.title);
         return true;
     }
     
     std::string getStatus() const {
-        return "{ \"domain\": \"" + std::string("calendar") + "\", \"status\": \"OK\" }";
+        return "{ \"domain\": \"" + std::string("sipgate") + "\", \"status\": \"OK\" }";
     }
     
     void shutdown() { initialized_=false; }
     
 private:
     bool initialized_=false;
-    CalendarService()=default;
+    SipgateService()=default;
 };
 
 } // namespace

@@ -1,6 +1,6 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
 #pragma once
-// Calendar event management
+// Book management
 #include "org/projectforge/business/BaseDao.hpp"
 #include <string>
 #include <vector>
@@ -9,11 +9,11 @@
 #include <map>
 #include <nlohmann/json.hpp>
 
-namespace org::projectforge::business::calendar {
+namespace org::projectforge::business::book {
 
 // ======== DOMAIN ENTITIES AND SERVICES ========
 
-struct CalendarConfig {
+struct BookConfig {
     bool enabled = true;
     std::string name;
     std::string description;
@@ -28,7 +28,7 @@ struct CalendarConfig {
     }
 };
 
-struct CalendarEntry {
+struct BookEntry {
     DECLARE_ENTITY_FIELDS();
     std::string title;
     std::string content;
@@ -57,23 +57,23 @@ struct CalendarEntry {
     }
 };
 
-class CalendarDao : public BaseDao<CalendarEntry> {
+class BookDao : public BaseDao<BookEntry> {
 public:
-    explicit CalendarDao(Storage& s) : BaseDao<CalendarEntry>(s) {}
+    explicit BookDao(Storage& s) : BaseDao<BookEntry>(s) {}
     
-    std::vector<CalendarEntry> getByOwner(int64_t uid) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<BookEntry> getByOwner(int64_t uid) {
+        auto all=getAll(); std::vector<BookEntry> r;
         for(auto& e:all) if(!e.deleted && e.ownerId==uid) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getByStatus(const std::string& s) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<BookEntry> getByStatus(const std::string& s) {
+        auto all=getAll(); std::vector<BookEntry> r;
         for(auto& e:all) if(!e.deleted && e.status==s) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getRecent(int limit=50) {
+    std::vector<BookEntry> getRecent(int limit=50) {
         auto all=getAll();
         std::sort(all.begin(),all.end(),[](auto& a,auto& b){return a.timestamp>b.timestamp;});
         if((int)all.size()>limit) all.resize(limit);
@@ -92,27 +92,27 @@ public:
 };
 
 // ======== DOMAIN SERVICE ========
-class CalendarService {
+class BookService {
 public:
-    static CalendarService& instance() { static CalendarService svc; return svc; }
+    static BookService& instance() { static BookService svc; return svc; }
     
     void init() { initialized_=true; }
     bool isInitialized() const { return initialized_; }
     
-    bool processEntry(const CalendarEntry& entry) {
-        spdlog::info("calendar: Processing entry: {}", entry.title);
+    bool processEntry(const BookEntry& entry) {
+        spdlog::info("book: Processing entry: {}", entry.title);
         return true;
     }
     
     std::string getStatus() const {
-        return "{ \"domain\": \"" + std::string("calendar") + "\", \"status\": \"OK\" }";
+        return "{ \"domain\": \"" + std::string("book") + "\", \"status\": \"OK\" }";
     }
     
     void shutdown() { initialized_=false; }
     
 private:
     bool initialized_=false;
-    CalendarService()=default;
+    BookService()=default;
 };
 
 } // namespace

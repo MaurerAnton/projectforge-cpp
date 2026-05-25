@@ -11,9 +11,9 @@
 #include <nlohmann/json.hpp>
 #include <spdlog/spdlog.h>
 
-namespace org::projectforge::business::address {
+namespace org::projectforge::business::scripting {
 
-struct AddressEntity {
+struct AbstractScriptEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -35,16 +35,16 @@ struct AddressEntity {
     }
 };
 
-class AddressDao : public BaseDao<AddressEntity> {
+class AbstractScriptDao : public BaseDao<AbstractScriptEntity> {
 public:
-    explicit AddressDao(Storage& s) : BaseDao<AddressEntity>(s) {}
-    std::vector<AddressEntity> getActive() {
-        auto all=getAll(); std::vector<AddressEntity> r;
+    explicit AbstractScriptDao(Storage& s) : BaseDao<AbstractScriptEntity>(s) {}
+    std::vector<AbstractScriptEntity> getActive() {
+        auto all=getAll(); std::vector<AbstractScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressEntity> r;
+    std::vector<AbstractScriptEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<AbstractScriptEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -55,7 +55,7 @@ public:
     }
 };
 
-struct AddressImageEntity {
+struct MyScriptEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -77,16 +77,16 @@ struct AddressImageEntity {
     }
 };
 
-class AddressImageDao : public BaseDao<AddressImageEntity> {
+class MyScriptDao : public BaseDao<MyScriptEntity> {
 public:
-    explicit AddressImageDao(Storage& s) : BaseDao<AddressImageEntity>(s) {}
-    std::vector<AddressImageEntity> getActive() {
-        auto all=getAll(); std::vector<AddressImageEntity> r;
+    explicit MyScriptDao(Storage& s) : BaseDao<MyScriptEntity>(s) {}
+    std::vector<MyScriptEntity> getActive() {
+        auto all=getAll(); std::vector<MyScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressImageEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressImageEntity> r;
+    std::vector<MyScriptEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<MyScriptEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -97,7 +97,7 @@ public:
     }
 };
 
-struct AddressbookEntity {
+struct ScriptEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -119,16 +119,16 @@ struct AddressbookEntity {
     }
 };
 
-class AddressbookDao : public BaseDao<AddressbookEntity> {
+class ScriptDao : public BaseDao<ScriptEntity> {
 public:
-    explicit AddressbookDao(Storage& s) : BaseDao<AddressbookEntity>(s) {}
-    std::vector<AddressbookEntity> getActive() {
-        auto all=getAll(); std::vector<AddressbookEntity> r;
+    explicit ScriptDao(Storage& s) : BaseDao<ScriptEntity>(s) {}
+    std::vector<ScriptEntity> getActive() {
+        auto all=getAll(); std::vector<ScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressbookEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressbookEntity> r;
+    std::vector<ScriptEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<ScriptEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -139,7 +139,7 @@ public:
     }
 };
 
-struct PersonalAddressEntity {
+struct ScriptingEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -161,16 +161,16 @@ struct PersonalAddressEntity {
     }
 };
 
-class PersonalAddressDao : public BaseDao<PersonalAddressEntity> {
+class ScriptingDao : public BaseDao<ScriptingEntity> {
 public:
-    explicit PersonalAddressDao(Storage& s) : BaseDao<PersonalAddressEntity>(s) {}
-    std::vector<PersonalAddressEntity> getActive() {
-        auto all=getAll(); std::vector<PersonalAddressEntity> r;
+    explicit ScriptingDao(Storage& s) : BaseDao<ScriptingEntity>(s) {}
+    std::vector<ScriptingEntity> getActive() {
+        auto all=getAll(); std::vector<ScriptingEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<PersonalAddressEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<PersonalAddressEntity> r;
+    std::vector<ScriptingEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<ScriptingEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -181,4 +181,4 @@ public:
     }
 };
 
-} // namespace org::projectforge::business::address
+} // namespace org::projectforge::business::scripting

@@ -11,9 +11,9 @@
 #include <nlohmann/json.hpp>
 #include <spdlog/spdlog.h>
 
-namespace org::projectforge::business::address {
+namespace org::projectforge::business::vacation {
 
-struct AddressEntity {
+struct LeaveAccountEntryEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -35,16 +35,16 @@ struct AddressEntity {
     }
 };
 
-class AddressDao : public BaseDao<AddressEntity> {
+class LeaveAccountEntryDao : public BaseDao<LeaveAccountEntryEntity> {
 public:
-    explicit AddressDao(Storage& s) : BaseDao<AddressEntity>(s) {}
-    std::vector<AddressEntity> getActive() {
-        auto all=getAll(); std::vector<AddressEntity> r;
+    explicit LeaveAccountEntryDao(Storage& s) : BaseDao<LeaveAccountEntryEntity>(s) {}
+    std::vector<LeaveAccountEntryEntity> getActive() {
+        auto all=getAll(); std::vector<LeaveAccountEntryEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressEntity> r;
+    std::vector<LeaveAccountEntryEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<LeaveAccountEntryEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -55,7 +55,7 @@ public:
     }
 };
 
-struct AddressImageEntity {
+struct RemainingLeaveEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -77,16 +77,16 @@ struct AddressImageEntity {
     }
 };
 
-class AddressImageDao : public BaseDao<AddressImageEntity> {
+class RemainingLeaveDao : public BaseDao<RemainingLeaveEntity> {
 public:
-    explicit AddressImageDao(Storage& s) : BaseDao<AddressImageEntity>(s) {}
-    std::vector<AddressImageEntity> getActive() {
-        auto all=getAll(); std::vector<AddressImageEntity> r;
+    explicit RemainingLeaveDao(Storage& s) : BaseDao<RemainingLeaveEntity>(s) {}
+    std::vector<RemainingLeaveEntity> getActive() {
+        auto all=getAll(); std::vector<RemainingLeaveEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressImageEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressImageEntity> r;
+    std::vector<RemainingLeaveEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<RemainingLeaveEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -97,7 +97,7 @@ public:
     }
 };
 
-struct AddressbookEntity {
+struct VacationEntity {
     DECLARE_ENTITY_FIELDS();
     std::string name;
     std::string description;
@@ -119,16 +119,16 @@ struct AddressbookEntity {
     }
 };
 
-class AddressbookDao : public BaseDao<AddressbookEntity> {
+class VacationDao : public BaseDao<VacationEntity> {
 public:
-    explicit AddressbookDao(Storage& s) : BaseDao<AddressbookEntity>(s) {}
-    std::vector<AddressbookEntity> getActive() {
-        auto all=getAll(); std::vector<AddressbookEntity> r;
+    explicit VacationDao(Storage& s) : BaseDao<VacationEntity>(s) {}
+    std::vector<VacationEntity> getActive() {
+        auto all=getAll(); std::vector<VacationEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
         return r;
     }
-    std::vector<AddressbookEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<AddressbookEntity> r;
+    std::vector<VacationEntity> search(const std::string& q, int limit=100) {
+        auto all=getAll(); std::vector<VacationEntity> r;
         std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
         for(auto& e:all) {
             if(e.deleted)continue;
@@ -139,46 +139,4 @@ public:
     }
 };
 
-struct PersonalAddressEntity {
-    DECLARE_ENTITY_FIELDS();
-    std::string name;
-    std::string description;
-    int order = 0;
-    bool active = true;
-    
-    nlohmann::json toJson() const {
-        nlohmann::json j; JSON_ENTITY_BASE(j);
-        if(!name.empty())j["name"]=name;
-        if(!description.empty())j["description"]=description;
-        j["active"]=active;
-        return j;
-    }
-    void fromJson(const nlohmann::json& j) {
-        FROMJSON_ENTITY_BASE(j);
-        if(j.contains("name"))name=j["name"];
-        if(j.contains("description"))description=j["description"];
-        if(j.contains("active"))active=j["active"];
-    }
-};
-
-class PersonalAddressDao : public BaseDao<PersonalAddressEntity> {
-public:
-    explicit PersonalAddressDao(Storage& s) : BaseDao<PersonalAddressEntity>(s) {}
-    std::vector<PersonalAddressEntity> getActive() {
-        auto all=getAll(); std::vector<PersonalAddressEntity> r;
-        for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
-        return r;
-    }
-    std::vector<PersonalAddressEntity> search(const std::string& q, int limit=100) {
-        auto all=getAll(); std::vector<PersonalAddressEntity> r;
-        std::string lq=q; std::transform(lq.begin(),lq.end(),lq.begin(),::tolower);
-        for(auto& e:all) {
-            if(e.deleted)continue;
-            std::string n=e.name; std::transform(n.begin(),n.end(),n.begin(),::tolower);
-            if(n.find(lq)!=std::string::npos){r.push_back(e);if((int)r.size()>=limit)break;}
-        }
-        return r;
-    }
-};
-
-} // namespace org::projectforge::business::address
+} // namespace org::projectforge::business::vacation

@@ -1,6 +1,6 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
 #pragma once
-// Calendar event management
+// DVelop integration for document management
 #include "org/projectforge/business/BaseDao.hpp"
 #include <string>
 #include <vector>
@@ -9,11 +9,11 @@
 #include <map>
 #include <nlohmann/json.hpp>
 
-namespace org::projectforge::business::calendar {
+namespace org::projectforge::business::dvelop {
 
 // ======== DOMAIN ENTITIES AND SERVICES ========
 
-struct CalendarConfig {
+struct DvelopConfig {
     bool enabled = true;
     std::string name;
     std::string description;
@@ -28,7 +28,7 @@ struct CalendarConfig {
     }
 };
 
-struct CalendarEntry {
+struct DvelopEntry {
     DECLARE_ENTITY_FIELDS();
     std::string title;
     std::string content;
@@ -57,23 +57,23 @@ struct CalendarEntry {
     }
 };
 
-class CalendarDao : public BaseDao<CalendarEntry> {
+class DvelopDao : public BaseDao<DvelopEntry> {
 public:
-    explicit CalendarDao(Storage& s) : BaseDao<CalendarEntry>(s) {}
+    explicit DvelopDao(Storage& s) : BaseDao<DvelopEntry>(s) {}
     
-    std::vector<CalendarEntry> getByOwner(int64_t uid) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<DvelopEntry> getByOwner(int64_t uid) {
+        auto all=getAll(); std::vector<DvelopEntry> r;
         for(auto& e:all) if(!e.deleted && e.ownerId==uid) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getByStatus(const std::string& s) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<DvelopEntry> getByStatus(const std::string& s) {
+        auto all=getAll(); std::vector<DvelopEntry> r;
         for(auto& e:all) if(!e.deleted && e.status==s) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getRecent(int limit=50) {
+    std::vector<DvelopEntry> getRecent(int limit=50) {
         auto all=getAll();
         std::sort(all.begin(),all.end(),[](auto& a,auto& b){return a.timestamp>b.timestamp;});
         if((int)all.size()>limit) all.resize(limit);
@@ -92,27 +92,27 @@ public:
 };
 
 // ======== DOMAIN SERVICE ========
-class CalendarService {
+class DvelopService {
 public:
-    static CalendarService& instance() { static CalendarService svc; return svc; }
+    static DvelopService& instance() { static DvelopService svc; return svc; }
     
     void init() { initialized_=true; }
     bool isInitialized() const { return initialized_; }
     
-    bool processEntry(const CalendarEntry& entry) {
-        spdlog::info("calendar: Processing entry: {}", entry.title);
+    bool processEntry(const DvelopEntry& entry) {
+        spdlog::info("dvelop: Processing entry: {}", entry.title);
         return true;
     }
     
     std::string getStatus() const {
-        return "{ \"domain\": \"" + std::string("calendar") + "\", \"status\": \"OK\" }";
+        return "{ \"domain\": \"" + std::string("dvelop") + "\", \"status\": \"OK\" }";
     }
     
     void shutdown() { initialized_=false; }
     
 private:
     bool initialized_=false;
-    CalendarService()=default;
+    DvelopService()=default;
 };
 
 } // namespace

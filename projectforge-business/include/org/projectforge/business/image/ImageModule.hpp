@@ -1,6 +1,6 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
 #pragma once
-// Calendar event management
+// Image handling and processing
 #include "org/projectforge/business/BaseDao.hpp"
 #include <string>
 #include <vector>
@@ -9,11 +9,11 @@
 #include <map>
 #include <nlohmann/json.hpp>
 
-namespace org::projectforge::business::calendar {
+namespace org::projectforge::business::image {
 
 // ======== DOMAIN ENTITIES AND SERVICES ========
 
-struct CalendarConfig {
+struct ImageConfig {
     bool enabled = true;
     std::string name;
     std::string description;
@@ -28,7 +28,7 @@ struct CalendarConfig {
     }
 };
 
-struct CalendarEntry {
+struct ImageEntry {
     DECLARE_ENTITY_FIELDS();
     std::string title;
     std::string content;
@@ -57,23 +57,23 @@ struct CalendarEntry {
     }
 };
 
-class CalendarDao : public BaseDao<CalendarEntry> {
+class ImageDao : public BaseDao<ImageEntry> {
 public:
-    explicit CalendarDao(Storage& s) : BaseDao<CalendarEntry>(s) {}
+    explicit ImageDao(Storage& s) : BaseDao<ImageEntry>(s) {}
     
-    std::vector<CalendarEntry> getByOwner(int64_t uid) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<ImageEntry> getByOwner(int64_t uid) {
+        auto all=getAll(); std::vector<ImageEntry> r;
         for(auto& e:all) if(!e.deleted && e.ownerId==uid) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getByStatus(const std::string& s) {
-        auto all=getAll(); std::vector<CalendarEntry> r;
+    std::vector<ImageEntry> getByStatus(const std::string& s) {
+        auto all=getAll(); std::vector<ImageEntry> r;
         for(auto& e:all) if(!e.deleted && e.status==s) r.push_back(e);
         return r;
     }
     
-    std::vector<CalendarEntry> getRecent(int limit=50) {
+    std::vector<ImageEntry> getRecent(int limit=50) {
         auto all=getAll();
         std::sort(all.begin(),all.end(),[](auto& a,auto& b){return a.timestamp>b.timestamp;});
         if((int)all.size()>limit) all.resize(limit);
@@ -92,27 +92,27 @@ public:
 };
 
 // ======== DOMAIN SERVICE ========
-class CalendarService {
+class ImageService {
 public:
-    static CalendarService& instance() { static CalendarService svc; return svc; }
+    static ImageService& instance() { static ImageService svc; return svc; }
     
     void init() { initialized_=true; }
     bool isInitialized() const { return initialized_; }
     
-    bool processEntry(const CalendarEntry& entry) {
-        spdlog::info("calendar: Processing entry: {}", entry.title);
+    bool processEntry(const ImageEntry& entry) {
+        spdlog::info("image: Processing entry: {}", entry.title);
         return true;
     }
     
     std::string getStatus() const {
-        return "{ \"domain\": \"" + std::string("calendar") + "\", \"status\": \"OK\" }";
+        return "{ \"domain\": \"" + std::string("image") + "\", \"status\": \"OK\" }";
     }
     
     void shutdown() { initialized_=false; }
     
 private:
     bool initialized_=false;
-    CalendarService()=default;
+    ImageService()=default;
 };
 
 } // namespace
