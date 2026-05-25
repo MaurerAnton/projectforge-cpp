@@ -1,5 +1,10 @@
-// ProjectForge C++ port — GPL v3 — www.projectforge.org
-#include "org/projectforge/start/ProjectForgeConfig.hpp"
+// ProjectForge C++ — Config stub
+#include <string>
 namespace org::projectforge::start {
-// Config is a simple struct, mostly configured from file/CLI.
-}
+struct ProjectForgeConfig {
+    int port = 8080;
+    std::string bindAddress = "0.0.0.0";
+    std::string databasePath = "projectforge.db";
+    std::string logLevel = "info";
+};
+} // namespace

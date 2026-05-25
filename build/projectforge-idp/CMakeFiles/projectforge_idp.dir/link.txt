@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprojectforge_idp.a CMakeFiles/projectforge_idp.dir/src/IdpModule.cpp.o
+/usr/bin/ranlib libprojectforge_idp.a

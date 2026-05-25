@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprojectforge_carddav.a CMakeFiles/projectforge_carddav.dir/src/CardDavModule.cpp.o
+/usr/bin/ranlib libprojectforge_carddav.a

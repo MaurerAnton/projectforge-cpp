@@ -26,19 +26,13 @@ FetchContent_MakeAvailable(sqlite_orm)
 FetchContent_Declare(jwt-cpp GIT_REPOSITORY https://github.com/Thalhammer/jwt-cpp.git GIT_TAG v0.7.0)
 FetchContent_MakeAvailable(jwt-cpp)
 
-# Note: Drogon requires OpenSSL. If not available, the application target will fail.
-# FetchContent_Declare(drogon GIT_REPOSITORY https://github.com/drogonframework/drogon.git GIT_TAG v1.9.8)
-# set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-# set(BUILD_DOC OFF CACHE BOOL "" FORCE)
-# FetchContent_MakeAvailable(drogon)
-
 add_subdirectory(projectforge-common)
 add_subdirectory(projectforge-model)
 add_subdirectory(projectforge-jcr)
 add_subdirectory(projectforge-business)
-# add_subdirectory(projectforge-rest)  # requires jwt-cpp which may have issues
-# add_subdirectory(projectforge-carddav)
-# add_subdirectory(projectforge-idp)
-# add_subdirectory(projectforge-wicket)
+add_subdirectory(projectforge-rest)
+add_subdirectory(projectforge-carddav)
+add_subdirectory(projectforge-idp)
+add_subdirectory(projectforge-wicket)
 add_subdirectory(projectforge-commons-test)
-# add_subdirectory(projectforge-application)  # requires drogon
+add_subdirectory(projectforge-application)

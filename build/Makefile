@@ -741,6 +741,58 @@ projectforge_business/fast:
 .PHONY : projectforge_business/fast
 
 #=============================================================================
+# Target rules for targets named projectforge_rest
+
+# Build rule for target.
+projectforge_rest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectforge_rest
+.PHONY : projectforge_rest
+
+# fast build rule for target.
+projectforge_rest/fast:
+	$(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/build
+.PHONY : projectforge_rest/fast
+
+#=============================================================================
+# Target rules for targets named projectforge_carddav
+
+# Build rule for target.
+projectforge_carddav: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectforge_carddav
+.PHONY : projectforge_carddav
+
+# fast build rule for target.
+projectforge_carddav/fast:
+	$(MAKE) $(MAKESILENT) -f projectforge-carddav/CMakeFiles/projectforge_carddav.dir/build.make projectforge-carddav/CMakeFiles/projectforge_carddav.dir/build
+.PHONY : projectforge_carddav/fast
+
+#=============================================================================
+# Target rules for targets named projectforge_idp
+
+# Build rule for target.
+projectforge_idp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectforge_idp
+.PHONY : projectforge_idp
+
+# fast build rule for target.
+projectforge_idp/fast:
+	$(MAKE) $(MAKESILENT) -f projectforge-idp/CMakeFiles/projectforge_idp.dir/build.make projectforge-idp/CMakeFiles/projectforge_idp.dir/build
+.PHONY : projectforge_idp/fast
+
+#=============================================================================
+# Target rules for targets named projectforge_wicket
+
+# Build rule for target.
+projectforge_wicket: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectforge_wicket
+.PHONY : projectforge_wicket
+
+# fast build rule for target.
+projectforge_wicket/fast:
+	$(MAKE) $(MAKESILENT) -f projectforge-wicket/CMakeFiles/projectforge_wicket.dir/build.make projectforge-wicket/CMakeFiles/projectforge_wicket.dir/build
+.PHONY : projectforge_wicket/fast
+
+#=============================================================================
 # Target rules for targets named projectforge_commons_test
 
 # Build rule for target.
@@ -752,6 +804,19 @@ projectforge_commons_test: cmake_check_build_system
 projectforge_commons_test/fast:
 	$(MAKE) $(MAKESILENT) -f projectforge-commons-test/CMakeFiles/projectforge_commons_test.dir/build.make projectforge-commons-test/CMakeFiles/projectforge_commons_test.dir/build
 .PHONY : projectforge_commons_test/fast
+
+#=============================================================================
+# Target rules for targets named projectforge
+
+# Build rule for target.
+projectforge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectforge
+.PHONY : projectforge
+
+# fast build rule for target.
+projectforge/fast:
+	$(MAKE) $(MAKESILENT) -f projectforge-application/CMakeFiles/projectforge.dir/build.make projectforge-application/CMakeFiles/projectforge.dir/build
+.PHONY : projectforge/fast
 
 # Help Target
 help:
@@ -803,11 +868,16 @@ help:
 	@echo "... partial-claim-verifier"
 	@echo "... print-claims"
 	@echo "... private-claims"
+	@echo "... projectforge"
 	@echo "... projectforge_business"
+	@echo "... projectforge_carddav"
 	@echo "... projectforge_common"
 	@echo "... projectforge_commons_test"
+	@echo "... projectforge_idp"
 	@echo "... projectforge_jcr"
 	@echo "... projectforge_model"
+	@echo "... projectforge_rest"
+	@echo "... projectforge_wicket"
 	@echo "... rsa-create"
 	@echo "... rsa-verify"
 	@echo "... spdlog"

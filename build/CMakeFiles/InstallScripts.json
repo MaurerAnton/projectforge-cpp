@@ -15,7 +15,12 @@
 		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model/cmake_install.cmake",
 		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-jcr/cmake_install.cmake",
 		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business/cmake_install.cmake",
-		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-commons-test/cmake_install.cmake"
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-carddav/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-idp/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-wicket/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-commons-test/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-application/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

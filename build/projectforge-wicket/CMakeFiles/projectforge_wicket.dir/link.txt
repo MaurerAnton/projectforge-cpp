@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprojectforge_wicket.a CMakeFiles/projectforge_wicket.dir/src/WicketModule.cpp.o
+/usr/bin/ranlib libprojectforge_wicket.a
