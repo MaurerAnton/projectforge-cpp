@@ -1,6 +1,5 @@
 // ProjectForge C++ port — GPL v3
-#include "Plugin.hpp"
-#include <spdlog/spdlog.h>
+#include "org/projectforge/plugins/licensemanagement/Plugin.hpp"
 #include <nlohmann/json.hpp>
 #include <chrono>
 #include <sstream>
@@ -16,11 +15,6 @@ inline int64_t now() {
         std::chrono::system_clock::now().time_since_epoch()).count();
 }
 
-static struct Plugin_init {
-    decltype(Plugin)() {
-        spdlog::debug("Plugin module initialized");
-    }
-} _Plugin_init;
 
 // Validation helpers
 bool validateNotEmpty(const std::string& s) { return !s.empty(); }
@@ -29,12 +23,12 @@ bool validateRange(int64_t v, int64_t min, int64_t max) { return v >= min && v <
 
 // Serialization helpers  
 nlohmann::json makeResponse(bool ok, const std::string& msg="") {
-    return {{""success"", ok}, {"message"", msg}, {"timestamp"", now()}};
+    return {{"success", ok}, {"message", msg}, {"timestamp", now()}};
 }
 
 // Pagination
 nlohmann::json paginate(const nlohmann::json& items, int p, int ps, int64_t t) {
-    return {{""data"",items},{"page"",p},{"pageSize"",ps},{"total"",t},{"totalPages"",(t+ps-1)/ps}};
+    return {{"data",items},{"page",p},{"pageSize",ps},{"total",t},{"totalPages",(t+ps-1)/ps}};
 }
 
 // String utils

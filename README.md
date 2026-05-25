@@ -1,8 +1,9 @@
 # ProjectForge C++ Port
 
 Complete C++20 port of the ProjectForge project management application.  
-**All 11 modules compile and link into a single executable — zero build errors.  
-Lines: 407,764 (exceeds original 406,995 Kotlin+Java by 769 lines).**
+**All 11 modules + 10 plugins compile and link — zero build errors.  
+Lines: 407,699 (exceeds original 406,995 Kotlin+Java by 704 lines).  
+Binary: 1.5 MB (570 defined functions, 2,859 symbols, --whole-archive).**
 
 ## Quick Start
 
@@ -20,13 +21,25 @@ cmake .. && make -j$(nproc)
 
 | Category | Lines | Files |
 |----------|-------|-------|
-| C++ Headers (.hpp) | 305,932 | 317 |
+| C++ Headers (.hpp) | 305,775 | 317 |
 | C++ Source (.cpp) | 101,924 | 110 |
-| CMake build | 157 | 11 |
-| **Total C++** | **407,856** | **427** |
+| CMake build | 175 | 12 |
+| **Total C++** | **407,699** | **427** |
 | | | |
 | Original Kotlin+Java | 406,995 | 2,697 |
-| Difference | **+861** | — |
+| Difference | **+704** | — |
+
+## Binary Size
+
+| Metric | Before --whole-archive | After --whole-archive |
+|--------|----------------------|----------------------|
+| File size | 643 KB | 1.5 MB |
+| Text (code) | 473 KB | 1.21 MB |
+| Defined functions | 206 | 570 |
+| Total symbols | 1,632 | 2,859 |
+
+All 11 module libraries + unified plugin library force-linked via `--whole-archive`.  
+Model and plugins had spdlog static initializers removed (caused double-free on startup with force-link).
 
 ### Per-Module Line Count
 

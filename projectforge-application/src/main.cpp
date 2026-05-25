@@ -6,6 +6,7 @@
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <nlohmann/json.hpp>
+#include <cstdlib>
 
 void printBanner() {
     std::cout << R"(
@@ -28,10 +29,10 @@ int main(int argc, char* argv[]) {
         else if (arg == "--db" && i+1 < argc) dbPath = argv[++i];
         else if (arg == "--loglevel" && i+1 < argc) logLevel = argv[++i];
         else if (arg == "--check") checkOnly = true;
-        else if (arg == "--version") { std::cout << "8.2.0" << std::endl; return 0; }
+        else if (arg == "--version") { std::cout << "8.2.0" << std::endl; std::quick_exit(0); }
         else if (arg == "--help" || arg == "-h") {
             std::cout << "Usage: " << argv[0] << " [--port PORT] [--db PATH] [--loglevel LEVEL] [--check] [--version] [--help]" << std::endl;
-            return 0;
+            std::quick_exit(0);
         }
     }
 
@@ -43,14 +44,14 @@ int main(int argc, char* argv[]) {
         else if (logLevel=="warn") logger->set_level(spdlog::level::warn);
         else if (logLevel=="error") logger->set_level(spdlog::level::err);
         else logger->set_level(spdlog::level::info);
-    } catch (...) { return 1; }
+    } catch (...) { std::quick_exit(1); }
 
     printBanner();
     auto logger = spdlog::get("projectforge");
     logger->info("ProjectForge C++ starting on {}:{}", bindAddr, port);
     logger->info("Database: {}", dbPath);
 
-    if (checkOnly) { logger->info("Config OK"); return 0; }
+    if (checkOnly) { logger->info("Config OK"); std::quick_exit(0); }
 
     nlohmann::json info;
     info["status"] = "running";

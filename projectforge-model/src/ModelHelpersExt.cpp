@@ -1,7 +1,6 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
 
 #include "org/projectforge/model/rest/AbstractBaseObject.hpp"
-#include <spdlog/spdlog.h>
 #include <nlohmann/json.hpp>
 #include <chrono>
 

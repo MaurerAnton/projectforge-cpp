@@ -17,6 +17,8 @@ FetchContent_MakeAvailable(nlohmann_json)
 FetchContent_Declare(spdlog GIT_REPOSITORY https://github.com/gabime/spdlog.git GIT_TAG v1.14.1)
 FetchContent_MakeAvailable(spdlog)
 
+find_package(fmt REQUIRED)
+
 FetchContent_Declare(httplib GIT_REPOSITORY https://github.com/yhirose/cpp-httplib.git GIT_TAG v0.18.3)
 FetchContent_MakeAvailable(httplib)
 
@@ -35,4 +37,5 @@ add_subdirectory(projectforge-carddav)
 add_subdirectory(projectforge-idp)
 add_subdirectory(projectforge-wicket)
 add_subdirectory(projectforge-commons-test)
+add_subdirectory(plugins)
 add_subdirectory(projectforge-application)

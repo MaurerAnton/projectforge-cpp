@@ -1,6 +1,5 @@
 // ProjectForge C++ port
 #include "org/projectforge/model/rest/AbstractBaseObject.hpp"
-#include <spdlog/spdlog.h>
 #include <nlohmann/json.hpp>
 #include <chrono>
 #include <sstream>
@@ -44,10 +43,6 @@ std::string toCsvLine(const std::vector<std::string>& cells) {
     return ss.str();
 }
 
-// Module init
-static bool _init = []() {
-    spdlog::debug("AbstractBaseObject module initialized");
-    return true;
-}();
+// Module init — no-op (spdlog not available in model layer)
 
 } // namespace
