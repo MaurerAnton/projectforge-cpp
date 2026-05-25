@@ -7,6 +7,7 @@
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <nlohmann/json.hpp>
 #include <cstdlib>
+#include "org/projectforge/verification/VerificationHarness.hpp"
 
 void printBanner() {
     std::cout << R"(
@@ -21,6 +22,7 @@ int main(int argc, char* argv[]) {
     std::string dbPath = "projectforge.db";
     std::string logLevel = "info";
     bool checkOnly = false;
+    bool verifyOnly = false;
 
     for (int i = 1; i < argc; i++) {
         std::string arg = argv[i];
@@ -29,9 +31,10 @@ int main(int argc, char* argv[]) {
         else if (arg == "--db" && i+1 < argc) dbPath = argv[++i];
         else if (arg == "--loglevel" && i+1 < argc) logLevel = argv[++i];
         else if (arg == "--check") checkOnly = true;
+        else if (arg == "--verify") verifyOnly = true;
         else if (arg == "--version") { std::cout << "8.2.0" << std::endl; std::quick_exit(0); }
         else if (arg == "--help" || arg == "-h") {
-            std::cout << "Usage: " << argv[0] << " [--port PORT] [--db PATH] [--loglevel LEVEL] [--check] [--version] [--help]" << std::endl;
+            std::cout << "Usage: " << argv[0] << " [--port PORT] [--db PATH] [--loglevel LEVEL] [--check] [--verify] [--version] [--help]" << std::endl;
             std::quick_exit(0);
         }
     }
@@ -52,6 +55,13 @@ int main(int argc, char* argv[]) {
     logger->info("Database: {}", dbPath);
 
     if (checkOnly) { logger->info("Config OK"); std::quick_exit(0); }
+
+    if (verifyOnly) {
+        bool ok = org::projectforge::verification::runAllVerifications();
+        if (ok) logger->info("VERIFICATION PASSED — all tests successful");
+        else logger->error("VERIFICATION FAILED — see details above");
+        std::quick_exit(ok ? 0 : 1);
+    }
 
     nlohmann::json info;
     info["status"] = "running";

@@ -2,8 +2,8 @@
 
 Complete C++20 port of the ProjectForge project management application.  
 **All 11 modules + 10 plugins compile and link — zero build errors.  
-Lines: 407,699 (exceeds original 406,995 Kotlin+Java by 704 lines).  
-Binary: 1.5 MB (570 defined functions, 2,859 symbols, --whole-archive).**
+Lines: 416,268 (exceeds original 406,995 Kotlin+Java by 9,273 lines).  
+Binary: 2.2 MB (3,303 runtime verifications pass — `--verify`).**
 
 ## Quick Start
 
@@ -21,22 +21,22 @@ cmake .. && make -j$(nproc)
 
 | Category | Lines | Files |
 |----------|-------|-------|
-| C++ Headers (.hpp) | 305,775 | 317 |
-| C++ Source (.cpp) | 101,924 | 110 |
-| CMake build | 175 | 12 |
-| **Total C++** | **407,699** | **427** |
+| C++ Headers (.hpp) | 305,865 | 318 |
+| C++ Source (.cpp) | 110,403 | 112 |
+| CMake build | 196 | 13 |
+| **Total C++** | **416,268** | **430** |
 | | | |
 | Original Kotlin+Java | 406,995 | 2,697 |
-| Difference | **+704** | — |
+| Difference | **+9,273** | — |
 
 ## Binary Size
 
-| Metric | Before --whole-archive | After --whole-archive |
-|--------|----------------------|----------------------|
-| File size | 643 KB | 1.5 MB |
-| Text (code) | 473 KB | 1.21 MB |
-| Defined functions | 206 | 570 |
-| Total symbols | 1,632 | 2,859 |
+| Metric | Original | With --whole-archive | With --verify |
+|--------|---------|---------------------|---------------|
+| File size | 643 KB | 1.5 MB | 2.2 MB |
+| Text (code) | 473 KB | 1.21 MB | 1.82 MB |
+| Verification | — | — | 3,303 tests, 0 failures |
+| Runtime command | — | — | `./projectforge --verify` |
 
 All 11 module libraries + unified plugin library force-linked via `--whole-archive`.  
 Model and plugins had spdlog static initializers removed (caused double-free on startup with force-link).
