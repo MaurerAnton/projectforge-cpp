@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "session_wrapper.hpp"
+#include "org/projectforge/jcr/session_wrapper.hpp"
 
 namespace org::projectforge::jcr {
 

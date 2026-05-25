@@ -37,7 +37,7 @@ struct HRPlanningEntity {
 
 class HRPlanningDao : public BaseDao<HRPlanningEntity> {
 public:
-    explicit HRPlanningDao(Storage& s) : BaseDao<HRPlanningEntity>(s) {}
+    explicit HRPlanningDao() {}
     std::vector<HRPlanningEntity> getActive() {
         auto all=getAll(); std::vector<HRPlanningEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

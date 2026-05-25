@@ -59,7 +59,7 @@ struct ImageEntry {
 
 class ImageDao : public BaseDao<ImageEntry> {
 public:
-    explicit ImageDao(Storage& s) : BaseDao<ImageEntry>(s) {}
+    explicit ImageDao() {}
     
     std::vector<ImageEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<ImageEntry> r;

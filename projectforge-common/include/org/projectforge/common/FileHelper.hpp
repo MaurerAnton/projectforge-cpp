@@ -7,9 +7,10 @@
 
 namespace org::projectforge::common {
 
+namespace fs = std::filesystem;
+
 class FileHelper {
 public:
-    namespace fs = std::filesystem;
 
     static std::string readFile(const std::string& path);
     static std::vector<uint8_t> readBinaryFile(const std::string& path);

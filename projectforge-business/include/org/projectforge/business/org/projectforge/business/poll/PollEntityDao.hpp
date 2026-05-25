@@ -37,7 +37,7 @@ private:
 
 class PollDao : public BaseDao<PollEntity> {
 public:
-    explicit PollDao(Storage& storage) : BaseDao<PollEntity>(storage) {}
+    explicit PollDao() {}
     std::vector<PollEntity> getRecent(int limit=20) {
         auto all = getAll();
         std::sort(all.begin(), all.end(), [](auto& a, auto& b){ return a.lastUpdate > b.lastUpdate; });

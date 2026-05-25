@@ -37,7 +37,7 @@ private:
 
 class GanttEntryDao : public BaseDao<GanttEntryEntity> {
 public:
-    explicit GanttEntryDao(Storage& storage) : BaseDao<GanttEntryEntity>(storage) {}
+    explicit GanttEntryDao() {}
     std::vector<GanttEntryEntity> getRecent(int limit=20) {
         auto all = getAll();
         std::sort(all.begin(), all.end(), [](auto& a, auto& b){ return a.lastUpdate > b.lastUpdate; });

@@ -59,7 +59,7 @@ struct JobsEntry {
 
 class JobsDao : public BaseDao<JobsEntry> {
 public:
-    explicit JobsDao(Storage& s) : BaseDao<JobsEntry>(s) {}
+    explicit JobsDao() {}
     
     std::vector<JobsEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<JobsEntry> r;

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/sqlite_orm-populate"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/sqlite_orm-populate.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/sqlite_orm-populate-complete.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-build.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-configure.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-download.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-install.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-patch.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-test.rule"
+		},
+		{
+			"file" : "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/sqlite_orm-populate-prefix/src/sqlite_orm-populate-stamp/sqlite_orm-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sqlite_orm-populate"
+		],
+		"name" : "sqlite_orm-populate"
+	}
+}

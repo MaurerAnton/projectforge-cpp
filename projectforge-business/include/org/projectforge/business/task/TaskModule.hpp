@@ -37,7 +37,7 @@ struct TaskEntity {
 
 class TaskDao : public BaseDao<TaskEntity> {
 public:
-    explicit TaskDao(Storage& s) : BaseDao<TaskEntity>(s) {}
+    explicit TaskDao() {}
     std::vector<TaskEntity> getActive() {
         auto all=getAll(); std::vector<TaskEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

@@ -57,7 +57,7 @@ struct TimesheetEntity {
 
 class TimesheetDao : public BaseDao<TimesheetEntity> {
 public:
-    explicit TimesheetDao(Storage& storage) : BaseDao<TimesheetEntity>(storage) {}
+    explicit TimesheetDao() {}
 
     std::vector<TimesheetEntity> getByUser(int64_t userId, int64_t startDate = 0, int64_t endDate = 0) {
         auto all = getAll();

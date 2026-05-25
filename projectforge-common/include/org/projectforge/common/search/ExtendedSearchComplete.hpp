@@ -20,7 +20,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine2 {
 public:
@@ -32,7 +32,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine3 {
 public:
@@ -44,7 +44,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine4 {
 public:
@@ -56,7 +56,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine5 {
 public:
@@ -68,7 +68,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine6 {
 public:
@@ -80,7 +80,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine7 {
 public:
@@ -92,7 +92,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine8 {
 public:
@@ -104,7 +104,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine9 {
 public:
@@ -116,7 +116,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine10 {
 public:
@@ -128,7 +128,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine11 {
 public:
@@ -140,7 +140,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine12 {
 public:
@@ -152,7 +152,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine13 {
 public:
@@ -164,7 +164,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine14 {
 public:
@@ -176,7 +176,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine15 {
 public:
@@ -188,7 +188,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine16 {
 public:
@@ -200,7 +200,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine17 {
 public:
@@ -212,7 +212,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine18 {
 public:
@@ -224,7 +224,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine19 {
 public:
@@ -236,7 +236,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine20 {
 public:
@@ -248,7 +248,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine21 {
 public:
@@ -260,7 +260,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine22 {
 public:
@@ -272,7 +272,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine23 {
 public:
@@ -284,7 +284,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine24 {
 public:
@@ -296,7 +296,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine25 {
 public:
@@ -308,7 +308,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine26 {
 public:
@@ -320,7 +320,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine27 {
 public:
@@ -332,7 +332,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine28 {
 public:
@@ -344,7 +344,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine29 {
 public:
@@ -356,7 +356,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine30 {
 public:
@@ -368,7 +368,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine31 {
 public:
@@ -380,7 +380,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine32 {
 public:
@@ -392,7 +392,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine33 {
 public:
@@ -404,7 +404,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine34 {
 public:
@@ -416,7 +416,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine35 {
 public:
@@ -428,7 +428,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine36 {
 public:
@@ -440,7 +440,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine37 {
 public:
@@ -452,7 +452,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine38 {
 public:
@@ -464,7 +464,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine39 {
 public:
@@ -476,7 +476,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine40 {
 public:
@@ -488,7 +488,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine41 {
 public:
@@ -500,7 +500,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine42 {
 public:
@@ -512,7 +512,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine43 {
 public:
@@ -524,7 +524,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine44 {
 public:
@@ -536,7 +536,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine45 {
 public:
@@ -548,7 +548,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine46 {
 public:
@@ -560,7 +560,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine47 {
 public:
@@ -572,7 +572,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine48 {
 public:
@@ -584,7 +584,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine49 {
 public:
@@ -596,7 +596,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine50 {
 public:
@@ -608,7 +608,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine51 {
 public:
@@ -620,7 +620,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine52 {
 public:
@@ -632,7 +632,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine53 {
 public:
@@ -644,7 +644,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine54 {
 public:
@@ -656,7 +656,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine55 {
 public:
@@ -668,7 +668,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine56 {
 public:
@@ -680,7 +680,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine57 {
 public:
@@ -692,7 +692,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine58 {
 public:
@@ -704,7 +704,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine59 {
 public:
@@ -716,7 +716,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine60 {
 public:
@@ -728,7 +728,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine61 {
 public:
@@ -740,7 +740,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine62 {
 public:
@@ -752,7 +752,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine63 {
 public:
@@ -764,7 +764,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine64 {
 public:
@@ -776,7 +776,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine65 {
 public:
@@ -788,7 +788,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine66 {
 public:
@@ -800,7 +800,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine67 {
 public:
@@ -812,7 +812,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine68 {
 public:
@@ -824,7 +824,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine69 {
 public:
@@ -836,7 +836,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine70 {
 public:
@@ -848,7 +848,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine71 {
 public:
@@ -860,7 +860,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine72 {
 public:
@@ -872,7 +872,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine73 {
 public:
@@ -884,7 +884,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine74 {
 public:
@@ -896,7 +896,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine75 {
 public:
@@ -908,7 +908,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine76 {
 public:
@@ -920,7 +920,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine77 {
 public:
@@ -932,7 +932,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine78 {
 public:
@@ -944,7 +944,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine79 {
 public:
@@ -956,7 +956,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine80 {
 public:
@@ -968,7 +968,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine81 {
 public:
@@ -980,7 +980,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine82 {
 public:
@@ -992,7 +992,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine83 {
 public:
@@ -1004,7 +1004,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine84 {
 public:
@@ -1016,7 +1016,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine85 {
 public:
@@ -1028,7 +1028,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine86 {
 public:
@@ -1040,7 +1040,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine87 {
 public:
@@ -1052,7 +1052,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine88 {
 public:
@@ -1064,7 +1064,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine89 {
 public:
@@ -1076,7 +1076,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine90 {
 public:
@@ -1088,7 +1088,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine91 {
 public:
@@ -1100,7 +1100,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine92 {
 public:
@@ -1112,7 +1112,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine93 {
 public:
@@ -1124,7 +1124,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine94 {
 public:
@@ -1136,7 +1136,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine95 {
 public:
@@ -1148,7 +1148,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine96 {
 public:
@@ -1160,7 +1160,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine97 {
 public:
@@ -1172,7 +1172,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine98 {
 public:
@@ -1184,7 +1184,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine99 {
 public:
@@ -1196,7 +1196,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine100 {
 public:
@@ -1208,7 +1208,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine101 {
 public:
@@ -1220,7 +1220,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine102 {
 public:
@@ -1232,7 +1232,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine103 {
 public:
@@ -1244,7 +1244,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine104 {
 public:
@@ -1256,7 +1256,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine105 {
 public:
@@ -1268,7 +1268,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine106 {
 public:
@@ -1280,7 +1280,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine107 {
 public:
@@ -1292,7 +1292,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine108 {
 public:
@@ -1304,7 +1304,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine109 {
 public:
@@ -1316,7 +1316,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine110 {
 public:
@@ -1328,7 +1328,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine111 {
 public:
@@ -1340,7 +1340,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine112 {
 public:
@@ -1352,7 +1352,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine113 {
 public:
@@ -1364,7 +1364,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine114 {
 public:
@@ -1376,7 +1376,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine115 {
 public:
@@ -1388,7 +1388,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine116 {
 public:
@@ -1400,7 +1400,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine117 {
 public:
@@ -1412,7 +1412,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine118 {
 public:
@@ -1424,7 +1424,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine119 {
 public:
@@ -1436,7 +1436,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine120 {
 public:
@@ -1448,7 +1448,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine121 {
 public:
@@ -1460,7 +1460,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine122 {
 public:
@@ -1472,7 +1472,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine123 {
 public:
@@ -1484,7 +1484,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine124 {
 public:
@@ -1496,7 +1496,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine125 {
 public:
@@ -1508,7 +1508,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine126 {
 public:
@@ -1520,7 +1520,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine127 {
 public:
@@ -1532,7 +1532,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine128 {
 public:
@@ -1544,7 +1544,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine129 {
 public:
@@ -1556,7 +1556,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine130 {
 public:
@@ -1568,7 +1568,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine131 {
 public:
@@ -1580,7 +1580,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine132 {
 public:
@@ -1592,7 +1592,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine133 {
 public:
@@ -1604,7 +1604,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine134 {
 public:
@@ -1616,7 +1616,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine135 {
 public:
@@ -1628,7 +1628,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine136 {
 public:
@@ -1640,7 +1640,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine137 {
 public:
@@ -1652,7 +1652,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine138 {
 public:
@@ -1664,7 +1664,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine139 {
 public:
@@ -1676,7 +1676,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine140 {
 public:
@@ -1688,7 +1688,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine141 {
 public:
@@ -1700,7 +1700,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine142 {
 public:
@@ -1712,7 +1712,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine143 {
 public:
@@ -1724,7 +1724,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine144 {
 public:
@@ -1736,7 +1736,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine145 {
 public:
@@ -1748,7 +1748,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine146 {
 public:
@@ -1760,7 +1760,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine147 {
 public:
@@ -1772,7 +1772,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine148 {
 public:
@@ -1784,7 +1784,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine149 {
 public:
@@ -1796,7 +1796,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine150 {
 public:
@@ -1808,7 +1808,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine151 {
 public:
@@ -1820,7 +1820,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine152 {
 public:
@@ -1832,7 +1832,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine153 {
 public:
@@ -1844,7 +1844,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine154 {
 public:
@@ -1856,7 +1856,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine155 {
 public:
@@ -1868,7 +1868,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine156 {
 public:
@@ -1880,7 +1880,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine157 {
 public:
@@ -1892,7 +1892,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine158 {
 public:
@@ -1904,7 +1904,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine159 {
 public:
@@ -1916,7 +1916,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine160 {
 public:
@@ -1928,7 +1928,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine161 {
 public:
@@ -1940,7 +1940,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine162 {
 public:
@@ -1952,7 +1952,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine163 {
 public:
@@ -1964,7 +1964,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine164 {
 public:
@@ -1976,7 +1976,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine165 {
 public:
@@ -1988,7 +1988,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine166 {
 public:
@@ -2000,7 +2000,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine167 {
 public:
@@ -2012,7 +2012,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine168 {
 public:
@@ -2024,7 +2024,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine169 {
 public:
@@ -2036,7 +2036,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine170 {
 public:
@@ -2048,7 +2048,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine171 {
 public:
@@ -2060,7 +2060,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine172 {
 public:
@@ -2072,7 +2072,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine173 {
 public:
@@ -2084,7 +2084,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine174 {
 public:
@@ -2096,7 +2096,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine175 {
 public:
@@ -2108,7 +2108,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine176 {
 public:
@@ -2120,7 +2120,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine177 {
 public:
@@ -2132,7 +2132,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine178 {
 public:
@@ -2144,7 +2144,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine179 {
 public:
@@ -2156,7 +2156,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine180 {
 public:
@@ -2168,7 +2168,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine181 {
 public:
@@ -2180,7 +2180,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine182 {
 public:
@@ -2192,7 +2192,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine183 {
 public:
@@ -2204,7 +2204,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine184 {
 public:
@@ -2216,7 +2216,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine185 {
 public:
@@ -2228,7 +2228,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine186 {
 public:
@@ -2240,7 +2240,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine187 {
 public:
@@ -2252,7 +2252,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine188 {
 public:
@@ -2264,7 +2264,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine189 {
 public:
@@ -2276,7 +2276,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine190 {
 public:
@@ -2288,7 +2288,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine191 {
 public:
@@ -2300,7 +2300,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine192 {
 public:
@@ -2312,7 +2312,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine193 {
 public:
@@ -2324,7 +2324,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine194 {
 public:
@@ -2336,7 +2336,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine195 {
 public:
@@ -2348,7 +2348,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine196 {
 public:
@@ -2360,7 +2360,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine197 {
 public:
@@ -2372,7 +2372,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine198 {
 public:
@@ -2384,7 +2384,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine199 {
 public:
@@ -2396,7 +2396,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine200 {
 public:
@@ -2408,7 +2408,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine201 {
 public:
@@ -2420,7 +2420,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine202 {
 public:
@@ -2432,7 +2432,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine203 {
 public:
@@ -2444,7 +2444,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine204 {
 public:
@@ -2456,7 +2456,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine205 {
 public:
@@ -2468,7 +2468,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine206 {
 public:
@@ -2480,7 +2480,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine207 {
 public:
@@ -2492,7 +2492,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine208 {
 public:
@@ -2504,7 +2504,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine209 {
 public:
@@ -2516,7 +2516,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine210 {
 public:
@@ -2528,7 +2528,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine211 {
 public:
@@ -2540,7 +2540,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine212 {
 public:
@@ -2552,7 +2552,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine213 {
 public:
@@ -2564,7 +2564,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine214 {
 public:
@@ -2576,7 +2576,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine215 {
 public:
@@ -2588,7 +2588,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine216 {
 public:
@@ -2600,7 +2600,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine217 {
 public:
@@ -2612,7 +2612,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine218 {
 public:
@@ -2624,7 +2624,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine219 {
 public:
@@ -2636,7 +2636,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine220 {
 public:
@@ -2648,7 +2648,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine221 {
 public:
@@ -2660,7 +2660,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine222 {
 public:
@@ -2672,7 +2672,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine223 {
 public:
@@ -2684,7 +2684,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine224 {
 public:
@@ -2696,7 +2696,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine225 {
 public:
@@ -2708,7 +2708,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine226 {
 public:
@@ -2720,7 +2720,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine227 {
 public:
@@ -2732,7 +2732,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine228 {
 public:
@@ -2744,7 +2744,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine229 {
 public:
@@ -2756,7 +2756,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine230 {
 public:
@@ -2768,7 +2768,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine231 {
 public:
@@ -2780,7 +2780,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine232 {
 public:
@@ -2792,7 +2792,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine233 {
 public:
@@ -2804,7 +2804,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine234 {
 public:
@@ -2816,7 +2816,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine235 {
 public:
@@ -2828,7 +2828,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine236 {
 public:
@@ -2840,7 +2840,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine237 {
 public:
@@ -2852,7 +2852,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine238 {
 public:
@@ -2864,7 +2864,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine239 {
 public:
@@ -2876,7 +2876,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine240 {
 public:
@@ -2888,7 +2888,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine241 {
 public:
@@ -2900,7 +2900,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine242 {
 public:
@@ -2912,7 +2912,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine243 {
 public:
@@ -2924,7 +2924,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine244 {
 public:
@@ -2936,7 +2936,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine245 {
 public:
@@ -2948,7 +2948,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine246 {
 public:
@@ -2960,7 +2960,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine247 {
 public:
@@ -2972,7 +2972,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine248 {
 public:
@@ -2984,7 +2984,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine249 {
 public:
@@ -2996,7 +2996,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine250 {
 public:
@@ -3008,7 +3008,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine251 {
 public:
@@ -3020,7 +3020,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine252 {
 public:
@@ -3032,7 +3032,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine253 {
 public:
@@ -3044,7 +3044,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine254 {
 public:
@@ -3056,7 +3056,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine255 {
 public:
@@ -3068,7 +3068,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine256 {
 public:
@@ -3080,7 +3080,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine257 {
 public:
@@ -3092,7 +3092,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine258 {
 public:
@@ -3104,7 +3104,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine259 {
 public:
@@ -3116,7 +3116,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine260 {
 public:
@@ -3128,7 +3128,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine261 {
 public:
@@ -3140,7 +3140,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine262 {
 public:
@@ -3152,7 +3152,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine263 {
 public:
@@ -3164,7 +3164,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine264 {
 public:
@@ -3176,7 +3176,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine265 {
 public:
@@ -3188,7 +3188,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine266 {
 public:
@@ -3200,7 +3200,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine267 {
 public:
@@ -3212,7 +3212,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine268 {
 public:
@@ -3224,7 +3224,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine269 {
 public:
@@ -3236,7 +3236,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine270 {
 public:
@@ -3248,7 +3248,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine271 {
 public:
@@ -3260,7 +3260,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine272 {
 public:
@@ -3272,7 +3272,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine273 {
 public:
@@ -3284,7 +3284,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine274 {
 public:
@@ -3296,7 +3296,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine275 {
 public:
@@ -3308,7 +3308,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine276 {
 public:
@@ -3320,7 +3320,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine277 {
 public:
@@ -3332,7 +3332,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine278 {
 public:
@@ -3344,7 +3344,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine279 {
 public:
@@ -3356,7 +3356,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine280 {
 public:
@@ -3368,7 +3368,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine281 {
 public:
@@ -3380,7 +3380,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine282 {
 public:
@@ -3392,7 +3392,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine283 {
 public:
@@ -3404,7 +3404,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine284 {
 public:
@@ -3416,7 +3416,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine285 {
 public:
@@ -3428,7 +3428,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine286 {
 public:
@@ -3440,7 +3440,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine287 {
 public:
@@ -3452,7 +3452,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine288 {
 public:
@@ -3464,7 +3464,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine289 {
 public:
@@ -3476,7 +3476,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine290 {
 public:
@@ -3488,7 +3488,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine291 {
 public:
@@ -3500,7 +3500,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine292 {
 public:
@@ -3512,7 +3512,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine293 {
 public:
@@ -3524,7 +3524,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine294 {
 public:
@@ -3536,7 +3536,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine295 {
 public:
@@ -3548,7 +3548,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine296 {
 public:
@@ -3560,7 +3560,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine297 {
 public:
@@ -3572,7 +3572,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine298 {
 public:
@@ -3584,7 +3584,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine299 {
 public:
@@ -3596,7 +3596,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine300 {
 public:
@@ -3608,7 +3608,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine301 {
 public:
@@ -3620,7 +3620,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine302 {
 public:
@@ -3632,7 +3632,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine303 {
 public:
@@ -3644,7 +3644,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine304 {
 public:
@@ -3656,7 +3656,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine305 {
 public:
@@ -3668,7 +3668,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine306 {
 public:
@@ -3680,7 +3680,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine307 {
 public:
@@ -3692,7 +3692,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine308 {
 public:
@@ -3704,7 +3704,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine309 {
 public:
@@ -3716,7 +3716,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine310 {
 public:
@@ -3728,7 +3728,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine311 {
 public:
@@ -3740,7 +3740,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine312 {
 public:
@@ -3752,7 +3752,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine313 {
 public:
@@ -3764,7 +3764,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine314 {
 public:
@@ -3776,7 +3776,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine315 {
 public:
@@ -3788,7 +3788,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine316 {
 public:
@@ -3800,7 +3800,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine317 {
 public:
@@ -3812,7 +3812,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine318 {
 public:
@@ -3824,7 +3824,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine319 {
 public:
@@ -3836,7 +3836,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine320 {
 public:
@@ -3848,7 +3848,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine321 {
 public:
@@ -3860,7 +3860,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine322 {
 public:
@@ -3872,7 +3872,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine323 {
 public:
@@ -3884,7 +3884,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine324 {
 public:
@@ -3896,7 +3896,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine325 {
 public:
@@ -3908,7 +3908,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine326 {
 public:
@@ -3920,7 +3920,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine327 {
 public:
@@ -3932,7 +3932,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine328 {
 public:
@@ -3944,7 +3944,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine329 {
 public:
@@ -3956,7 +3956,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine330 {
 public:
@@ -3968,7 +3968,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine331 {
 public:
@@ -3980,7 +3980,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine332 {
 public:
@@ -3992,7 +3992,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine333 {
 public:
@@ -4004,7 +4004,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine334 {
 public:
@@ -4016,7 +4016,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine335 {
 public:
@@ -4028,7 +4028,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine336 {
 public:
@@ -4040,7 +4040,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine337 {
 public:
@@ -4052,7 +4052,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine338 {
 public:
@@ -4064,7 +4064,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine339 {
 public:
@@ -4076,7 +4076,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine340 {
 public:
@@ -4088,7 +4088,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine341 {
 public:
@@ -4100,7 +4100,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine342 {
 public:
@@ -4112,7 +4112,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine343 {
 public:
@@ -4124,7 +4124,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine344 {
 public:
@@ -4136,7 +4136,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine345 {
 public:
@@ -4148,7 +4148,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine346 {
 public:
@@ -4160,7 +4160,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine347 {
 public:
@@ -4172,7 +4172,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine348 {
 public:
@@ -4184,7 +4184,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine349 {
 public:
@@ -4196,7 +4196,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine350 {
 public:
@@ -4208,7 +4208,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine351 {
 public:
@@ -4220,7 +4220,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine352 {
 public:
@@ -4232,7 +4232,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine353 {
 public:
@@ -4244,7 +4244,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine354 {
 public:
@@ -4256,7 +4256,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine355 {
 public:
@@ -4268,7 +4268,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine356 {
 public:
@@ -4280,7 +4280,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine357 {
 public:
@@ -4292,7 +4292,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine358 {
 public:
@@ -4304,7 +4304,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine359 {
 public:
@@ -4316,7 +4316,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine360 {
 public:
@@ -4328,7 +4328,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine361 {
 public:
@@ -4340,7 +4340,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine362 {
 public:
@@ -4352,7 +4352,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine363 {
 public:
@@ -4364,7 +4364,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine364 {
 public:
@@ -4376,7 +4376,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine365 {
 public:
@@ -4388,7 +4388,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine366 {
 public:
@@ -4400,7 +4400,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine367 {
 public:
@@ -4412,7 +4412,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine368 {
 public:
@@ -4424,7 +4424,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine369 {
 public:
@@ -4436,7 +4436,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine370 {
 public:
@@ -4448,7 +4448,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine371 {
 public:
@@ -4460,7 +4460,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine372 {
 public:
@@ -4472,7 +4472,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine373 {
 public:
@@ -4484,7 +4484,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine374 {
 public:
@@ -4496,7 +4496,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine375 {
 public:
@@ -4508,7 +4508,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine376 {
 public:
@@ -4520,7 +4520,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine377 {
 public:
@@ -4532,7 +4532,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine378 {
 public:
@@ -4544,7 +4544,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine379 {
 public:
@@ -4556,7 +4556,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine380 {
 public:
@@ -4568,7 +4568,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine381 {
 public:
@@ -4580,7 +4580,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine382 {
 public:
@@ -4592,7 +4592,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine383 {
 public:
@@ -4604,7 +4604,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine384 {
 public:
@@ -4616,7 +4616,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine385 {
 public:
@@ -4628,7 +4628,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine386 {
 public:
@@ -4640,7 +4640,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine387 {
 public:
@@ -4652,7 +4652,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine388 {
 public:
@@ -4664,7 +4664,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine389 {
 public:
@@ -4676,7 +4676,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine390 {
 public:
@@ -4688,7 +4688,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine391 {
 public:
@@ -4700,7 +4700,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine392 {
 public:
@@ -4712,7 +4712,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine393 {
 public:
@@ -4724,7 +4724,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine394 {
 public:
@@ -4736,7 +4736,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine395 {
 public:
@@ -4748,7 +4748,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine396 {
 public:
@@ -4760,7 +4760,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine397 {
 public:
@@ -4772,7 +4772,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine398 {
 public:
@@ -4784,7 +4784,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine399 {
 public:
@@ -4796,7 +4796,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine400 {
 public:
@@ -4808,7 +4808,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine401 {
 public:
@@ -4820,7 +4820,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine402 {
 public:
@@ -4832,7 +4832,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine403 {
 public:
@@ -4844,7 +4844,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine404 {
 public:
@@ -4856,7 +4856,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine405 {
 public:
@@ -4868,7 +4868,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine406 {
 public:
@@ -4880,7 +4880,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine407 {
 public:
@@ -4892,7 +4892,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine408 {
 public:
@@ -4904,7 +4904,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine409 {
 public:
@@ -4916,7 +4916,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine410 {
 public:
@@ -4928,7 +4928,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine411 {
 public:
@@ -4940,7 +4940,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine412 {
 public:
@@ -4952,7 +4952,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine413 {
 public:
@@ -4964,7 +4964,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine414 {
 public:
@@ -4976,7 +4976,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine415 {
 public:
@@ -4988,7 +4988,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine416 {
 public:
@@ -5000,7 +5000,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine417 {
 public:
@@ -5012,7 +5012,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine418 {
 public:
@@ -5024,7 +5024,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine419 {
 public:
@@ -5036,7 +5036,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine420 {
 public:
@@ -5048,7 +5048,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine421 {
 public:
@@ -5060,7 +5060,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine422 {
 public:
@@ -5072,7 +5072,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine423 {
 public:
@@ -5084,7 +5084,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine424 {
 public:
@@ -5096,7 +5096,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine425 {
 public:
@@ -5108,7 +5108,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine426 {
 public:
@@ -5120,7 +5120,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine427 {
 public:
@@ -5132,7 +5132,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine428 {
 public:
@@ -5144,7 +5144,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine429 {
 public:
@@ -5156,7 +5156,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine430 {
 public:
@@ -5168,7 +5168,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine431 {
 public:
@@ -5180,7 +5180,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine432 {
 public:
@@ -5192,7 +5192,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine433 {
 public:
@@ -5204,7 +5204,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine434 {
 public:
@@ -5216,7 +5216,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine435 {
 public:
@@ -5228,7 +5228,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine436 {
 public:
@@ -5240,7 +5240,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine437 {
 public:
@@ -5252,7 +5252,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine438 {
 public:
@@ -5264,7 +5264,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine439 {
 public:
@@ -5276,7 +5276,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine440 {
 public:
@@ -5288,7 +5288,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine441 {
 public:
@@ -5300,7 +5300,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine442 {
 public:
@@ -5312,7 +5312,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine443 {
 public:
@@ -5324,7 +5324,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine444 {
 public:
@@ -5336,7 +5336,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine445 {
 public:
@@ -5348,7 +5348,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine446 {
 public:
@@ -5360,7 +5360,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine447 {
 public:
@@ -5372,7 +5372,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine448 {
 public:
@@ -5384,7 +5384,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine449 {
 public:
@@ -5396,7 +5396,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine450 {
 public:
@@ -5408,7 +5408,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine451 {
 public:
@@ -5420,7 +5420,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine452 {
 public:
@@ -5432,7 +5432,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine453 {
 public:
@@ -5444,7 +5444,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine454 {
 public:
@@ -5456,7 +5456,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine455 {
 public:
@@ -5468,7 +5468,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine456 {
 public:
@@ -5480,7 +5480,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine457 {
 public:
@@ -5492,7 +5492,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine458 {
 public:
@@ -5504,7 +5504,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine459 {
 public:
@@ -5516,7 +5516,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine460 {
 public:
@@ -5528,7 +5528,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine461 {
 public:
@@ -5540,7 +5540,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine462 {
 public:
@@ -5552,7 +5552,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine463 {
 public:
@@ -5564,7 +5564,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine464 {
 public:
@@ -5576,7 +5576,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine465 {
 public:
@@ -5588,7 +5588,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine466 {
 public:
@@ -5600,7 +5600,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine467 {
 public:
@@ -5612,7 +5612,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine468 {
 public:
@@ -5624,7 +5624,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine469 {
 public:
@@ -5636,7 +5636,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine470 {
 public:
@@ -5648,7 +5648,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine471 {
 public:
@@ -5660,7 +5660,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine472 {
 public:
@@ -5672,7 +5672,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine473 {
 public:
@@ -5684,7 +5684,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine474 {
 public:
@@ -5696,7 +5696,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine475 {
 public:
@@ -5708,7 +5708,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine476 {
 public:
@@ -5720,7 +5720,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine477 {
 public:
@@ -5732,7 +5732,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine478 {
 public:
@@ -5744,7 +5744,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine479 {
 public:
@@ -5756,7 +5756,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine480 {
 public:
@@ -5768,7 +5768,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine481 {
 public:
@@ -5780,7 +5780,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine482 {
 public:
@@ -5792,7 +5792,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine483 {
 public:
@@ -5804,7 +5804,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine484 {
 public:
@@ -5816,7 +5816,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine485 {
 public:
@@ -5828,7 +5828,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine486 {
 public:
@@ -5840,7 +5840,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine487 {
 public:
@@ -5852,7 +5852,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine488 {
 public:
@@ -5864,7 +5864,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine489 {
 public:
@@ -5876,7 +5876,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine490 {
 public:
@@ -5888,7 +5888,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine491 {
 public:
@@ -5900,7 +5900,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine492 {
 public:
@@ -5912,7 +5912,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine493 {
 public:
@@ -5924,7 +5924,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine494 {
 public:
@@ -5936,7 +5936,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine495 {
 public:
@@ -5948,7 +5948,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine496 {
 public:
@@ -5960,7 +5960,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine497 {
 public:
@@ -5972,7 +5972,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine498 {
 public:
@@ -5984,7 +5984,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine499 {
 public:
@@ -5996,7 +5996,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine500 {
 public:
@@ -6008,7 +6008,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine501 {
 public:
@@ -6020,7 +6020,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine502 {
 public:
@@ -6032,7 +6032,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine503 {
 public:
@@ -6044,7 +6044,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine504 {
 public:
@@ -6056,7 +6056,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine505 {
 public:
@@ -6068,7 +6068,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine506 {
 public:
@@ -6080,7 +6080,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine507 {
 public:
@@ -6092,7 +6092,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine508 {
 public:
@@ -6104,7 +6104,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine509 {
 public:
@@ -6116,7 +6116,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine510 {
 public:
@@ -6128,7 +6128,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine511 {
 public:
@@ -6140,7 +6140,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine512 {
 public:
@@ -6152,7 +6152,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine513 {
 public:
@@ -6164,7 +6164,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine514 {
 public:
@@ -6176,7 +6176,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine515 {
 public:
@@ -6188,7 +6188,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine516 {
 public:
@@ -6200,7 +6200,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine517 {
 public:
@@ -6212,7 +6212,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine518 {
 public:
@@ -6224,7 +6224,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine519 {
 public:
@@ -6236,7 +6236,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine520 {
 public:
@@ -6248,7 +6248,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine521 {
 public:
@@ -6260,7 +6260,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine522 {
 public:
@@ -6272,7 +6272,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine523 {
 public:
@@ -6284,7 +6284,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine524 {
 public:
@@ -6296,7 +6296,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine525 {
 public:
@@ -6308,7 +6308,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine526 {
 public:
@@ -6320,7 +6320,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine527 {
 public:
@@ -6332,7 +6332,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine528 {
 public:
@@ -6344,7 +6344,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine529 {
 public:
@@ -6356,7 +6356,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine530 {
 public:
@@ -6368,7 +6368,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine531 {
 public:
@@ -6380,7 +6380,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine532 {
 public:
@@ -6392,7 +6392,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine533 {
 public:
@@ -6404,7 +6404,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine534 {
 public:
@@ -6416,7 +6416,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine535 {
 public:
@@ -6428,7 +6428,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine536 {
 public:
@@ -6440,7 +6440,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine537 {
 public:
@@ -6452,7 +6452,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine538 {
 public:
@@ -6464,7 +6464,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine539 {
 public:
@@ -6476,7 +6476,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine540 {
 public:
@@ -6488,7 +6488,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine541 {
 public:
@@ -6500,7 +6500,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine542 {
 public:
@@ -6512,7 +6512,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine543 {
 public:
@@ -6524,7 +6524,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine544 {
 public:
@@ -6536,7 +6536,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine545 {
 public:
@@ -6548,7 +6548,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine546 {
 public:
@@ -6560,7 +6560,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine547 {
 public:
@@ -6572,7 +6572,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine548 {
 public:
@@ -6584,7 +6584,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine549 {
 public:
@@ -6596,7 +6596,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine550 {
 public:
@@ -6608,7 +6608,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine551 {
 public:
@@ -6620,7 +6620,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine552 {
 public:
@@ -6632,7 +6632,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine553 {
 public:
@@ -6644,7 +6644,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine554 {
 public:
@@ -6656,7 +6656,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine555 {
 public:
@@ -6668,7 +6668,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine556 {
 public:
@@ -6680,7 +6680,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine557 {
 public:
@@ -6692,7 +6692,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine558 {
 public:
@@ -6704,7 +6704,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine559 {
 public:
@@ -6716,7 +6716,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine560 {
 public:
@@ -6728,7 +6728,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine561 {
 public:
@@ -6740,7 +6740,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine562 {
 public:
@@ -6752,7 +6752,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine563 {
 public:
@@ -6764,7 +6764,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine564 {
 public:
@@ -6776,7 +6776,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine565 {
 public:
@@ -6788,7 +6788,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine566 {
 public:
@@ -6800,7 +6800,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine567 {
 public:
@@ -6812,7 +6812,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine568 {
 public:
@@ -6824,7 +6824,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine569 {
 public:
@@ -6836,7 +6836,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine570 {
 public:
@@ -6848,7 +6848,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine571 {
 public:
@@ -6860,7 +6860,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine572 {
 public:
@@ -6872,7 +6872,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine573 {
 public:
@@ -6884,7 +6884,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine574 {
 public:
@@ -6896,7 +6896,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine575 {
 public:
@@ -6908,7 +6908,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine576 {
 public:
@@ -6920,7 +6920,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine577 {
 public:
@@ -6932,7 +6932,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine578 {
 public:
@@ -6944,7 +6944,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine579 {
 public:
@@ -6956,7 +6956,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine580 {
 public:
@@ -6968,7 +6968,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine581 {
 public:
@@ -6980,7 +6980,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine582 {
 public:
@@ -6992,7 +6992,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine583 {
 public:
@@ -7004,7 +7004,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine584 {
 public:
@@ -7016,7 +7016,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine585 {
 public:
@@ -7028,7 +7028,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine586 {
 public:
@@ -7040,7 +7040,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine587 {
 public:
@@ -7052,7 +7052,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine588 {
 public:
@@ -7064,7 +7064,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine589 {
 public:
@@ -7076,7 +7076,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine590 {
 public:
@@ -7088,7 +7088,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine591 {
 public:
@@ -7100,7 +7100,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine592 {
 public:
@@ -7112,7 +7112,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine593 {
 public:
@@ -7124,7 +7124,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine594 {
 public:
@@ -7136,7 +7136,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine595 {
 public:
@@ -7148,7 +7148,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine596 {
 public:
@@ -7160,7 +7160,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine597 {
 public:
@@ -7172,7 +7172,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine598 {
 public:
@@ -7184,7 +7184,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine599 {
 public:
@@ -7196,7 +7196,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine600 {
 public:
@@ -7208,7 +7208,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine601 {
 public:
@@ -7220,7 +7220,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine602 {
 public:
@@ -7232,7 +7232,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine603 {
 public:
@@ -7244,7 +7244,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine604 {
 public:
@@ -7256,7 +7256,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine605 {
 public:
@@ -7268,7 +7268,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine606 {
 public:
@@ -7280,7 +7280,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine607 {
 public:
@@ -7292,7 +7292,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine608 {
 public:
@@ -7304,7 +7304,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine609 {
 public:
@@ -7316,7 +7316,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine610 {
 public:
@@ -7328,7 +7328,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine611 {
 public:
@@ -7340,7 +7340,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine612 {
 public:
@@ -7352,7 +7352,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine613 {
 public:
@@ -7364,7 +7364,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine614 {
 public:
@@ -7376,7 +7376,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine615 {
 public:
@@ -7388,7 +7388,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine616 {
 public:
@@ -7400,7 +7400,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine617 {
 public:
@@ -7412,7 +7412,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine618 {
 public:
@@ -7424,7 +7424,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine619 {
 public:
@@ -7436,7 +7436,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine620 {
 public:
@@ -7448,7 +7448,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine621 {
 public:
@@ -7460,7 +7460,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine622 {
 public:
@@ -7472,7 +7472,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine623 {
 public:
@@ -7484,7 +7484,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine624 {
 public:
@@ -7496,7 +7496,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine625 {
 public:
@@ -7508,7 +7508,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine626 {
 public:
@@ -7520,7 +7520,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine627 {
 public:
@@ -7532,7 +7532,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine628 {
 public:
@@ -7544,7 +7544,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine629 {
 public:
@@ -7556,7 +7556,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine630 {
 public:
@@ -7568,7 +7568,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine631 {
 public:
@@ -7580,7 +7580,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine632 {
 public:
@@ -7592,7 +7592,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine633 {
 public:
@@ -7604,7 +7604,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine634 {
 public:
@@ -7616,7 +7616,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine635 {
 public:
@@ -7628,7 +7628,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine636 {
 public:
@@ -7640,7 +7640,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine637 {
 public:
@@ -7652,7 +7652,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine638 {
 public:
@@ -7664,7 +7664,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine639 {
 public:
@@ -7676,7 +7676,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine640 {
 public:
@@ -7688,7 +7688,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine641 {
 public:
@@ -7700,7 +7700,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine642 {
 public:
@@ -7712,7 +7712,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine643 {
 public:
@@ -7724,7 +7724,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine644 {
 public:
@@ -7736,7 +7736,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine645 {
 public:
@@ -7748,7 +7748,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine646 {
 public:
@@ -7760,7 +7760,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine647 {
 public:
@@ -7772,7 +7772,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine648 {
 public:
@@ -7784,7 +7784,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine649 {
 public:
@@ -7796,7 +7796,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine650 {
 public:
@@ -7808,7 +7808,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine651 {
 public:
@@ -7820,7 +7820,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine652 {
 public:
@@ -7832,7 +7832,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine653 {
 public:
@@ -7844,7 +7844,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine654 {
 public:
@@ -7856,7 +7856,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine655 {
 public:
@@ -7868,7 +7868,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine656 {
 public:
@@ -7880,7 +7880,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine657 {
 public:
@@ -7892,7 +7892,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine658 {
 public:
@@ -7904,7 +7904,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine659 {
 public:
@@ -7916,7 +7916,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine660 {
 public:
@@ -7928,7 +7928,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine661 {
 public:
@@ -7940,7 +7940,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine662 {
 public:
@@ -7952,7 +7952,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine663 {
 public:
@@ -7964,7 +7964,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine664 {
 public:
@@ -7976,7 +7976,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine665 {
 public:
@@ -7988,7 +7988,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine666 {
 public:
@@ -8000,7 +8000,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine667 {
 public:
@@ -8012,7 +8012,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine668 {
 public:
@@ -8024,7 +8024,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine669 {
 public:
@@ -8036,7 +8036,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine670 {
 public:
@@ -8048,7 +8048,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine671 {
 public:
@@ -8060,7 +8060,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine672 {
 public:
@@ -8072,7 +8072,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine673 {
 public:
@@ -8084,7 +8084,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine674 {
 public:
@@ -8096,7 +8096,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine675 {
 public:
@@ -8108,7 +8108,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine676 {
 public:
@@ -8120,7 +8120,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine677 {
 public:
@@ -8132,7 +8132,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine678 {
 public:
@@ -8144,7 +8144,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine679 {
 public:
@@ -8156,7 +8156,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine680 {
 public:
@@ -8168,7 +8168,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine681 {
 public:
@@ -8180,7 +8180,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine682 {
 public:
@@ -8192,7 +8192,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine683 {
 public:
@@ -8204,7 +8204,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine684 {
 public:
@@ -8216,7 +8216,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine685 {
 public:
@@ -8228,7 +8228,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine686 {
 public:
@@ -8240,7 +8240,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine687 {
 public:
@@ -8252,7 +8252,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine688 {
 public:
@@ -8264,7 +8264,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine689 {
 public:
@@ -8276,7 +8276,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine690 {
 public:
@@ -8288,7 +8288,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine691 {
 public:
@@ -8300,7 +8300,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine692 {
 public:
@@ -8312,7 +8312,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine693 {
 public:
@@ -8324,7 +8324,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine694 {
 public:
@@ -8336,7 +8336,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine695 {
 public:
@@ -8348,7 +8348,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine696 {
 public:
@@ -8360,7 +8360,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine697 {
 public:
@@ -8372,7 +8372,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine698 {
 public:
@@ -8384,7 +8384,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine699 {
 public:
@@ -8396,7 +8396,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine700 {
 public:
@@ -8408,7 +8408,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine701 {
 public:
@@ -8420,7 +8420,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine702 {
 public:
@@ -8432,7 +8432,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine703 {
 public:
@@ -8444,7 +8444,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine704 {
 public:
@@ -8456,7 +8456,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine705 {
 public:
@@ -8468,7 +8468,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine706 {
 public:
@@ -8480,7 +8480,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine707 {
 public:
@@ -8492,7 +8492,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine708 {
 public:
@@ -8504,7 +8504,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine709 {
 public:
@@ -8516,7 +8516,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine710 {
 public:
@@ -8528,7 +8528,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine711 {
 public:
@@ -8540,7 +8540,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine712 {
 public:
@@ -8552,7 +8552,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine713 {
 public:
@@ -8564,7 +8564,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine714 {
 public:
@@ -8576,7 +8576,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine715 {
 public:
@@ -8588,7 +8588,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine716 {
 public:
@@ -8600,7 +8600,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine717 {
 public:
@@ -8612,7 +8612,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine718 {
 public:
@@ -8624,7 +8624,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine719 {
 public:
@@ -8636,7 +8636,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine720 {
 public:
@@ -8648,7 +8648,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine721 {
 public:
@@ -8660,7 +8660,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine722 {
 public:
@@ -8672,7 +8672,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine723 {
 public:
@@ -8684,7 +8684,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine724 {
 public:
@@ -8696,7 +8696,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine725 {
 public:
@@ -8708,7 +8708,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine726 {
 public:
@@ -8720,7 +8720,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine727 {
 public:
@@ -8732,7 +8732,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine728 {
 public:
@@ -8744,7 +8744,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine729 {
 public:
@@ -8756,7 +8756,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine730 {
 public:
@@ -8768,7 +8768,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine731 {
 public:
@@ -8780,7 +8780,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine732 {
 public:
@@ -8792,7 +8792,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine733 {
 public:
@@ -8804,7 +8804,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine734 {
 public:
@@ -8816,7 +8816,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine735 {
 public:
@@ -8828,7 +8828,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine736 {
 public:
@@ -8840,7 +8840,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine737 {
 public:
@@ -8852,7 +8852,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine738 {
 public:
@@ -8864,7 +8864,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine739 {
 public:
@@ -8876,7 +8876,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine740 {
 public:
@@ -8888,7 +8888,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine741 {
 public:
@@ -8900,7 +8900,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine742 {
 public:
@@ -8912,7 +8912,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine743 {
 public:
@@ -8924,7 +8924,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine744 {
 public:
@@ -8936,7 +8936,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine745 {
 public:
@@ -8948,7 +8948,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine746 {
 public:
@@ -8960,7 +8960,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine747 {
 public:
@@ -8972,7 +8972,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine748 {
 public:
@@ -8984,7 +8984,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine749 {
 public:
@@ -8996,7 +8996,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine750 {
 public:
@@ -9008,7 +9008,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine751 {
 public:
@@ -9020,7 +9020,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine752 {
 public:
@@ -9032,7 +9032,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine753 {
 public:
@@ -9044,7 +9044,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine754 {
 public:
@@ -9056,7 +9056,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine755 {
 public:
@@ -9068,7 +9068,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine756 {
 public:
@@ -9080,7 +9080,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine757 {
 public:
@@ -9092,7 +9092,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine758 {
 public:
@@ -9104,7 +9104,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine759 {
 public:
@@ -9116,7 +9116,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine760 {
 public:
@@ -9128,7 +9128,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine761 {
 public:
@@ -9140,7 +9140,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine762 {
 public:
@@ -9152,7 +9152,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine763 {
 public:
@@ -9164,7 +9164,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine764 {
 public:
@@ -9176,7 +9176,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine765 {
 public:
@@ -9188,7 +9188,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine766 {
 public:
@@ -9200,7 +9200,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine767 {
 public:
@@ -9212,7 +9212,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine768 {
 public:
@@ -9224,7 +9224,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine769 {
 public:
@@ -9236,7 +9236,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine770 {
 public:
@@ -9248,7 +9248,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine771 {
 public:
@@ -9260,7 +9260,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine772 {
 public:
@@ -9272,7 +9272,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine773 {
 public:
@@ -9284,7 +9284,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine774 {
 public:
@@ -9296,7 +9296,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine775 {
 public:
@@ -9308,7 +9308,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine776 {
 public:
@@ -9320,7 +9320,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine777 {
 public:
@@ -9332,7 +9332,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine778 {
 public:
@@ -9344,7 +9344,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine779 {
 public:
@@ -9356,7 +9356,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine780 {
 public:
@@ -9368,7 +9368,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine781 {
 public:
@@ -9380,7 +9380,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine782 {
 public:
@@ -9392,7 +9392,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine783 {
 public:
@@ -9404,7 +9404,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine784 {
 public:
@@ -9416,7 +9416,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine785 {
 public:
@@ -9428,7 +9428,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine786 {
 public:
@@ -9440,7 +9440,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine787 {
 public:
@@ -9452,7 +9452,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine788 {
 public:
@@ -9464,7 +9464,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine789 {
 public:
@@ -9476,7 +9476,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine790 {
 public:
@@ -9488,7 +9488,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine791 {
 public:
@@ -9500,7 +9500,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine792 {
 public:
@@ -9512,7 +9512,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine793 {
 public:
@@ -9524,7 +9524,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine794 {
 public:
@@ -9536,7 +9536,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine795 {
 public:
@@ -9548,7 +9548,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine796 {
 public:
@@ -9560,7 +9560,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine797 {
 public:
@@ -9572,7 +9572,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine798 {
 public:
@@ -9584,7 +9584,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine799 {
 public:
@@ -9596,7 +9596,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine800 {
 public:
@@ -9608,7 +9608,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine801 {
 public:
@@ -9620,7 +9620,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine802 {
 public:
@@ -9632,7 +9632,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine803 {
 public:
@@ -9644,7 +9644,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine804 {
 public:
@@ -9656,7 +9656,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine805 {
 public:
@@ -9668,7 +9668,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine806 {
 public:
@@ -9680,7 +9680,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine807 {
 public:
@@ -9692,7 +9692,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine808 {
 public:
@@ -9704,7 +9704,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine809 {
 public:
@@ -9716,7 +9716,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine810 {
 public:
@@ -9728,7 +9728,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine811 {
 public:
@@ -9740,7 +9740,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine812 {
 public:
@@ -9752,7 +9752,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine813 {
 public:
@@ -9764,7 +9764,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine814 {
 public:
@@ -9776,7 +9776,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine815 {
 public:
@@ -9788,7 +9788,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine816 {
 public:
@@ -9800,7 +9800,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine817 {
 public:
@@ -9812,7 +9812,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine818 {
 public:
@@ -9824,7 +9824,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine819 {
 public:
@@ -9836,7 +9836,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine820 {
 public:
@@ -9848,7 +9848,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine821 {
 public:
@@ -9860,7 +9860,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine822 {
 public:
@@ -9872,7 +9872,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine823 {
 public:
@@ -9884,7 +9884,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine824 {
 public:
@@ -9896,7 +9896,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine825 {
 public:
@@ -9908,7 +9908,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine826 {
 public:
@@ -9920,7 +9920,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine827 {
 public:
@@ -9932,7 +9932,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine828 {
 public:
@@ -9944,7 +9944,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine829 {
 public:
@@ -9956,7 +9956,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine830 {
 public:
@@ -9968,7 +9968,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine831 {
 public:
@@ -9980,7 +9980,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine832 {
 public:
@@ -9992,7 +9992,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine833 {
 public:
@@ -10004,7 +10004,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine834 {
 public:
@@ -10016,7 +10016,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine835 {
 public:
@@ -10028,7 +10028,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine836 {
 public:
@@ -10040,7 +10040,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine837 {
 public:
@@ -10052,7 +10052,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine838 {
 public:
@@ -10064,7 +10064,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine839 {
 public:
@@ -10076,7 +10076,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine840 {
 public:
@@ -10088,7 +10088,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine841 {
 public:
@@ -10100,7 +10100,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine842 {
 public:
@@ -10112,7 +10112,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine843 {
 public:
@@ -10124,7 +10124,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine844 {
 public:
@@ -10136,7 +10136,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine845 {
 public:
@@ -10148,7 +10148,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine846 {
 public:
@@ -10160,7 +10160,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine847 {
 public:
@@ -10172,7 +10172,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine848 {
 public:
@@ -10184,7 +10184,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine849 {
 public:
@@ -10196,7 +10196,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine850 {
 public:
@@ -10208,7 +10208,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine851 {
 public:
@@ -10220,7 +10220,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine852 {
 public:
@@ -10232,7 +10232,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine853 {
 public:
@@ -10244,7 +10244,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine854 {
 public:
@@ -10256,7 +10256,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine855 {
 public:
@@ -10268,7 +10268,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine856 {
 public:
@@ -10280,7 +10280,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine857 {
 public:
@@ -10292,7 +10292,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine858 {
 public:
@@ -10304,7 +10304,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine859 {
 public:
@@ -10316,7 +10316,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine860 {
 public:
@@ -10328,7 +10328,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine861 {
 public:
@@ -10340,7 +10340,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine862 {
 public:
@@ -10352,7 +10352,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine863 {
 public:
@@ -10364,7 +10364,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine864 {
 public:
@@ -10376,7 +10376,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine865 {
 public:
@@ -10388,7 +10388,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine866 {
 public:
@@ -10400,7 +10400,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine867 {
 public:
@@ -10412,7 +10412,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine868 {
 public:
@@ -10424,7 +10424,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine869 {
 public:
@@ -10436,7 +10436,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine870 {
 public:
@@ -10448,7 +10448,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine871 {
 public:
@@ -10460,7 +10460,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine872 {
 public:
@@ -10472,7 +10472,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine873 {
 public:
@@ -10484,7 +10484,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine874 {
 public:
@@ -10496,7 +10496,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine875 {
 public:
@@ -10508,7 +10508,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine876 {
 public:
@@ -10520,7 +10520,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine877 {
 public:
@@ -10532,7 +10532,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine878 {
 public:
@@ -10544,7 +10544,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine879 {
 public:
@@ -10556,7 +10556,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine880 {
 public:
@@ -10568,7 +10568,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine881 {
 public:
@@ -10580,7 +10580,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine882 {
 public:
@@ -10592,7 +10592,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine883 {
 public:
@@ -10604,7 +10604,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine884 {
 public:
@@ -10616,7 +10616,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine885 {
 public:
@@ -10628,7 +10628,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine886 {
 public:
@@ -10640,7 +10640,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine887 {
 public:
@@ -10652,7 +10652,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine888 {
 public:
@@ -10664,7 +10664,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine889 {
 public:
@@ -10676,7 +10676,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine890 {
 public:
@@ -10688,7 +10688,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine891 {
 public:
@@ -10700,7 +10700,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine892 {
 public:
@@ -10712,7 +10712,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine893 {
 public:
@@ -10724,7 +10724,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine894 {
 public:
@@ -10736,7 +10736,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine895 {
 public:
@@ -10748,7 +10748,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine896 {
 public:
@@ -10760,7 +10760,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine897 {
 public:
@@ -10772,7 +10772,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine898 {
 public:
@@ -10784,7 +10784,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine899 {
 public:
@@ -10796,7 +10796,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine900 {
 public:
@@ -10808,7 +10808,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine901 {
 public:
@@ -10820,7 +10820,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine902 {
 public:
@@ -10832,7 +10832,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine903 {
 public:
@@ -10844,7 +10844,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine904 {
 public:
@@ -10856,7 +10856,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine905 {
 public:
@@ -10868,7 +10868,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine906 {
 public:
@@ -10880,7 +10880,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine907 {
 public:
@@ -10892,7 +10892,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine908 {
 public:
@@ -10904,7 +10904,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine909 {
 public:
@@ -10916,7 +10916,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine910 {
 public:
@@ -10928,7 +10928,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine911 {
 public:
@@ -10940,7 +10940,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine912 {
 public:
@@ -10952,7 +10952,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine913 {
 public:
@@ -10964,7 +10964,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine914 {
 public:
@@ -10976,7 +10976,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine915 {
 public:
@@ -10988,7 +10988,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine916 {
 public:
@@ -11000,7 +11000,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine917 {
 public:
@@ -11012,7 +11012,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine918 {
 public:
@@ -11024,7 +11024,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine919 {
 public:
@@ -11036,7 +11036,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine920 {
 public:
@@ -11048,7 +11048,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine921 {
 public:
@@ -11060,7 +11060,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine922 {
 public:
@@ -11072,7 +11072,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine923 {
 public:
@@ -11084,7 +11084,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine924 {
 public:
@@ -11096,7 +11096,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine925 {
 public:
@@ -11108,7 +11108,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine926 {
 public:
@@ -11120,7 +11120,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine927 {
 public:
@@ -11132,7 +11132,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine928 {
 public:
@@ -11144,7 +11144,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine929 {
 public:
@@ -11156,7 +11156,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine930 {
 public:
@@ -11168,7 +11168,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine931 {
 public:
@@ -11180,7 +11180,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine932 {
 public:
@@ -11192,7 +11192,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine933 {
 public:
@@ -11204,7 +11204,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine934 {
 public:
@@ -11216,7 +11216,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine935 {
 public:
@@ -11228,7 +11228,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine936 {
 public:
@@ -11240,7 +11240,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine937 {
 public:
@@ -11252,7 +11252,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine938 {
 public:
@@ -11264,7 +11264,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine939 {
 public:
@@ -11276,7 +11276,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine940 {
 public:
@@ -11288,7 +11288,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine941 {
 public:
@@ -11300,7 +11300,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine942 {
 public:
@@ -11312,7 +11312,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine943 {
 public:
@@ -11324,7 +11324,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine944 {
 public:
@@ -11336,7 +11336,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine945 {
 public:
@@ -11348,7 +11348,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine946 {
 public:
@@ -11360,7 +11360,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine947 {
 public:
@@ -11372,7 +11372,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine948 {
 public:
@@ -11384,7 +11384,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine949 {
 public:
@@ -11396,7 +11396,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine950 {
 public:
@@ -11408,7 +11408,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine951 {
 public:
@@ -11420,7 +11420,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine952 {
 public:
@@ -11432,7 +11432,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine953 {
 public:
@@ -11444,7 +11444,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine954 {
 public:
@@ -11456,7 +11456,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine955 {
 public:
@@ -11468,7 +11468,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine956 {
 public:
@@ -11480,7 +11480,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine957 {
 public:
@@ -11492,7 +11492,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine958 {
 public:
@@ -11504,7 +11504,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine959 {
 public:
@@ -11516,7 +11516,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine960 {
 public:
@@ -11528,7 +11528,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine961 {
 public:
@@ -11540,7 +11540,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine962 {
 public:
@@ -11552,7 +11552,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine963 {
 public:
@@ -11564,7 +11564,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine964 {
 public:
@@ -11576,7 +11576,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine965 {
 public:
@@ -11588,7 +11588,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine966 {
 public:
@@ -11600,7 +11600,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine967 {
 public:
@@ -11612,7 +11612,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine968 {
 public:
@@ -11624,7 +11624,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine969 {
 public:
@@ -11636,7 +11636,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine970 {
 public:
@@ -11648,7 +11648,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine971 {
 public:
@@ -11660,7 +11660,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine972 {
 public:
@@ -11672,7 +11672,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine973 {
 public:
@@ -11684,7 +11684,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine974 {
 public:
@@ -11696,7 +11696,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine975 {
 public:
@@ -11708,7 +11708,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine976 {
 public:
@@ -11720,7 +11720,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine977 {
 public:
@@ -11732,7 +11732,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine978 {
 public:
@@ -11744,7 +11744,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine979 {
 public:
@@ -11756,7 +11756,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine980 {
 public:
@@ -11768,7 +11768,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine981 {
 public:
@@ -11780,7 +11780,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine982 {
 public:
@@ -11792,7 +11792,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine983 {
 public:
@@ -11804,7 +11804,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine984 {
 public:
@@ -11816,7 +11816,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine985 {
 public:
@@ -11828,7 +11828,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine986 {
 public:
@@ -11840,7 +11840,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine987 {
 public:
@@ -11852,7 +11852,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine988 {
 public:
@@ -11864,7 +11864,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine989 {
 public:
@@ -11876,7 +11876,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine990 {
 public:
@@ -11888,7 +11888,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine991 {
 public:
@@ -11900,7 +11900,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine992 {
 public:
@@ -11912,7 +11912,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine993 {
 public:
@@ -11924,7 +11924,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine994 {
 public:
@@ -11936,7 +11936,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine995 {
 public:
@@ -11948,7 +11948,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine996 {
 public:
@@ -11960,7 +11960,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine997 {
 public:
@@ -11972,7 +11972,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine998 {
 public:
@@ -11984,7 +11984,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine999 {
 public:
@@ -11996,7 +11996,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class SearchEngine1000 {
 public:
@@ -12008,6 +12008,6 @@ public:
     void clear() { std::lock_guard lock(mtx_); docs_.clear(); }
 private:
     std::map<std::string,json> docs_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 }}}} // namespace

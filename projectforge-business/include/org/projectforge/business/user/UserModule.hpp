@@ -37,7 +37,7 @@ struct GroupEntity {
 
 class GroupDao : public BaseDao<GroupEntity> {
 public:
-    explicit GroupDao(Storage& s) : BaseDao<GroupEntity>(s) {}
+    explicit GroupDao() {}
     std::vector<GroupEntity> getActive() {
         auto all=getAll(); std::vector<GroupEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct UserAuthenticationsEntity {
 
 class UserAuthenticationsDao : public BaseDao<UserAuthenticationsEntity> {
 public:
-    explicit UserAuthenticationsDao(Storage& s) : BaseDao<UserAuthenticationsEntity>(s) {}
+    explicit UserAuthenticationsDao() {}
     std::vector<UserAuthenticationsEntity> getActive() {
         auto all=getAll(); std::vector<UserAuthenticationsEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -121,7 +121,7 @@ struct UserEntity {
 
 class UserDao : public BaseDao<UserEntity> {
 public:
-    explicit UserDao(Storage& s) : BaseDao<UserEntity>(s) {}
+    explicit UserDao() {}
     std::vector<UserEntity> getActive() {
         auto all=getAll(); std::vector<UserEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -163,7 +163,7 @@ struct UserPasswordEntity {
 
 class UserPasswordDao : public BaseDao<UserPasswordEntity> {
 public:
-    explicit UserPasswordDao(Storage& s) : BaseDao<UserPasswordEntity>(s) {}
+    explicit UserPasswordDao() {}
     std::vector<UserPasswordEntity> getActive() {
         auto all=getAll(); std::vector<UserPasswordEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -205,7 +205,7 @@ struct UserPrefEntity {
 
 class UserPrefDao : public BaseDao<UserPrefEntity> {
 public:
-    explicit UserPrefDao(Storage& s) : BaseDao<UserPrefEntity>(s) {}
+    explicit UserPrefDao() {}
     std::vector<UserPrefEntity> getActive() {
         auto all=getAll(); std::vector<UserPrefEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -247,7 +247,7 @@ struct UserXmlPreferencesEntity {
 
 class UserXmlPreferencesDao : public BaseDao<UserXmlPreferencesEntity> {
 public:
-    explicit UserXmlPreferencesDao(Storage& s) : BaseDao<UserXmlPreferencesEntity>(s) {}
+    explicit UserXmlPreferencesDao() {}
     std::vector<UserXmlPreferencesEntity> getActive() {
         auto all=getAll(); std::vector<UserXmlPreferencesEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -289,7 +289,7 @@ struct UserXmlPreferencesMigrationEntity {
 
 class UserXmlPreferencesMigrationDao : public BaseDao<UserXmlPreferencesMigrationEntity> {
 public:
-    explicit UserXmlPreferencesMigrationDao(Storage& s) : BaseDao<UserXmlPreferencesMigrationEntity>(s) {}
+    explicit UserXmlPreferencesMigrationDao() {}
     std::vector<UserXmlPreferencesMigrationEntity> getActive() {
         auto all=getAll(); std::vector<UserXmlPreferencesMigrationEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

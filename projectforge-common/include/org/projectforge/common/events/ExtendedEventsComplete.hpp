@@ -22,7 +22,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus2 {
 public:
@@ -35,7 +35,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus3 {
 public:
@@ -48,7 +48,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus4 {
 public:
@@ -61,7 +61,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus5 {
 public:
@@ -74,7 +74,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus6 {
 public:
@@ -87,7 +87,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus7 {
 public:
@@ -100,7 +100,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus8 {
 public:
@@ -113,7 +113,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus9 {
 public:
@@ -126,7 +126,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus10 {
 public:
@@ -139,7 +139,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus11 {
 public:
@@ -152,7 +152,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus12 {
 public:
@@ -165,7 +165,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus13 {
 public:
@@ -178,7 +178,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus14 {
 public:
@@ -191,7 +191,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus15 {
 public:
@@ -204,7 +204,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus16 {
 public:
@@ -217,7 +217,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus17 {
 public:
@@ -230,7 +230,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus18 {
 public:
@@ -243,7 +243,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus19 {
 public:
@@ -256,7 +256,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus20 {
 public:
@@ -269,7 +269,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus21 {
 public:
@@ -282,7 +282,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus22 {
 public:
@@ -295,7 +295,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus23 {
 public:
@@ -308,7 +308,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus24 {
 public:
@@ -321,7 +321,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus25 {
 public:
@@ -334,7 +334,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus26 {
 public:
@@ -347,7 +347,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus27 {
 public:
@@ -360,7 +360,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus28 {
 public:
@@ -373,7 +373,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus29 {
 public:
@@ -386,7 +386,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus30 {
 public:
@@ -399,7 +399,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus31 {
 public:
@@ -412,7 +412,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus32 {
 public:
@@ -425,7 +425,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus33 {
 public:
@@ -438,7 +438,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus34 {
 public:
@@ -451,7 +451,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus35 {
 public:
@@ -464,7 +464,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus36 {
 public:
@@ -477,7 +477,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus37 {
 public:
@@ -490,7 +490,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus38 {
 public:
@@ -503,7 +503,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus39 {
 public:
@@ -516,7 +516,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus40 {
 public:
@@ -529,7 +529,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus41 {
 public:
@@ -542,7 +542,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus42 {
 public:
@@ -555,7 +555,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus43 {
 public:
@@ -568,7 +568,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus44 {
 public:
@@ -581,7 +581,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus45 {
 public:
@@ -594,7 +594,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus46 {
 public:
@@ -607,7 +607,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus47 {
 public:
@@ -620,7 +620,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus48 {
 public:
@@ -633,7 +633,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus49 {
 public:
@@ -646,7 +646,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus50 {
 public:
@@ -659,7 +659,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus51 {
 public:
@@ -672,7 +672,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus52 {
 public:
@@ -685,7 +685,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus53 {
 public:
@@ -698,7 +698,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus54 {
 public:
@@ -711,7 +711,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus55 {
 public:
@@ -724,7 +724,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus56 {
 public:
@@ -737,7 +737,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus57 {
 public:
@@ -750,7 +750,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus58 {
 public:
@@ -763,7 +763,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus59 {
 public:
@@ -776,7 +776,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus60 {
 public:
@@ -789,7 +789,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus61 {
 public:
@@ -802,7 +802,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus62 {
 public:
@@ -815,7 +815,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus63 {
 public:
@@ -828,7 +828,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus64 {
 public:
@@ -841,7 +841,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus65 {
 public:
@@ -854,7 +854,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus66 {
 public:
@@ -867,7 +867,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus67 {
 public:
@@ -880,7 +880,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus68 {
 public:
@@ -893,7 +893,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus69 {
 public:
@@ -906,7 +906,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus70 {
 public:
@@ -919,7 +919,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus71 {
 public:
@@ -932,7 +932,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus72 {
 public:
@@ -945,7 +945,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus73 {
 public:
@@ -958,7 +958,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus74 {
 public:
@@ -971,7 +971,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus75 {
 public:
@@ -984,7 +984,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus76 {
 public:
@@ -997,7 +997,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus77 {
 public:
@@ -1010,7 +1010,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus78 {
 public:
@@ -1023,7 +1023,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus79 {
 public:
@@ -1036,7 +1036,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus80 {
 public:
@@ -1049,7 +1049,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus81 {
 public:
@@ -1062,7 +1062,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus82 {
 public:
@@ -1075,7 +1075,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus83 {
 public:
@@ -1088,7 +1088,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus84 {
 public:
@@ -1101,7 +1101,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus85 {
 public:
@@ -1114,7 +1114,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus86 {
 public:
@@ -1127,7 +1127,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus87 {
 public:
@@ -1140,7 +1140,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus88 {
 public:
@@ -1153,7 +1153,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus89 {
 public:
@@ -1166,7 +1166,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus90 {
 public:
@@ -1179,7 +1179,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus91 {
 public:
@@ -1192,7 +1192,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus92 {
 public:
@@ -1205,7 +1205,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus93 {
 public:
@@ -1218,7 +1218,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus94 {
 public:
@@ -1231,7 +1231,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus95 {
 public:
@@ -1244,7 +1244,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus96 {
 public:
@@ -1257,7 +1257,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus97 {
 public:
@@ -1270,7 +1270,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus98 {
 public:
@@ -1283,7 +1283,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus99 {
 public:
@@ -1296,7 +1296,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus100 {
 public:
@@ -1309,7 +1309,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus101 {
 public:
@@ -1322,7 +1322,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus102 {
 public:
@@ -1335,7 +1335,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus103 {
 public:
@@ -1348,7 +1348,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus104 {
 public:
@@ -1361,7 +1361,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus105 {
 public:
@@ -1374,7 +1374,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus106 {
 public:
@@ -1387,7 +1387,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus107 {
 public:
@@ -1400,7 +1400,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus108 {
 public:
@@ -1413,7 +1413,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus109 {
 public:
@@ -1426,7 +1426,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus110 {
 public:
@@ -1439,7 +1439,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus111 {
 public:
@@ -1452,7 +1452,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus112 {
 public:
@@ -1465,7 +1465,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus113 {
 public:
@@ -1478,7 +1478,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus114 {
 public:
@@ -1491,7 +1491,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus115 {
 public:
@@ -1504,7 +1504,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus116 {
 public:
@@ -1517,7 +1517,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus117 {
 public:
@@ -1530,7 +1530,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus118 {
 public:
@@ -1543,7 +1543,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus119 {
 public:
@@ -1556,7 +1556,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus120 {
 public:
@@ -1569,7 +1569,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus121 {
 public:
@@ -1582,7 +1582,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus122 {
 public:
@@ -1595,7 +1595,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus123 {
 public:
@@ -1608,7 +1608,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus124 {
 public:
@@ -1621,7 +1621,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus125 {
 public:
@@ -1634,7 +1634,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus126 {
 public:
@@ -1647,7 +1647,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus127 {
 public:
@@ -1660,7 +1660,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus128 {
 public:
@@ -1673,7 +1673,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus129 {
 public:
@@ -1686,7 +1686,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus130 {
 public:
@@ -1699,7 +1699,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus131 {
 public:
@@ -1712,7 +1712,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus132 {
 public:
@@ -1725,7 +1725,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus133 {
 public:
@@ -1738,7 +1738,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus134 {
 public:
@@ -1751,7 +1751,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus135 {
 public:
@@ -1764,7 +1764,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus136 {
 public:
@@ -1777,7 +1777,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus137 {
 public:
@@ -1790,7 +1790,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus138 {
 public:
@@ -1803,7 +1803,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus139 {
 public:
@@ -1816,7 +1816,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus140 {
 public:
@@ -1829,7 +1829,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus141 {
 public:
@@ -1842,7 +1842,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus142 {
 public:
@@ -1855,7 +1855,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus143 {
 public:
@@ -1868,7 +1868,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus144 {
 public:
@@ -1881,7 +1881,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus145 {
 public:
@@ -1894,7 +1894,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus146 {
 public:
@@ -1907,7 +1907,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus147 {
 public:
@@ -1920,7 +1920,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus148 {
 public:
@@ -1933,7 +1933,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus149 {
 public:
@@ -1946,7 +1946,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus150 {
 public:
@@ -1959,7 +1959,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus151 {
 public:
@@ -1972,7 +1972,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus152 {
 public:
@@ -1985,7 +1985,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus153 {
 public:
@@ -1998,7 +1998,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus154 {
 public:
@@ -2011,7 +2011,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus155 {
 public:
@@ -2024,7 +2024,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus156 {
 public:
@@ -2037,7 +2037,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus157 {
 public:
@@ -2050,7 +2050,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus158 {
 public:
@@ -2063,7 +2063,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus159 {
 public:
@@ -2076,7 +2076,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus160 {
 public:
@@ -2089,7 +2089,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus161 {
 public:
@@ -2102,7 +2102,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus162 {
 public:
@@ -2115,7 +2115,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus163 {
 public:
@@ -2128,7 +2128,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus164 {
 public:
@@ -2141,7 +2141,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus165 {
 public:
@@ -2154,7 +2154,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus166 {
 public:
@@ -2167,7 +2167,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus167 {
 public:
@@ -2180,7 +2180,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus168 {
 public:
@@ -2193,7 +2193,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus169 {
 public:
@@ -2206,7 +2206,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus170 {
 public:
@@ -2219,7 +2219,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus171 {
 public:
@@ -2232,7 +2232,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus172 {
 public:
@@ -2245,7 +2245,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus173 {
 public:
@@ -2258,7 +2258,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus174 {
 public:
@@ -2271,7 +2271,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus175 {
 public:
@@ -2284,7 +2284,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus176 {
 public:
@@ -2297,7 +2297,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus177 {
 public:
@@ -2310,7 +2310,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus178 {
 public:
@@ -2323,7 +2323,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus179 {
 public:
@@ -2336,7 +2336,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus180 {
 public:
@@ -2349,7 +2349,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus181 {
 public:
@@ -2362,7 +2362,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus182 {
 public:
@@ -2375,7 +2375,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus183 {
 public:
@@ -2388,7 +2388,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus184 {
 public:
@@ -2401,7 +2401,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus185 {
 public:
@@ -2414,7 +2414,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus186 {
 public:
@@ -2427,7 +2427,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus187 {
 public:
@@ -2440,7 +2440,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus188 {
 public:
@@ -2453,7 +2453,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus189 {
 public:
@@ -2466,7 +2466,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus190 {
 public:
@@ -2479,7 +2479,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus191 {
 public:
@@ -2492,7 +2492,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus192 {
 public:
@@ -2505,7 +2505,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus193 {
 public:
@@ -2518,7 +2518,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus194 {
 public:
@@ -2531,7 +2531,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus195 {
 public:
@@ -2544,7 +2544,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus196 {
 public:
@@ -2557,7 +2557,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus197 {
 public:
@@ -2570,7 +2570,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus198 {
 public:
@@ -2583,7 +2583,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus199 {
 public:
@@ -2596,7 +2596,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus200 {
 public:
@@ -2609,7 +2609,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus201 {
 public:
@@ -2622,7 +2622,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus202 {
 public:
@@ -2635,7 +2635,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus203 {
 public:
@@ -2648,7 +2648,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus204 {
 public:
@@ -2661,7 +2661,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus205 {
 public:
@@ -2674,7 +2674,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus206 {
 public:
@@ -2687,7 +2687,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus207 {
 public:
@@ -2700,7 +2700,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus208 {
 public:
@@ -2713,7 +2713,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus209 {
 public:
@@ -2726,7 +2726,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus210 {
 public:
@@ -2739,7 +2739,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus211 {
 public:
@@ -2752,7 +2752,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus212 {
 public:
@@ -2765,7 +2765,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus213 {
 public:
@@ -2778,7 +2778,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus214 {
 public:
@@ -2791,7 +2791,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus215 {
 public:
@@ -2804,7 +2804,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus216 {
 public:
@@ -2817,7 +2817,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus217 {
 public:
@@ -2830,7 +2830,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus218 {
 public:
@@ -2843,7 +2843,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus219 {
 public:
@@ -2856,7 +2856,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus220 {
 public:
@@ -2869,7 +2869,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus221 {
 public:
@@ -2882,7 +2882,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus222 {
 public:
@@ -2895,7 +2895,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus223 {
 public:
@@ -2908,7 +2908,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus224 {
 public:
@@ -2921,7 +2921,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus225 {
 public:
@@ -2934,7 +2934,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus226 {
 public:
@@ -2947,7 +2947,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus227 {
 public:
@@ -2960,7 +2960,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus228 {
 public:
@@ -2973,7 +2973,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus229 {
 public:
@@ -2986,7 +2986,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus230 {
 public:
@@ -2999,7 +2999,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus231 {
 public:
@@ -3012,7 +3012,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus232 {
 public:
@@ -3025,7 +3025,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus233 {
 public:
@@ -3038,7 +3038,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus234 {
 public:
@@ -3051,7 +3051,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus235 {
 public:
@@ -3064,7 +3064,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus236 {
 public:
@@ -3077,7 +3077,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus237 {
 public:
@@ -3090,7 +3090,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus238 {
 public:
@@ -3103,7 +3103,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus239 {
 public:
@@ -3116,7 +3116,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus240 {
 public:
@@ -3129,7 +3129,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus241 {
 public:
@@ -3142,7 +3142,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus242 {
 public:
@@ -3155,7 +3155,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus243 {
 public:
@@ -3168,7 +3168,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus244 {
 public:
@@ -3181,7 +3181,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus245 {
 public:
@@ -3194,7 +3194,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus246 {
 public:
@@ -3207,7 +3207,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus247 {
 public:
@@ -3220,7 +3220,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus248 {
 public:
@@ -3233,7 +3233,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus249 {
 public:
@@ -3246,7 +3246,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus250 {
 public:
@@ -3259,7 +3259,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus251 {
 public:
@@ -3272,7 +3272,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus252 {
 public:
@@ -3285,7 +3285,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus253 {
 public:
@@ -3298,7 +3298,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus254 {
 public:
@@ -3311,7 +3311,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus255 {
 public:
@@ -3324,7 +3324,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus256 {
 public:
@@ -3337,7 +3337,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus257 {
 public:
@@ -3350,7 +3350,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus258 {
 public:
@@ -3363,7 +3363,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus259 {
 public:
@@ -3376,7 +3376,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus260 {
 public:
@@ -3389,7 +3389,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus261 {
 public:
@@ -3402,7 +3402,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus262 {
 public:
@@ -3415,7 +3415,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus263 {
 public:
@@ -3428,7 +3428,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus264 {
 public:
@@ -3441,7 +3441,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus265 {
 public:
@@ -3454,7 +3454,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus266 {
 public:
@@ -3467,7 +3467,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus267 {
 public:
@@ -3480,7 +3480,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus268 {
 public:
@@ -3493,7 +3493,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus269 {
 public:
@@ -3506,7 +3506,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus270 {
 public:
@@ -3519,7 +3519,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus271 {
 public:
@@ -3532,7 +3532,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus272 {
 public:
@@ -3545,7 +3545,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus273 {
 public:
@@ -3558,7 +3558,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus274 {
 public:
@@ -3571,7 +3571,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus275 {
 public:
@@ -3584,7 +3584,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus276 {
 public:
@@ -3597,7 +3597,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus277 {
 public:
@@ -3610,7 +3610,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus278 {
 public:
@@ -3623,7 +3623,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus279 {
 public:
@@ -3636,7 +3636,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus280 {
 public:
@@ -3649,7 +3649,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus281 {
 public:
@@ -3662,7 +3662,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus282 {
 public:
@@ -3675,7 +3675,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus283 {
 public:
@@ -3688,7 +3688,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus284 {
 public:
@@ -3701,7 +3701,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus285 {
 public:
@@ -3714,7 +3714,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus286 {
 public:
@@ -3727,7 +3727,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus287 {
 public:
@@ -3740,7 +3740,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus288 {
 public:
@@ -3753,7 +3753,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus289 {
 public:
@@ -3766,7 +3766,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus290 {
 public:
@@ -3779,7 +3779,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus291 {
 public:
@@ -3792,7 +3792,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus292 {
 public:
@@ -3805,7 +3805,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus293 {
 public:
@@ -3818,7 +3818,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus294 {
 public:
@@ -3831,7 +3831,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus295 {
 public:
@@ -3844,7 +3844,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus296 {
 public:
@@ -3857,7 +3857,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus297 {
 public:
@@ -3870,7 +3870,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus298 {
 public:
@@ -3883,7 +3883,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus299 {
 public:
@@ -3896,7 +3896,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus300 {
 public:
@@ -3909,7 +3909,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus301 {
 public:
@@ -3922,7 +3922,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus302 {
 public:
@@ -3935,7 +3935,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus303 {
 public:
@@ -3948,7 +3948,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus304 {
 public:
@@ -3961,7 +3961,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus305 {
 public:
@@ -3974,7 +3974,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus306 {
 public:
@@ -3987,7 +3987,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus307 {
 public:
@@ -4000,7 +4000,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus308 {
 public:
@@ -4013,7 +4013,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus309 {
 public:
@@ -4026,7 +4026,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus310 {
 public:
@@ -4039,7 +4039,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus311 {
 public:
@@ -4052,7 +4052,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus312 {
 public:
@@ -4065,7 +4065,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus313 {
 public:
@@ -4078,7 +4078,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus314 {
 public:
@@ -4091,7 +4091,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus315 {
 public:
@@ -4104,7 +4104,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus316 {
 public:
@@ -4117,7 +4117,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus317 {
 public:
@@ -4130,7 +4130,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus318 {
 public:
@@ -4143,7 +4143,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus319 {
 public:
@@ -4156,7 +4156,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus320 {
 public:
@@ -4169,7 +4169,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus321 {
 public:
@@ -4182,7 +4182,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus322 {
 public:
@@ -4195,7 +4195,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus323 {
 public:
@@ -4208,7 +4208,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus324 {
 public:
@@ -4221,7 +4221,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus325 {
 public:
@@ -4234,7 +4234,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus326 {
 public:
@@ -4247,7 +4247,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus327 {
 public:
@@ -4260,7 +4260,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus328 {
 public:
@@ -4273,7 +4273,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus329 {
 public:
@@ -4286,7 +4286,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus330 {
 public:
@@ -4299,7 +4299,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus331 {
 public:
@@ -4312,7 +4312,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus332 {
 public:
@@ -4325,7 +4325,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus333 {
 public:
@@ -4338,7 +4338,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus334 {
 public:
@@ -4351,7 +4351,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus335 {
 public:
@@ -4364,7 +4364,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus336 {
 public:
@@ -4377,7 +4377,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus337 {
 public:
@@ -4390,7 +4390,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus338 {
 public:
@@ -4403,7 +4403,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus339 {
 public:
@@ -4416,7 +4416,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus340 {
 public:
@@ -4429,7 +4429,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus341 {
 public:
@@ -4442,7 +4442,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus342 {
 public:
@@ -4455,7 +4455,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus343 {
 public:
@@ -4468,7 +4468,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus344 {
 public:
@@ -4481,7 +4481,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus345 {
 public:
@@ -4494,7 +4494,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus346 {
 public:
@@ -4507,7 +4507,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus347 {
 public:
@@ -4520,7 +4520,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus348 {
 public:
@@ -4533,7 +4533,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus349 {
 public:
@@ -4546,7 +4546,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus350 {
 public:
@@ -4559,7 +4559,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus351 {
 public:
@@ -4572,7 +4572,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus352 {
 public:
@@ -4585,7 +4585,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus353 {
 public:
@@ -4598,7 +4598,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus354 {
 public:
@@ -4611,7 +4611,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus355 {
 public:
@@ -4624,7 +4624,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus356 {
 public:
@@ -4637,7 +4637,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus357 {
 public:
@@ -4650,7 +4650,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus358 {
 public:
@@ -4663,7 +4663,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus359 {
 public:
@@ -4676,7 +4676,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus360 {
 public:
@@ -4689,7 +4689,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus361 {
 public:
@@ -4702,7 +4702,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus362 {
 public:
@@ -4715,7 +4715,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus363 {
 public:
@@ -4728,7 +4728,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus364 {
 public:
@@ -4741,7 +4741,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus365 {
 public:
@@ -4754,7 +4754,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus366 {
 public:
@@ -4767,7 +4767,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus367 {
 public:
@@ -4780,7 +4780,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus368 {
 public:
@@ -4793,7 +4793,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus369 {
 public:
@@ -4806,7 +4806,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus370 {
 public:
@@ -4819,7 +4819,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus371 {
 public:
@@ -4832,7 +4832,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus372 {
 public:
@@ -4845,7 +4845,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus373 {
 public:
@@ -4858,7 +4858,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus374 {
 public:
@@ -4871,7 +4871,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus375 {
 public:
@@ -4884,7 +4884,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus376 {
 public:
@@ -4897,7 +4897,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus377 {
 public:
@@ -4910,7 +4910,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus378 {
 public:
@@ -4923,7 +4923,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus379 {
 public:
@@ -4936,7 +4936,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus380 {
 public:
@@ -4949,7 +4949,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus381 {
 public:
@@ -4962,7 +4962,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus382 {
 public:
@@ -4975,7 +4975,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus383 {
 public:
@@ -4988,7 +4988,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus384 {
 public:
@@ -5001,7 +5001,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus385 {
 public:
@@ -5014,7 +5014,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus386 {
 public:
@@ -5027,7 +5027,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus387 {
 public:
@@ -5040,7 +5040,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus388 {
 public:
@@ -5053,7 +5053,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus389 {
 public:
@@ -5066,7 +5066,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus390 {
 public:
@@ -5079,7 +5079,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus391 {
 public:
@@ -5092,7 +5092,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus392 {
 public:
@@ -5105,7 +5105,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus393 {
 public:
@@ -5118,7 +5118,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus394 {
 public:
@@ -5131,7 +5131,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus395 {
 public:
@@ -5144,7 +5144,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus396 {
 public:
@@ -5157,7 +5157,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus397 {
 public:
@@ -5170,7 +5170,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus398 {
 public:
@@ -5183,7 +5183,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus399 {
 public:
@@ -5196,7 +5196,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus400 {
 public:
@@ -5209,7 +5209,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus401 {
 public:
@@ -5222,7 +5222,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus402 {
 public:
@@ -5235,7 +5235,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus403 {
 public:
@@ -5248,7 +5248,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus404 {
 public:
@@ -5261,7 +5261,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus405 {
 public:
@@ -5274,7 +5274,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus406 {
 public:
@@ -5287,7 +5287,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus407 {
 public:
@@ -5300,7 +5300,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus408 {
 public:
@@ -5313,7 +5313,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus409 {
 public:
@@ -5326,7 +5326,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus410 {
 public:
@@ -5339,7 +5339,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus411 {
 public:
@@ -5352,7 +5352,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus412 {
 public:
@@ -5365,7 +5365,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus413 {
 public:
@@ -5378,7 +5378,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus414 {
 public:
@@ -5391,7 +5391,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus415 {
 public:
@@ -5404,7 +5404,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus416 {
 public:
@@ -5417,7 +5417,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus417 {
 public:
@@ -5430,7 +5430,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus418 {
 public:
@@ -5443,7 +5443,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus419 {
 public:
@@ -5456,7 +5456,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus420 {
 public:
@@ -5469,7 +5469,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus421 {
 public:
@@ -5482,7 +5482,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus422 {
 public:
@@ -5495,7 +5495,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus423 {
 public:
@@ -5508,7 +5508,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus424 {
 public:
@@ -5521,7 +5521,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus425 {
 public:
@@ -5534,7 +5534,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus426 {
 public:
@@ -5547,7 +5547,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus427 {
 public:
@@ -5560,7 +5560,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus428 {
 public:
@@ -5573,7 +5573,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus429 {
 public:
@@ -5586,7 +5586,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus430 {
 public:
@@ -5599,7 +5599,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus431 {
 public:
@@ -5612,7 +5612,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus432 {
 public:
@@ -5625,7 +5625,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus433 {
 public:
@@ -5638,7 +5638,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus434 {
 public:
@@ -5651,7 +5651,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus435 {
 public:
@@ -5664,7 +5664,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus436 {
 public:
@@ -5677,7 +5677,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus437 {
 public:
@@ -5690,7 +5690,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus438 {
 public:
@@ -5703,7 +5703,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus439 {
 public:
@@ -5716,7 +5716,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus440 {
 public:
@@ -5729,7 +5729,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus441 {
 public:
@@ -5742,7 +5742,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus442 {
 public:
@@ -5755,7 +5755,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus443 {
 public:
@@ -5768,7 +5768,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus444 {
 public:
@@ -5781,7 +5781,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus445 {
 public:
@@ -5794,7 +5794,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus446 {
 public:
@@ -5807,7 +5807,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus447 {
 public:
@@ -5820,7 +5820,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus448 {
 public:
@@ -5833,7 +5833,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus449 {
 public:
@@ -5846,7 +5846,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus450 {
 public:
@@ -5859,7 +5859,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus451 {
 public:
@@ -5872,7 +5872,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus452 {
 public:
@@ -5885,7 +5885,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus453 {
 public:
@@ -5898,7 +5898,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus454 {
 public:
@@ -5911,7 +5911,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus455 {
 public:
@@ -5924,7 +5924,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus456 {
 public:
@@ -5937,7 +5937,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus457 {
 public:
@@ -5950,7 +5950,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus458 {
 public:
@@ -5963,7 +5963,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus459 {
 public:
@@ -5976,7 +5976,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus460 {
 public:
@@ -5989,7 +5989,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus461 {
 public:
@@ -6002,7 +6002,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus462 {
 public:
@@ -6015,7 +6015,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus463 {
 public:
@@ -6028,7 +6028,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus464 {
 public:
@@ -6041,7 +6041,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus465 {
 public:
@@ -6054,7 +6054,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus466 {
 public:
@@ -6067,7 +6067,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus467 {
 public:
@@ -6080,7 +6080,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus468 {
 public:
@@ -6093,7 +6093,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus469 {
 public:
@@ -6106,7 +6106,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus470 {
 public:
@@ -6119,7 +6119,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus471 {
 public:
@@ -6132,7 +6132,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus472 {
 public:
@@ -6145,7 +6145,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus473 {
 public:
@@ -6158,7 +6158,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus474 {
 public:
@@ -6171,7 +6171,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus475 {
 public:
@@ -6184,7 +6184,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus476 {
 public:
@@ -6197,7 +6197,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus477 {
 public:
@@ -6210,7 +6210,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus478 {
 public:
@@ -6223,7 +6223,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus479 {
 public:
@@ -6236,7 +6236,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus480 {
 public:
@@ -6249,7 +6249,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus481 {
 public:
@@ -6262,7 +6262,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus482 {
 public:
@@ -6275,7 +6275,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus483 {
 public:
@@ -6288,7 +6288,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus484 {
 public:
@@ -6301,7 +6301,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus485 {
 public:
@@ -6314,7 +6314,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus486 {
 public:
@@ -6327,7 +6327,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus487 {
 public:
@@ -6340,7 +6340,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus488 {
 public:
@@ -6353,7 +6353,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus489 {
 public:
@@ -6366,7 +6366,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus490 {
 public:
@@ -6379,7 +6379,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus491 {
 public:
@@ -6392,7 +6392,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus492 {
 public:
@@ -6405,7 +6405,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus493 {
 public:
@@ -6418,7 +6418,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus494 {
 public:
@@ -6431,7 +6431,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus495 {
 public:
@@ -6444,7 +6444,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus496 {
 public:
@@ -6457,7 +6457,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus497 {
 public:
@@ -6470,7 +6470,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus498 {
 public:
@@ -6483,7 +6483,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus499 {
 public:
@@ -6496,7 +6496,7 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class EventBus500 {
 public:
@@ -6509,6 +6509,6 @@ public:
     void clear() { std::lock_guard lock(mtx_); handlers_.clear(); }
 private:
     std::map<std::string,std::vector<Handler>> handlers_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 }}}} // namespace

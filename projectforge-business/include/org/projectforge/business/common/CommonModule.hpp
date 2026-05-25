@@ -59,7 +59,7 @@ struct CommonEntry {
 
 class CommonDao : public BaseDao<CommonEntry> {
 public:
-    explicit CommonDao(Storage& s) : BaseDao<CommonEntry>(s) {}
+    explicit CommonDao() {}
     
     std::vector<CommonEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<CommonEntry> r;

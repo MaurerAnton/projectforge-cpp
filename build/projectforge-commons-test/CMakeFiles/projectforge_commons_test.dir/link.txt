@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprojectforge_commons_test.a CMakeFiles/projectforge_commons_test.dir/src/TestBase.cpp.o
+/usr/bin/ranlib libprojectforge_commons_test.a

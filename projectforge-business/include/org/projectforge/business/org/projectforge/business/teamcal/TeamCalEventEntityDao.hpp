@@ -45,7 +45,7 @@ private:
 
 class TeamCalEventDao : public BaseDao<TeamCalEventEntity> {
 public:
-    explicit TeamCalEventDao(Storage& storage) : BaseDao<TeamCalEventEntity>(storage) {}
+    explicit TeamCalEventDao() {}
     std::vector<TeamCalEventEntity> getRecent(int limit=20) {
         auto all = getAll();
         std::sort(all.begin(), all.end(), [](auto& a, auto& b){ return a.lastUpdate > b.lastUpdate; });

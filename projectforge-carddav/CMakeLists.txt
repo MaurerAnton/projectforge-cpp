@@ -1,13 +1,7 @@
-# projectforge-carddav: CardDAV server
-add_library(projectforge_carddav STATIC
-    src/CardDavServer.cpp
-    src/CardDavServlet.cpp
-    src/VCardParser.cpp
-    src/VCardWriter.cpp
-    src/AddressBookResource.cpp
-    src/CardDavAuth.cpp
-    src/CardDavPropfind.cpp
-    src/CardDavReport.cpp
-)
+# projectforge-carddav
+file(GLOB_RECURSE projectforge_carddav_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE projectforge_carddav_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp")
+
+add_library(projectforge_carddav STATIC ${projectforge_carddav_SOURCES})
 target_include_directories(projectforge_carddav PUBLIC include)
 target_link_libraries(projectforge_carddav PUBLIC projectforge_rest projectforge_common)

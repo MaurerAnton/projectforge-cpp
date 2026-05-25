@@ -37,7 +37,7 @@ struct TimesheetEntity {
 
 class TimesheetDao : public BaseDao<TimesheetEntity> {
 public:
-    explicit TimesheetDao(Storage& s) : BaseDao<TimesheetEntity>(s) {}
+    explicit TimesheetDao() {}
     std::vector<TimesheetEntity> getActive() {
         auto all=getAll(); std::vector<TimesheetEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

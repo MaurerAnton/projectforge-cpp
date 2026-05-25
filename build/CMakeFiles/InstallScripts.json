@@ -1,0 +1,21 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/bym/projectforge-folder/projectforge-cpp/build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/nlohmann_json-build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/spdlog-build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/httplib-build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-build/dependencies/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-build/packaging/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-build/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-build/example/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-build/example/traits/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-jcr/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business/cmake_install.cmake",
+		"/home/bym/projectforge-folder/projectforge-cpp/build/projectforge-commons-test/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

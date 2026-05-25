@@ -59,7 +59,7 @@ struct ConfigurationEntry {
 
 class ConfigurationDao : public BaseDao<ConfigurationEntry> {
 public:
-    explicit ConfigurationDao(Storage& s) : BaseDao<ConfigurationEntry>(s) {}
+    explicit ConfigurationDao() {}
     
     std::vector<ConfigurationEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<ConfigurationEntry> r;

@@ -39,7 +39,7 @@ private:
 
 class BookDao : public BaseDao<BookEntity> {
 public:
-    explicit BookDao(Storage& storage) : BaseDao<BookEntity>(storage) {}
+    explicit BookDao() {}
     std::vector<BookEntity> getRecent(int limit=20) {
         auto all = getAll();
         std::sort(all.begin(), all.end(), [](auto& a, auto& b){ return a.lastUpdate > b.lastUpdate; });

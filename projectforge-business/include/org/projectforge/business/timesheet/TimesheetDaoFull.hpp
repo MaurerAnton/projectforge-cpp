@@ -83,7 +83,7 @@ class TimesheetDao : public BaseDao<TimesheetDO> {
 public:
     static constexpr int64_t MAXIMUM_DURATION = 86400000LL; // 24 hours
 
-    explicit TimesheetDao(Storage& storage) : BaseDao<TimesheetDO>(storage) {}
+    explicit TimesheetDao() {}
 
     // Get tags list for autocompletion
     std::vector<std::string> getTags(const std::string& currentTag = "") {

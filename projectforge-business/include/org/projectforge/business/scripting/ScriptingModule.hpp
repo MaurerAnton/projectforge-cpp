@@ -37,7 +37,7 @@ struct AbstractScriptEntity {
 
 class AbstractScriptDao : public BaseDao<AbstractScriptEntity> {
 public:
-    explicit AbstractScriptDao(Storage& s) : BaseDao<AbstractScriptEntity>(s) {}
+    explicit AbstractScriptDao() {}
     std::vector<AbstractScriptEntity> getActive() {
         auto all=getAll(); std::vector<AbstractScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct MyScriptEntity {
 
 class MyScriptDao : public BaseDao<MyScriptEntity> {
 public:
-    explicit MyScriptDao(Storage& s) : BaseDao<MyScriptEntity>(s) {}
+    explicit MyScriptDao() {}
     std::vector<MyScriptEntity> getActive() {
         auto all=getAll(); std::vector<MyScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -121,7 +121,7 @@ struct ScriptEntity {
 
 class ScriptDao : public BaseDao<ScriptEntity> {
 public:
-    explicit ScriptDao(Storage& s) : BaseDao<ScriptEntity>(s) {}
+    explicit ScriptDao() {}
     std::vector<ScriptEntity> getActive() {
         auto all=getAll(); std::vector<ScriptEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -163,7 +163,7 @@ struct ScriptingEntity {
 
 class ScriptingDao : public BaseDao<ScriptingEntity> {
 public:
-    explicit ScriptingDao(Storage& s) : BaseDao<ScriptingEntity>(s) {}
+    explicit ScriptingDao() {}
     std::vector<ScriptingEntity> getActive() {
         auto all=getAll(); std::vector<ScriptingEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

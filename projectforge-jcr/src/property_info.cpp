@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "property_info.hpp"
+#include "org/projectforge/jcr/property_info.hpp"
 
 namespace org::projectforge::jcr {
 

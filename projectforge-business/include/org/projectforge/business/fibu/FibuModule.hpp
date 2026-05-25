@@ -37,7 +37,7 @@ struct AuftragEntity {
 
 class AuftragDao : public BaseDao<AuftragEntity> {
 public:
-    explicit AuftragDao(Storage& s) : BaseDao<AuftragEntity>(s) {}
+    explicit AuftragDao() {}
     std::vector<AuftragEntity> getActive() {
         auto all=getAll(); std::vector<AuftragEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct CurrencyPairEntity {
 
 class CurrencyPairDao : public BaseDao<CurrencyPairEntity> {
 public:
-    explicit CurrencyPairDao(Storage& s) : BaseDao<CurrencyPairEntity>(s) {}
+    explicit CurrencyPairDao() {}
     std::vector<CurrencyPairEntity> getActive() {
         auto all=getAll(); std::vector<CurrencyPairEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -121,7 +121,7 @@ struct EingangsrechnungEntity {
 
 class EingangsrechnungDao : public BaseDao<EingangsrechnungEntity> {
 public:
-    explicit EingangsrechnungDao(Storage& s) : BaseDao<EingangsrechnungEntity>(s) {}
+    explicit EingangsrechnungDao() {}
     std::vector<EingangsrechnungEntity> getActive() {
         auto all=getAll(); std::vector<EingangsrechnungEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -163,7 +163,7 @@ struct EmployeeEntity {
 
 class EmployeeDao : public BaseDao<EmployeeEntity> {
 public:
-    explicit EmployeeDao(Storage& s) : BaseDao<EmployeeEntity>(s) {}
+    explicit EmployeeDao() {}
     std::vector<EmployeeEntity> getActive() {
         auto all=getAll(); std::vector<EmployeeEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -205,7 +205,7 @@ struct EmployeeSalaryEntity {
 
 class EmployeeSalaryDao : public BaseDao<EmployeeSalaryEntity> {
 public:
-    explicit EmployeeSalaryDao(Storage& s) : BaseDao<EmployeeSalaryEntity>(s) {}
+    explicit EmployeeSalaryDao() {}
     std::vector<EmployeeSalaryEntity> getActive() {
         auto all=getAll(); std::vector<EmployeeSalaryEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -247,7 +247,7 @@ struct EmployeeScriptingEntity {
 
 class EmployeeScriptingDao : public BaseDao<EmployeeScriptingEntity> {
 public:
-    explicit EmployeeScriptingDao(Storage& s) : BaseDao<EmployeeScriptingEntity>(s) {}
+    explicit EmployeeScriptingDao() {}
     std::vector<EmployeeScriptingEntity> getActive() {
         auto all=getAll(); std::vector<EmployeeScriptingEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -289,7 +289,7 @@ struct ProjektEntity {
 
 class ProjektDao : public BaseDao<ProjektEntity> {
 public:
-    explicit ProjektDao(Storage& s) : BaseDao<ProjektEntity>(s) {}
+    explicit ProjektDao() {}
     std::vector<ProjektEntity> getActive() {
         auto all=getAll(); std::vector<ProjektEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -331,7 +331,7 @@ struct RechnungEntity {
 
 class RechnungDao : public BaseDao<RechnungEntity> {
 public:
-    explicit RechnungDao(Storage& s) : BaseDao<RechnungEntity>(s) {}
+    explicit RechnungDao() {}
     std::vector<RechnungEntity> getActive() {
         auto all=getAll(); std::vector<RechnungEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -373,7 +373,7 @@ struct BuchungssatzEntity {
 
 class BuchungssatzDao : public BaseDao<BuchungssatzEntity> {
 public:
-    explicit BuchungssatzDao(Storage& s) : BaseDao<BuchungssatzEntity>(s) {}
+    explicit BuchungssatzDao() {}
     std::vector<BuchungssatzEntity> getActive() {
         auto all=getAll(); std::vector<BuchungssatzEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -415,7 +415,7 @@ struct Kost1Entity {
 
 class Kost1Dao : public BaseDao<Kost1Entity> {
 public:
-    explicit Kost1Dao(Storage& s) : BaseDao<Kost1Entity>(s) {}
+    explicit Kost1Dao() {}
     std::vector<Kost1Entity> getActive() {
         auto all=getAll(); std::vector<Kost1Entity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -457,7 +457,7 @@ struct Kost2Entity {
 
 class Kost2Dao : public BaseDao<Kost2Entity> {
 public:
-    explicit Kost2Dao(Storage& s) : BaseDao<Kost2Entity>(s) {}
+    explicit Kost2Dao() {}
     std::vector<Kost2Entity> getActive() {
         auto all=getAll(); std::vector<Kost2Entity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

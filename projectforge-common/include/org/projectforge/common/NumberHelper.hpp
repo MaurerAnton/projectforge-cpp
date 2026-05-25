@@ -1,5 +1,5 @@
 // ProjectForge C++ port — GPL v3 — www.projectforge.org
-'#pragma once
+#pragma once
 #include <string>
 #include <optional>
 #include <vector>

@@ -59,7 +59,7 @@ struct PrivacyprotectionEntry {
 
 class PrivacyprotectionDao : public BaseDao<PrivacyprotectionEntry> {
 public:
-    explicit PrivacyprotectionDao(Storage& s) : BaseDao<PrivacyprotectionEntry>(s) {}
+    explicit PrivacyprotectionDao() {}
     
     std::vector<PrivacyprotectionEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<PrivacyprotectionEntry> r;

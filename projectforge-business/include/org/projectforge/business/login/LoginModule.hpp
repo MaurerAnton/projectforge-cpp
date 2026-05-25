@@ -59,7 +59,7 @@ struct LoginEntry {
 
 class LoginDao : public BaseDao<LoginEntry> {
 public:
-    explicit LoginDao(Storage& s) : BaseDao<LoginEntry>(s) {}
+    explicit LoginDao() {}
     
     std::vector<LoginEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<LoginEntry> r;

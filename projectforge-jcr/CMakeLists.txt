@@ -1,19 +1,7 @@
-# projectforge-jcr: Java Content Repository abstraction
-add_library(projectforge_jcr STATIC
-    src/JcrNode.cpp
-    src/JcrSession.cpp
-    src/JcrRepository.cpp
-    src/JcrProperty.cpp
-    src/JcrContent.cpp
-    src/FileSystemJcrBackend.cpp
-    src/SqliteJcrBackend.cpp
-    src/ContentRepositoryManager.cpp
-    src/JcrUtils.cpp
-    src/ZipHandler.cpp
-)
+# projectforge-jcr
+file(GLOB_RECURSE projectforge_jcr_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE projectforge_jcr_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp")
+
+add_library(projectforge_jcr STATIC ${projectforge_jcr_SOURCES})
 target_include_directories(projectforge_jcr PUBLIC include)
-target_link_libraries(projectforge_jcr PUBLIC
-    nlohmann_json::nlohmann_json
-    spdlog::spdlog
-    sqlite_orm::sqlite_orm
-)
+target_link_libraries(projectforge_jcr PUBLIC nlohmann_json::nlohmann_json spdlog::spdlog sqlite_orm::sqlite_orm)

@@ -59,7 +59,7 @@ struct GanttEntry {
 
 class GanttDao : public BaseDao<GanttEntry> {
 public:
-    explicit GanttDao(Storage& s) : BaseDao<GanttEntry>(s) {}
+    explicit GanttDao() {}
     
     std::vector<GanttEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<GanttEntry> r;

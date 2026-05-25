@@ -10,7 +10,7 @@ namespace org::projectforge::business::user {
 
 class UserDao : public BaseDao<UserEntity> {
 public:
-    explicit UserDao(Storage& storage) : BaseDao<UserEntity>(storage) {}
+    explicit UserDao() {}
 
     std::optional<UserEntity> findByUsername(const std::string& username) {
         try {

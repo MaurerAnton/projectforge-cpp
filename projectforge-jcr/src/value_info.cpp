@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "value_info.hpp"
+#include "org/projectforge/jcr/value_info.hpp"
 #include <sstream>
 #include <iomanip>
 

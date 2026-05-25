@@ -59,7 +59,7 @@ struct CalendarEntry {
 
 class CalendarDao : public BaseDao<CalendarEntry> {
 public:
-    explicit CalendarDao(Storage& s) : BaseDao<CalendarEntry>(s) {}
+    explicit CalendarDao() {}
     
     std::vector<CalendarEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<CalendarEntry> r;

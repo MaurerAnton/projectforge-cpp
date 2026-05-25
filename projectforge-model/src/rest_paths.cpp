@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "rest_paths.hpp"
+#include "org/projectforge/model/rest/rest_paths.hpp"
 
 namespace org::projectforge::model::rest {
 

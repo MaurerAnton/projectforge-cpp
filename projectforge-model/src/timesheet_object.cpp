@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "timesheet_object.hpp"
+#include "org/projectforge/model/rest/timesheet_object.hpp"
 #include <sstream>
 
 namespace org::projectforge::model::rest {

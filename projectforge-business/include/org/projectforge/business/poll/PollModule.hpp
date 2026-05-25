@@ -37,7 +37,7 @@ struct PollEntity {
 
 class PollDao : public BaseDao<PollEntity> {
 public:
-    explicit PollDao(Storage& s) : BaseDao<PollEntity>(s) {}
+    explicit PollDao() {}
     std::vector<PollEntity> getActive() {
         auto all=getAll(); std::vector<PollEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct PollResponseEntity {
 
 class PollResponseDao : public BaseDao<PollResponseEntity> {
 public:
-    explicit PollResponseDao(Storage& s) : BaseDao<PollResponseEntity>(s) {}
+    explicit PollResponseDao() {}
     std::vector<PollResponseEntity> getActive() {
         auto all=getAll(); std::vector<PollResponseEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

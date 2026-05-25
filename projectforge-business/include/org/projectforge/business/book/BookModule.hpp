@@ -59,7 +59,7 @@ struct BookEntry {
 
 class BookDao : public BaseDao<BookEntry> {
 public:
-    explicit BookDao(Storage& s) : BaseDao<BookEntry>(s) {}
+    explicit BookDao() {}
     
     std::vector<BookEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<BookEntry> r;

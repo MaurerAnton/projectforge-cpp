@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "repo_config.hpp"
+#include "org/projectforge/jcr/repo_config.hpp"
 #include <iostream>
 
 namespace org::projectforge::jcr {

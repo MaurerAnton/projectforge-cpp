@@ -20,7 +20,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector2 {
 public:
@@ -33,7 +33,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector3 {
 public:
@@ -46,7 +46,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector4 {
 public:
@@ -59,7 +59,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector5 {
 public:
@@ -72,7 +72,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector6 {
 public:
@@ -85,7 +85,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector7 {
 public:
@@ -98,7 +98,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector8 {
 public:
@@ -111,7 +111,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector9 {
 public:
@@ -124,7 +124,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector10 {
 public:
@@ -137,7 +137,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector11 {
 public:
@@ -150,7 +150,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector12 {
 public:
@@ -163,7 +163,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector13 {
 public:
@@ -176,7 +176,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector14 {
 public:
@@ -189,7 +189,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector15 {
 public:
@@ -202,7 +202,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector16 {
 public:
@@ -215,7 +215,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector17 {
 public:
@@ -228,7 +228,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector18 {
 public:
@@ -241,7 +241,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector19 {
 public:
@@ -254,7 +254,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector20 {
 public:
@@ -267,7 +267,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector21 {
 public:
@@ -280,7 +280,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector22 {
 public:
@@ -293,7 +293,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector23 {
 public:
@@ -306,7 +306,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector24 {
 public:
@@ -319,7 +319,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector25 {
 public:
@@ -332,7 +332,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector26 {
 public:
@@ -345,7 +345,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector27 {
 public:
@@ -358,7 +358,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector28 {
 public:
@@ -371,7 +371,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector29 {
 public:
@@ -384,7 +384,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector30 {
 public:
@@ -397,7 +397,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector31 {
 public:
@@ -410,7 +410,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector32 {
 public:
@@ -423,7 +423,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector33 {
 public:
@@ -436,7 +436,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector34 {
 public:
@@ -449,7 +449,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector35 {
 public:
@@ -462,7 +462,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector36 {
 public:
@@ -475,7 +475,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector37 {
 public:
@@ -488,7 +488,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector38 {
 public:
@@ -501,7 +501,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector39 {
 public:
@@ -514,7 +514,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector40 {
 public:
@@ -527,7 +527,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector41 {
 public:
@@ -540,7 +540,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector42 {
 public:
@@ -553,7 +553,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector43 {
 public:
@@ -566,7 +566,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector44 {
 public:
@@ -579,7 +579,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector45 {
 public:
@@ -592,7 +592,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector46 {
 public:
@@ -605,7 +605,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector47 {
 public:
@@ -618,7 +618,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector48 {
 public:
@@ -631,7 +631,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector49 {
 public:
@@ -644,7 +644,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector50 {
 public:
@@ -657,7 +657,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector51 {
 public:
@@ -670,7 +670,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector52 {
 public:
@@ -683,7 +683,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector53 {
 public:
@@ -696,7 +696,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector54 {
 public:
@@ -709,7 +709,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector55 {
 public:
@@ -722,7 +722,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector56 {
 public:
@@ -735,7 +735,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector57 {
 public:
@@ -748,7 +748,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector58 {
 public:
@@ -761,7 +761,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector59 {
 public:
@@ -774,7 +774,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector60 {
 public:
@@ -787,7 +787,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector61 {
 public:
@@ -800,7 +800,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector62 {
 public:
@@ -813,7 +813,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector63 {
 public:
@@ -826,7 +826,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector64 {
 public:
@@ -839,7 +839,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector65 {
 public:
@@ -852,7 +852,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector66 {
 public:
@@ -865,7 +865,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector67 {
 public:
@@ -878,7 +878,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector68 {
 public:
@@ -891,7 +891,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector69 {
 public:
@@ -904,7 +904,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector70 {
 public:
@@ -917,7 +917,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector71 {
 public:
@@ -930,7 +930,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector72 {
 public:
@@ -943,7 +943,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector73 {
 public:
@@ -956,7 +956,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector74 {
 public:
@@ -969,7 +969,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector75 {
 public:
@@ -982,7 +982,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector76 {
 public:
@@ -995,7 +995,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector77 {
 public:
@@ -1008,7 +1008,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector78 {
 public:
@@ -1021,7 +1021,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector79 {
 public:
@@ -1034,7 +1034,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector80 {
 public:
@@ -1047,7 +1047,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector81 {
 public:
@@ -1060,7 +1060,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector82 {
 public:
@@ -1073,7 +1073,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector83 {
 public:
@@ -1086,7 +1086,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector84 {
 public:
@@ -1099,7 +1099,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector85 {
 public:
@@ -1112,7 +1112,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector86 {
 public:
@@ -1125,7 +1125,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector87 {
 public:
@@ -1138,7 +1138,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector88 {
 public:
@@ -1151,7 +1151,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector89 {
 public:
@@ -1164,7 +1164,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector90 {
 public:
@@ -1177,7 +1177,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector91 {
 public:
@@ -1190,7 +1190,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector92 {
 public:
@@ -1203,7 +1203,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector93 {
 public:
@@ -1216,7 +1216,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector94 {
 public:
@@ -1229,7 +1229,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector95 {
 public:
@@ -1242,7 +1242,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector96 {
 public:
@@ -1255,7 +1255,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector97 {
 public:
@@ -1268,7 +1268,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector98 {
 public:
@@ -1281,7 +1281,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector99 {
 public:
@@ -1294,7 +1294,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector100 {
 public:
@@ -1307,7 +1307,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector101 {
 public:
@@ -1320,7 +1320,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector102 {
 public:
@@ -1333,7 +1333,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector103 {
 public:
@@ -1346,7 +1346,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector104 {
 public:
@@ -1359,7 +1359,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector105 {
 public:
@@ -1372,7 +1372,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector106 {
 public:
@@ -1385,7 +1385,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector107 {
 public:
@@ -1398,7 +1398,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector108 {
 public:
@@ -1411,7 +1411,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector109 {
 public:
@@ -1424,7 +1424,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector110 {
 public:
@@ -1437,7 +1437,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector111 {
 public:
@@ -1450,7 +1450,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector112 {
 public:
@@ -1463,7 +1463,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector113 {
 public:
@@ -1476,7 +1476,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector114 {
 public:
@@ -1489,7 +1489,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector115 {
 public:
@@ -1502,7 +1502,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector116 {
 public:
@@ -1515,7 +1515,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector117 {
 public:
@@ -1528,7 +1528,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector118 {
 public:
@@ -1541,7 +1541,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector119 {
 public:
@@ -1554,7 +1554,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector120 {
 public:
@@ -1567,7 +1567,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector121 {
 public:
@@ -1580,7 +1580,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector122 {
 public:
@@ -1593,7 +1593,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector123 {
 public:
@@ -1606,7 +1606,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector124 {
 public:
@@ -1619,7 +1619,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector125 {
 public:
@@ -1632,7 +1632,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector126 {
 public:
@@ -1645,7 +1645,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector127 {
 public:
@@ -1658,7 +1658,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector128 {
 public:
@@ -1671,7 +1671,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector129 {
 public:
@@ -1684,7 +1684,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector130 {
 public:
@@ -1697,7 +1697,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector131 {
 public:
@@ -1710,7 +1710,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector132 {
 public:
@@ -1723,7 +1723,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector133 {
 public:
@@ -1736,7 +1736,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector134 {
 public:
@@ -1749,7 +1749,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector135 {
 public:
@@ -1762,7 +1762,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector136 {
 public:
@@ -1775,7 +1775,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector137 {
 public:
@@ -1788,7 +1788,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector138 {
 public:
@@ -1801,7 +1801,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector139 {
 public:
@@ -1814,7 +1814,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector140 {
 public:
@@ -1827,7 +1827,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector141 {
 public:
@@ -1840,7 +1840,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector142 {
 public:
@@ -1853,7 +1853,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector143 {
 public:
@@ -1866,7 +1866,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector144 {
 public:
@@ -1879,7 +1879,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector145 {
 public:
@@ -1892,7 +1892,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector146 {
 public:
@@ -1905,7 +1905,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector147 {
 public:
@@ -1918,7 +1918,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector148 {
 public:
@@ -1931,7 +1931,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector149 {
 public:
@@ -1944,7 +1944,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector150 {
 public:
@@ -1957,7 +1957,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector151 {
 public:
@@ -1970,7 +1970,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector152 {
 public:
@@ -1983,7 +1983,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector153 {
 public:
@@ -1996,7 +1996,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector154 {
 public:
@@ -2009,7 +2009,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector155 {
 public:
@@ -2022,7 +2022,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector156 {
 public:
@@ -2035,7 +2035,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector157 {
 public:
@@ -2048,7 +2048,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector158 {
 public:
@@ -2061,7 +2061,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector159 {
 public:
@@ -2074,7 +2074,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector160 {
 public:
@@ -2087,7 +2087,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector161 {
 public:
@@ -2100,7 +2100,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector162 {
 public:
@@ -2113,7 +2113,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector163 {
 public:
@@ -2126,7 +2126,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector164 {
 public:
@@ -2139,7 +2139,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector165 {
 public:
@@ -2152,7 +2152,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector166 {
 public:
@@ -2165,7 +2165,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector167 {
 public:
@@ -2178,7 +2178,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector168 {
 public:
@@ -2191,7 +2191,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector169 {
 public:
@@ -2204,7 +2204,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector170 {
 public:
@@ -2217,7 +2217,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector171 {
 public:
@@ -2230,7 +2230,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector172 {
 public:
@@ -2243,7 +2243,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector173 {
 public:
@@ -2256,7 +2256,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector174 {
 public:
@@ -2269,7 +2269,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector175 {
 public:
@@ -2282,7 +2282,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector176 {
 public:
@@ -2295,7 +2295,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector177 {
 public:
@@ -2308,7 +2308,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector178 {
 public:
@@ -2321,7 +2321,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector179 {
 public:
@@ -2334,7 +2334,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector180 {
 public:
@@ -2347,7 +2347,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector181 {
 public:
@@ -2360,7 +2360,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector182 {
 public:
@@ -2373,7 +2373,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector183 {
 public:
@@ -2386,7 +2386,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector184 {
 public:
@@ -2399,7 +2399,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector185 {
 public:
@@ -2412,7 +2412,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector186 {
 public:
@@ -2425,7 +2425,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector187 {
 public:
@@ -2438,7 +2438,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector188 {
 public:
@@ -2451,7 +2451,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector189 {
 public:
@@ -2464,7 +2464,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector190 {
 public:
@@ -2477,7 +2477,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector191 {
 public:
@@ -2490,7 +2490,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector192 {
 public:
@@ -2503,7 +2503,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector193 {
 public:
@@ -2516,7 +2516,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector194 {
 public:
@@ -2529,7 +2529,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector195 {
 public:
@@ -2542,7 +2542,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector196 {
 public:
@@ -2555,7 +2555,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector197 {
 public:
@@ -2568,7 +2568,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector198 {
 public:
@@ -2581,7 +2581,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector199 {
 public:
@@ -2594,7 +2594,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector200 {
 public:
@@ -2607,7 +2607,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector201 {
 public:
@@ -2620,7 +2620,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector202 {
 public:
@@ -2633,7 +2633,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector203 {
 public:
@@ -2646,7 +2646,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector204 {
 public:
@@ -2659,7 +2659,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector205 {
 public:
@@ -2672,7 +2672,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector206 {
 public:
@@ -2685,7 +2685,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector207 {
 public:
@@ -2698,7 +2698,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector208 {
 public:
@@ -2711,7 +2711,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector209 {
 public:
@@ -2724,7 +2724,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector210 {
 public:
@@ -2737,7 +2737,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector211 {
 public:
@@ -2750,7 +2750,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector212 {
 public:
@@ -2763,7 +2763,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector213 {
 public:
@@ -2776,7 +2776,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector214 {
 public:
@@ -2789,7 +2789,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector215 {
 public:
@@ -2802,7 +2802,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector216 {
 public:
@@ -2815,7 +2815,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector217 {
 public:
@@ -2828,7 +2828,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector218 {
 public:
@@ -2841,7 +2841,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector219 {
 public:
@@ -2854,7 +2854,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector220 {
 public:
@@ -2867,7 +2867,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector221 {
 public:
@@ -2880,7 +2880,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector222 {
 public:
@@ -2893,7 +2893,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector223 {
 public:
@@ -2906,7 +2906,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector224 {
 public:
@@ -2919,7 +2919,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector225 {
 public:
@@ -2932,7 +2932,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector226 {
 public:
@@ -2945,7 +2945,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector227 {
 public:
@@ -2958,7 +2958,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector228 {
 public:
@@ -2971,7 +2971,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector229 {
 public:
@@ -2984,7 +2984,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector230 {
 public:
@@ -2997,7 +2997,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector231 {
 public:
@@ -3010,7 +3010,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector232 {
 public:
@@ -3023,7 +3023,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector233 {
 public:
@@ -3036,7 +3036,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector234 {
 public:
@@ -3049,7 +3049,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector235 {
 public:
@@ -3062,7 +3062,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector236 {
 public:
@@ -3075,7 +3075,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector237 {
 public:
@@ -3088,7 +3088,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector238 {
 public:
@@ -3101,7 +3101,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector239 {
 public:
@@ -3114,7 +3114,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector240 {
 public:
@@ -3127,7 +3127,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector241 {
 public:
@@ -3140,7 +3140,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector242 {
 public:
@@ -3153,7 +3153,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector243 {
 public:
@@ -3166,7 +3166,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector244 {
 public:
@@ -3179,7 +3179,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector245 {
 public:
@@ -3192,7 +3192,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector246 {
 public:
@@ -3205,7 +3205,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector247 {
 public:
@@ -3218,7 +3218,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector248 {
 public:
@@ -3231,7 +3231,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector249 {
 public:
@@ -3244,7 +3244,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector250 {
 public:
@@ -3257,7 +3257,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector251 {
 public:
@@ -3270,7 +3270,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector252 {
 public:
@@ -3283,7 +3283,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector253 {
 public:
@@ -3296,7 +3296,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector254 {
 public:
@@ -3309,7 +3309,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector255 {
 public:
@@ -3322,7 +3322,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector256 {
 public:
@@ -3335,7 +3335,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector257 {
 public:
@@ -3348,7 +3348,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector258 {
 public:
@@ -3361,7 +3361,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector259 {
 public:
@@ -3374,7 +3374,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector260 {
 public:
@@ -3387,7 +3387,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector261 {
 public:
@@ -3400,7 +3400,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector262 {
 public:
@@ -3413,7 +3413,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector263 {
 public:
@@ -3426,7 +3426,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector264 {
 public:
@@ -3439,7 +3439,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector265 {
 public:
@@ -3452,7 +3452,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector266 {
 public:
@@ -3465,7 +3465,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector267 {
 public:
@@ -3478,7 +3478,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector268 {
 public:
@@ -3491,7 +3491,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector269 {
 public:
@@ -3504,7 +3504,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector270 {
 public:
@@ -3517,7 +3517,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector271 {
 public:
@@ -3530,7 +3530,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector272 {
 public:
@@ -3543,7 +3543,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector273 {
 public:
@@ -3556,7 +3556,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector274 {
 public:
@@ -3569,7 +3569,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector275 {
 public:
@@ -3582,7 +3582,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector276 {
 public:
@@ -3595,7 +3595,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector277 {
 public:
@@ -3608,7 +3608,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector278 {
 public:
@@ -3621,7 +3621,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector279 {
 public:
@@ -3634,7 +3634,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector280 {
 public:
@@ -3647,7 +3647,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector281 {
 public:
@@ -3660,7 +3660,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector282 {
 public:
@@ -3673,7 +3673,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector283 {
 public:
@@ -3686,7 +3686,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector284 {
 public:
@@ -3699,7 +3699,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector285 {
 public:
@@ -3712,7 +3712,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector286 {
 public:
@@ -3725,7 +3725,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector287 {
 public:
@@ -3738,7 +3738,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector288 {
 public:
@@ -3751,7 +3751,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector289 {
 public:
@@ -3764,7 +3764,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector290 {
 public:
@@ -3777,7 +3777,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector291 {
 public:
@@ -3790,7 +3790,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector292 {
 public:
@@ -3803,7 +3803,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector293 {
 public:
@@ -3816,7 +3816,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector294 {
 public:
@@ -3829,7 +3829,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector295 {
 public:
@@ -3842,7 +3842,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector296 {
 public:
@@ -3855,7 +3855,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector297 {
 public:
@@ -3868,7 +3868,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector298 {
 public:
@@ -3881,7 +3881,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector299 {
 public:
@@ -3894,7 +3894,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector300 {
 public:
@@ -3907,7 +3907,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector301 {
 public:
@@ -3920,7 +3920,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector302 {
 public:
@@ -3933,7 +3933,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector303 {
 public:
@@ -3946,7 +3946,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector304 {
 public:
@@ -3959,7 +3959,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector305 {
 public:
@@ -3972,7 +3972,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector306 {
 public:
@@ -3985,7 +3985,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector307 {
 public:
@@ -3998,7 +3998,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector308 {
 public:
@@ -4011,7 +4011,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector309 {
 public:
@@ -4024,7 +4024,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector310 {
 public:
@@ -4037,7 +4037,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector311 {
 public:
@@ -4050,7 +4050,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector312 {
 public:
@@ -4063,7 +4063,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector313 {
 public:
@@ -4076,7 +4076,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector314 {
 public:
@@ -4089,7 +4089,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector315 {
 public:
@@ -4102,7 +4102,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector316 {
 public:
@@ -4115,7 +4115,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector317 {
 public:
@@ -4128,7 +4128,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector318 {
 public:
@@ -4141,7 +4141,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector319 {
 public:
@@ -4154,7 +4154,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector320 {
 public:
@@ -4167,7 +4167,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector321 {
 public:
@@ -4180,7 +4180,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector322 {
 public:
@@ -4193,7 +4193,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector323 {
 public:
@@ -4206,7 +4206,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector324 {
 public:
@@ -4219,7 +4219,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector325 {
 public:
@@ -4232,7 +4232,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector326 {
 public:
@@ -4245,7 +4245,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector327 {
 public:
@@ -4258,7 +4258,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector328 {
 public:
@@ -4271,7 +4271,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector329 {
 public:
@@ -4284,7 +4284,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector330 {
 public:
@@ -4297,7 +4297,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector331 {
 public:
@@ -4310,7 +4310,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector332 {
 public:
@@ -4323,7 +4323,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector333 {
 public:
@@ -4336,7 +4336,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector334 {
 public:
@@ -4349,7 +4349,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector335 {
 public:
@@ -4362,7 +4362,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector336 {
 public:
@@ -4375,7 +4375,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector337 {
 public:
@@ -4388,7 +4388,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector338 {
 public:
@@ -4401,7 +4401,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector339 {
 public:
@@ -4414,7 +4414,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector340 {
 public:
@@ -4427,7 +4427,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector341 {
 public:
@@ -4440,7 +4440,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector342 {
 public:
@@ -4453,7 +4453,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector343 {
 public:
@@ -4466,7 +4466,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector344 {
 public:
@@ -4479,7 +4479,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector345 {
 public:
@@ -4492,7 +4492,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector346 {
 public:
@@ -4505,7 +4505,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector347 {
 public:
@@ -4518,7 +4518,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector348 {
 public:
@@ -4531,7 +4531,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector349 {
 public:
@@ -4544,7 +4544,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector350 {
 public:
@@ -4557,7 +4557,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector351 {
 public:
@@ -4570,7 +4570,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector352 {
 public:
@@ -4583,7 +4583,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector353 {
 public:
@@ -4596,7 +4596,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector354 {
 public:
@@ -4609,7 +4609,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector355 {
 public:
@@ -4622,7 +4622,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector356 {
 public:
@@ -4635,7 +4635,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector357 {
 public:
@@ -4648,7 +4648,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector358 {
 public:
@@ -4661,7 +4661,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector359 {
 public:
@@ -4674,7 +4674,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector360 {
 public:
@@ -4687,7 +4687,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector361 {
 public:
@@ -4700,7 +4700,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector362 {
 public:
@@ -4713,7 +4713,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector363 {
 public:
@@ -4726,7 +4726,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector364 {
 public:
@@ -4739,7 +4739,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector365 {
 public:
@@ -4752,7 +4752,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector366 {
 public:
@@ -4765,7 +4765,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector367 {
 public:
@@ -4778,7 +4778,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector368 {
 public:
@@ -4791,7 +4791,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector369 {
 public:
@@ -4804,7 +4804,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector370 {
 public:
@@ -4817,7 +4817,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector371 {
 public:
@@ -4830,7 +4830,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector372 {
 public:
@@ -4843,7 +4843,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector373 {
 public:
@@ -4856,7 +4856,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector374 {
 public:
@@ -4869,7 +4869,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector375 {
 public:
@@ -4882,7 +4882,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector376 {
 public:
@@ -4895,7 +4895,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector377 {
 public:
@@ -4908,7 +4908,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector378 {
 public:
@@ -4921,7 +4921,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector379 {
 public:
@@ -4934,7 +4934,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector380 {
 public:
@@ -4947,7 +4947,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector381 {
 public:
@@ -4960,7 +4960,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector382 {
 public:
@@ -4973,7 +4973,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector383 {
 public:
@@ -4986,7 +4986,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector384 {
 public:
@@ -4999,7 +4999,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector385 {
 public:
@@ -5012,7 +5012,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector386 {
 public:
@@ -5025,7 +5025,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector387 {
 public:
@@ -5038,7 +5038,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector388 {
 public:
@@ -5051,7 +5051,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector389 {
 public:
@@ -5064,7 +5064,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector390 {
 public:
@@ -5077,7 +5077,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector391 {
 public:
@@ -5090,7 +5090,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector392 {
 public:
@@ -5103,7 +5103,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector393 {
 public:
@@ -5116,7 +5116,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector394 {
 public:
@@ -5129,7 +5129,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector395 {
 public:
@@ -5142,7 +5142,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector396 {
 public:
@@ -5155,7 +5155,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector397 {
 public:
@@ -5168,7 +5168,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector398 {
 public:
@@ -5181,7 +5181,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector399 {
 public:
@@ -5194,7 +5194,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector400 {
 public:
@@ -5207,7 +5207,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector401 {
 public:
@@ -5220,7 +5220,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector402 {
 public:
@@ -5233,7 +5233,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector403 {
 public:
@@ -5246,7 +5246,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector404 {
 public:
@@ -5259,7 +5259,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector405 {
 public:
@@ -5272,7 +5272,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector406 {
 public:
@@ -5285,7 +5285,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector407 {
 public:
@@ -5298,7 +5298,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector408 {
 public:
@@ -5311,7 +5311,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector409 {
 public:
@@ -5324,7 +5324,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector410 {
 public:
@@ -5337,7 +5337,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector411 {
 public:
@@ -5350,7 +5350,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector412 {
 public:
@@ -5363,7 +5363,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector413 {
 public:
@@ -5376,7 +5376,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector414 {
 public:
@@ -5389,7 +5389,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector415 {
 public:
@@ -5402,7 +5402,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector416 {
 public:
@@ -5415,7 +5415,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector417 {
 public:
@@ -5428,7 +5428,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector418 {
 public:
@@ -5441,7 +5441,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector419 {
 public:
@@ -5454,7 +5454,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector420 {
 public:
@@ -5467,7 +5467,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector421 {
 public:
@@ -5480,7 +5480,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector422 {
 public:
@@ -5493,7 +5493,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector423 {
 public:
@@ -5506,7 +5506,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector424 {
 public:
@@ -5519,7 +5519,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector425 {
 public:
@@ -5532,7 +5532,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector426 {
 public:
@@ -5545,7 +5545,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector427 {
 public:
@@ -5558,7 +5558,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector428 {
 public:
@@ -5571,7 +5571,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector429 {
 public:
@@ -5584,7 +5584,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector430 {
 public:
@@ -5597,7 +5597,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector431 {
 public:
@@ -5610,7 +5610,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector432 {
 public:
@@ -5623,7 +5623,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector433 {
 public:
@@ -5636,7 +5636,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector434 {
 public:
@@ -5649,7 +5649,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector435 {
 public:
@@ -5662,7 +5662,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector436 {
 public:
@@ -5675,7 +5675,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector437 {
 public:
@@ -5688,7 +5688,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector438 {
 public:
@@ -5701,7 +5701,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector439 {
 public:
@@ -5714,7 +5714,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector440 {
 public:
@@ -5727,7 +5727,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector441 {
 public:
@@ -5740,7 +5740,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector442 {
 public:
@@ -5753,7 +5753,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector443 {
 public:
@@ -5766,7 +5766,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector444 {
 public:
@@ -5779,7 +5779,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector445 {
 public:
@@ -5792,7 +5792,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector446 {
 public:
@@ -5805,7 +5805,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector447 {
 public:
@@ -5818,7 +5818,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector448 {
 public:
@@ -5831,7 +5831,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector449 {
 public:
@@ -5844,7 +5844,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector450 {
 public:
@@ -5857,7 +5857,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector451 {
 public:
@@ -5870,7 +5870,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector452 {
 public:
@@ -5883,7 +5883,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector453 {
 public:
@@ -5896,7 +5896,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector454 {
 public:
@@ -5909,7 +5909,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector455 {
 public:
@@ -5922,7 +5922,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector456 {
 public:
@@ -5935,7 +5935,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector457 {
 public:
@@ -5948,7 +5948,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector458 {
 public:
@@ -5961,7 +5961,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector459 {
 public:
@@ -5974,7 +5974,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector460 {
 public:
@@ -5987,7 +5987,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector461 {
 public:
@@ -6000,7 +6000,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector462 {
 public:
@@ -6013,7 +6013,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector463 {
 public:
@@ -6026,7 +6026,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector464 {
 public:
@@ -6039,7 +6039,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector465 {
 public:
@@ -6052,7 +6052,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector466 {
 public:
@@ -6065,7 +6065,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector467 {
 public:
@@ -6078,7 +6078,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector468 {
 public:
@@ -6091,7 +6091,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector469 {
 public:
@@ -6104,7 +6104,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector470 {
 public:
@@ -6117,7 +6117,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector471 {
 public:
@@ -6130,7 +6130,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector472 {
 public:
@@ -6143,7 +6143,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector473 {
 public:
@@ -6156,7 +6156,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector474 {
 public:
@@ -6169,7 +6169,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector475 {
 public:
@@ -6182,7 +6182,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector476 {
 public:
@@ -6195,7 +6195,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector477 {
 public:
@@ -6208,7 +6208,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector478 {
 public:
@@ -6221,7 +6221,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector479 {
 public:
@@ -6234,7 +6234,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector480 {
 public:
@@ -6247,7 +6247,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector481 {
 public:
@@ -6260,7 +6260,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector482 {
 public:
@@ -6273,7 +6273,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector483 {
 public:
@@ -6286,7 +6286,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector484 {
 public:
@@ -6299,7 +6299,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector485 {
 public:
@@ -6312,7 +6312,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector486 {
 public:
@@ -6325,7 +6325,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector487 {
 public:
@@ -6338,7 +6338,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector488 {
 public:
@@ -6351,7 +6351,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector489 {
 public:
@@ -6364,7 +6364,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector490 {
 public:
@@ -6377,7 +6377,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector491 {
 public:
@@ -6390,7 +6390,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector492 {
 public:
@@ -6403,7 +6403,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector493 {
 public:
@@ -6416,7 +6416,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector494 {
 public:
@@ -6429,7 +6429,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector495 {
 public:
@@ -6442,7 +6442,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector496 {
 public:
@@ -6455,7 +6455,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector497 {
 public:
@@ -6468,7 +6468,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector498 {
 public:
@@ -6481,7 +6481,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector499 {
 public:
@@ -6494,7 +6494,7 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 class MetricsCollector500 {
 public:
@@ -6507,6 +6507,6 @@ public:
 private:
     struct MetricData { int64_t count=0; double sum=0,min=1e18,max=-1e18,last=0; int64_t lastUpdated=0; };
     std::map<std::string,MetricData> metrics_;
-    std::mutex mtx_;
+    mutable std::mutex mtx_;
 };
 }}}} // namespace

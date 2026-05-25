@@ -1,0 +1,3 @@
+/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/sqlite_orm-populate.dir
+/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/edit_cache.dir
+/home/bym/projectforge-folder/projectforge-cpp/build/_deps/sqlite_orm-subbuild/CMakeFiles/rebuild_cache.dir

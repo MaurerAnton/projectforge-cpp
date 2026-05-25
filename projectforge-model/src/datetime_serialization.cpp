@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "datetime_serialization.hpp"
+#include "org/projectforge/model/rest/datetime_serialization.hpp"
 
 namespace org::projectforge::model::rest {
 

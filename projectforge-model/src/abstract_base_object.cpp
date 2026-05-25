@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "abstract_base_object.hpp"
+#include "org/projectforge/model/rest/abstract_base_object.hpp"
 
 namespace org::projectforge::model::rest {
 

@@ -59,7 +59,7 @@ struct SipgateEntry {
 
 class SipgateDao : public BaseDao<SipgateEntry> {
 public:
-    explicit SipgateDao(Storage& s) : BaseDao<SipgateEntry>(s) {}
+    explicit SipgateDao() {}
     
     std::vector<SipgateEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<SipgateEntry> r;

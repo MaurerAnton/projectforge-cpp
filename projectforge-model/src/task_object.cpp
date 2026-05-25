@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "task_object.hpp"
+#include "org/projectforge/model/rest/task_object.hpp"
 #include <sstream>
 #include <algorithm>
 #include <cctype>

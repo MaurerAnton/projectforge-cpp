@@ -37,7 +37,7 @@ struct VisitorbookEntity {
 
 class VisitorbookDao : public BaseDao<VisitorbookEntity> {
 public:
-    explicit VisitorbookDao(Storage& s) : BaseDao<VisitorbookEntity>(s) {}
+    explicit VisitorbookDao() {}
     std::vector<VisitorbookEntity> getActive() {
         auto all=getAll(); std::vector<VisitorbookEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

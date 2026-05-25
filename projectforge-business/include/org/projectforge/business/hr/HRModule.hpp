@@ -34,7 +34,7 @@ struct HRPlanningEntity {
 
 class HRPlanningDao : public BaseDao<HRPlanningEntity> {
 public:
-    explicit HRPlanningDao(Storage& storage) : BaseDao<HRPlanningEntity>(storage) {}
+    explicit HRPlanningDao() {}
     std::vector<HRPlanningEntity> getByUser(int64_t uid) {
         auto all = getAll(); std::vector<HRPlanningEntity> r;
         for(auto& p : all) if(!p.deleted && p.userId==uid) r.push_back(p);
@@ -88,7 +88,7 @@ struct LeaveAccountEntity {
 
 class LeaveAccountDao : public BaseDao<LeaveAccountEntity> {
 public:
-    explicit LeaveAccountDao(Storage& storage) : BaseDao<LeaveAccountEntity>(storage) {}
+    explicit LeaveAccountDao() {}
     std::optional<LeaveAccountEntity> getByUserAndYear(int64_t uid, int y) {
         auto all = getAll();
         for(auto& l : all) if(!l.deleted && l.userId==uid && l.year==y) return l;
@@ -124,7 +124,7 @@ struct VacationEntryEntity {
 
 class VacationDao : public BaseDao<VacationEntryEntity> {
 public:
-    explicit VacationDao(Storage& storage) : BaseDao<VacationEntryEntity>(storage) {}
+    explicit VacationDao() {}
     std::vector<VacationEntryEntity> getByUser(int64_t uid) {
         auto all = getAll(); std::vector<VacationEntryEntity> r;
         for(auto& v : all) if(!v.deleted && v.userId==uid) r.push_back(v);

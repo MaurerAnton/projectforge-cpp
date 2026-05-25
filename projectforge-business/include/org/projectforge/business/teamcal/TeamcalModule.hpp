@@ -37,7 +37,7 @@ struct TeamCalEntity {
 
 class TeamCalDao : public BaseDao<TeamCalEntity> {
 public:
-    explicit TeamCalDao(Storage& s) : BaseDao<TeamCalEntity>(s) {}
+    explicit TeamCalDao() {}
     std::vector<TeamCalEntity> getActive() {
         auto all=getAll(); std::vector<TeamCalEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct TeamEventEntity {
 
 class TeamEventDao : public BaseDao<TeamEventEntity> {
 public:
-    explicit TeamEventDao(Storage& s) : BaseDao<TeamEventEntity>(s) {}
+    explicit TeamEventDao() {}
     std::vector<TeamEventEntity> getActive() {
         auto all=getAll(); std::vector<TeamEventEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

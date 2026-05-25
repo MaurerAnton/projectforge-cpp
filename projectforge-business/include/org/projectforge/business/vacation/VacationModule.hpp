@@ -37,7 +37,7 @@ struct LeaveAccountEntryEntity {
 
 class LeaveAccountEntryDao : public BaseDao<LeaveAccountEntryEntity> {
 public:
-    explicit LeaveAccountEntryDao(Storage& s) : BaseDao<LeaveAccountEntryEntity>(s) {}
+    explicit LeaveAccountEntryDao() {}
     std::vector<LeaveAccountEntryEntity> getActive() {
         auto all=getAll(); std::vector<LeaveAccountEntryEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct RemainingLeaveEntity {
 
 class RemainingLeaveDao : public BaseDao<RemainingLeaveEntity> {
 public:
-    explicit RemainingLeaveDao(Storage& s) : BaseDao<RemainingLeaveEntity>(s) {}
+    explicit RemainingLeaveDao() {}
     std::vector<RemainingLeaveEntity> getActive() {
         auto all=getAll(); std::vector<RemainingLeaveEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -121,7 +121,7 @@ struct VacationEntity {
 
 class VacationDao : public BaseDao<VacationEntity> {
 public:
-    explicit VacationDao(Storage& s) : BaseDao<VacationEntity>(s) {}
+    explicit VacationDao() {}
     std::vector<VacationEntity> getActive() {
         auto all=getAll(); std::vector<VacationEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

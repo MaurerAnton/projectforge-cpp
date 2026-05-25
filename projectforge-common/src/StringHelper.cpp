@@ -213,7 +213,7 @@ std::string StringHelper::escapeJavaScript(const std::string& str) {
     for (char c : str) {
         switch (c) {
             case '\\': result += "\\\\"; break;
-            case '"': result += "\\""; break;
+            case '"': result += "\\\""; break;
             case '\'': result += "\\'"; break;
             case '\n': result += "\\n"; break;
             case '\r': result += "\\r"; break;

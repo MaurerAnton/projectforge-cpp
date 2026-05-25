@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "file_object.hpp"
+#include "org/projectforge/jcr/file_object.hpp"
 #include <sstream>
 
 namespace org::projectforge::jcr {

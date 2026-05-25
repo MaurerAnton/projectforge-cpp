@@ -59,7 +59,7 @@ struct SystemEntry {
 
 class SystemDao : public BaseDao<SystemEntry> {
 public:
-    explicit SystemDao(Storage& s) : BaseDao<SystemEntry>(s) {}
+    explicit SystemDao() {}
     
     std::vector<SystemEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<SystemEntry> r;

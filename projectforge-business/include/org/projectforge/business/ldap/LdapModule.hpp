@@ -59,7 +59,7 @@ struct LdapEntry {
 
 class LdapDao : public BaseDao<LdapEntry> {
 public:
-    explicit LdapDao(Storage& s) : BaseDao<LdapEntry>(s) {}
+    explicit LdapDao() {}
     
     std::vector<LdapEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<LdapEntry> r;

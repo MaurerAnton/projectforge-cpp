@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "file_info.hpp"
+#include "org/projectforge/jcr/file_info.hpp"
 
 namespace org::projectforge::jcr {
 

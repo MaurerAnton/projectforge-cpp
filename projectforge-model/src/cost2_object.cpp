@@ -21,7 +21,7 @@
 //
 /////////////////////////////////////////////////////////////////////////////
 
-#include "cost2_object.hpp"
+#include "org/projectforge/model/rest/cost2_object.hpp"
 #include <sstream>
 
 namespace org::projectforge::model::rest {

@@ -59,7 +59,7 @@ struct AdminEntry {
 
 class AdminDao : public BaseDao<AdminEntry> {
 public:
-    explicit AdminDao(Storage& s) : BaseDao<AdminEntry>(s) {}
+    explicit AdminDao() {}
     
     std::vector<AdminEntry> getByOwner(int64_t uid) {
         auto all=getAll(); std::vector<AdminEntry> r;

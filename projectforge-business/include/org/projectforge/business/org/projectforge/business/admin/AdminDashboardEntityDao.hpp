@@ -34,7 +34,7 @@ private:
 
 class AdminDashboardDao : public BaseDao<AdminDashboardEntity> {
 public:
-    explicit AdminDashboardDao(Storage& storage) : BaseDao<AdminDashboardEntity>(storage) {}
+    explicit AdminDashboardDao() {}
     std::vector<AdminDashboardEntity> getRecent(int limit=20) {
         auto all = getAll();
         std::sort(all.begin(), all.end(), [](auto& a, auto& b){ return a.lastUpdate > b.lastUpdate; });

@@ -37,7 +37,7 @@ struct AddressEntity {
 
 class AddressDao : public BaseDao<AddressEntity> {
 public:
-    explicit AddressDao(Storage& s) : BaseDao<AddressEntity>(s) {}
+    explicit AddressDao() {}
     std::vector<AddressEntity> getActive() {
         auto all=getAll(); std::vector<AddressEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -79,7 +79,7 @@ struct AddressImageEntity {
 
 class AddressImageDao : public BaseDao<AddressImageEntity> {
 public:
-    explicit AddressImageDao(Storage& s) : BaseDao<AddressImageEntity>(s) {}
+    explicit AddressImageDao() {}
     std::vector<AddressImageEntity> getActive() {
         auto all=getAll(); std::vector<AddressImageEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -121,7 +121,7 @@ struct AddressbookEntity {
 
 class AddressbookDao : public BaseDao<AddressbookEntity> {
 public:
-    explicit AddressbookDao(Storage& s) : BaseDao<AddressbookEntity>(s) {}
+    explicit AddressbookDao() {}
     std::vector<AddressbookEntity> getActive() {
         auto all=getAll(); std::vector<AddressbookEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);
@@ -163,7 +163,7 @@ struct PersonalAddressEntity {
 
 class PersonalAddressDao : public BaseDao<PersonalAddressEntity> {
 public:
-    explicit PersonalAddressDao(Storage& s) : BaseDao<PersonalAddressEntity>(s) {}
+    explicit PersonalAddressDao() {}
     std::vector<PersonalAddressEntity> getActive() {
         auto all=getAll(); std::vector<PersonalAddressEntity> r;
         for(auto& e:all) if(!e.deleted && e.active) r.push_back(e);

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -31,7 +31,7 @@ struct GroupEntity {
 
 class GroupDao : public BaseDao<GroupEntity> {
 public:
-    explicit GroupDao(Storage& storage) : BaseDao<GroupEntity>(storage) {}
+    explicit GroupDao() {}
 
     std::optional<GroupEntity> findByName(const std::string& name) {
         try {

@@ -28,6 +28,7 @@
 #include <optional>
 #include <vector>
 #include <cstdint>
+#include <nlohmann/json.hpp>
 #include <filesystem>
 
 namespace org::projectforge::jcr {
@@ -73,12 +74,12 @@ public:
     /**
      * Copy metadata to a JSON node representation.
      */
-    void copyToNode(class nlohmann::json& nodeJson) const;
+    void copyToNode(nlohmann::json& nodeJson) const;
 
     /**
      * Copy metadata from a JSON node representation.
      */
-    void copyFromNode(const class nlohmann::json& nodeJson);
+    void copyFromNode(const nlohmann::json& nodeJson);
 
     std::string toString() const;
 };
