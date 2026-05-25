@@ -20,29 +20,30 @@ cmake .. && make -j$(nproc)
 
 | Category | Lines | Files |
 |----------|-------|-------|
-| C++ Headers (.hpp) | 305,857 | 317 |
-| C++ Source (.cpp) | 101,907 | 106 |
+| C++ Headers (.hpp) | 305,932 | 317 |
+| C++ Source (.cpp) | 101,924 | 110 |
 | CMake build | 157 | 11 |
-| **Total C++** | **407,764** | **423** |
+| **Total C++** | **407,856** | **427** |
 | | | |
 | Original Kotlin+Java | 406,995 | 2,697 |
-| Difference | **+769** | — |
+| Difference | **+861** | — |
 
 ### Per-Module Line Count
 
 | Module | .hpp | .cpp | Total | Description |
 |--------|------|------|-------|-------------|
-| projectforge-common | 211,968 | 5,421 | 217,389 | Foundation utilities, logging, crypto, i18n, extended implementations |
-| projectforge-model | 21,590 | 5,477 | 27,067 | REST data objects, JSON serialization, model helpers |
-| projectforge-business | 21,362 | 18,088 | 39,450 | Core business logic, DAOs, services, 800+ service classes |
-| projectforge-wicket | 26,271 | 2 | 26,273 | Server-side UI components and pages (500+ components) |
-| projectforge-rest | 16,819 | 10,012 | 26,831 | REST API (1000+ endpoint handlers) |
-| projectforge-jcr | 794 | 528 | 1,322 | Content repository (FS + SQLite) |
-| projectforge-application | 186 | 118 | 304 | Main executable entry point |
+| projectforge-common | 212,006 | 34,389 | 246,395 | Foundation utilities, logging, crypto, i18n, extended implementations |
+| projectforge-model | 21,600 | 4,474 | 26,074 | REST data objects, JSON serialization, model helpers |
+| projectforge-business | 21,339 | 29,234 | 50,573 | Core business logic, DAOs, services, 800+ service classes |
+| projectforge-wicket | 26,273 | 2 | 26,275 | Server-side UI components and pages (500+ components) |
+| projectforge-rest | 16,821 | 9,010 | 25,831 | REST API (1000+ endpoint handlers) |
+| projectforge-jcr | 799 | 532 | 1,331 | Content repository (FS + SQLite) |
+| projectforge-application | 190 | 118 | 308 | Main executable entry point |
 | projectforge-carddav | 96 | 2 | 98 | CardDAV server |
 | projectforge-idp | 132 | 2 | 134 | OAuth2/OIDC identity provider |
 | projectforge-commons-test | 66 | 5 | 71 | Test framework |
-| plugins (10x) | 6,573 | 62,252 | 68,825 | Banking, datatransfer, IHK, license, liquidity, marketing, memo, merlin, skillmatrix, todo |
+| plugins (10x) | 6,610 | 3,602 | 10,212 | Banking, datatransfer, IHK, license, liquidity, marketing, memo, merlin, skillmatrix, todo |
+| tests/integration | 0 | 20,554 | 20,554 | Full integration test suites |
 
 ## Architecture
 
