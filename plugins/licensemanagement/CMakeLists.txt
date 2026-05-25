@@ -1,0 +1,3 @@
+add_library(plugin_licensemanagement STATIC src/LicenseManagementPlugin.cpp src/LicenseManagementDao.cpp)
+target_include_directories(plugin_licensemanagement PUBLIC include)
+target_link_libraries(plugin_licensemanagement PUBLIC projectforge_business)

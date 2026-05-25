@@ -1,0 +1,10 @@
+/////////////////////////////////////////////////////////////////////////////
+// (C) 2001-2026 Micromata GmbH - GPL v3
+/////////////////////////////////////////////////////////////////////////////
+#pragma once
+#include <functional>
+#include <any>
+namespace org::projectforge::common::mgc {
+template<typename T>
+using Matcher = std::function<bool(const T&)>;
+}

@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////////////
+// (C) 2001-2026 Micromata GmbH - GPL v3
+/////////////////////////////////////////////////////////////////////////////
+#pragma once
+#include <string>
+namespace org::projectforge::common::i18n {
+struct I18nEnum {
+    virtual ~I18nEnum() = default;
+    virtual std::string getI18nKey() const = 0;
+};
+}

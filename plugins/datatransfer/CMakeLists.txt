@@ -1,0 +1,3 @@
+add_library(plugin_datatransfer STATIC src/DataTransferPlugin.cpp src/DataTransferDao.cpp)
+target_include_directories(plugin_datatransfer PUBLIC include)
+target_link_libraries(plugin_datatransfer PUBLIC projectforge_business)

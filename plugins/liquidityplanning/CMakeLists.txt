@@ -1,0 +1,3 @@
+add_library(plugin_liquidityplanning STATIC src/LiquidityPlanningPlugin.cpp src/LiquidityPlanningDao.cpp)
+target_include_directories(plugin_liquidityplanning PUBLIC include)
+target_link_libraries(plugin_liquidityplanning PUBLIC projectforge_business)

@@ -1,0 +1,3 @@
+add_library(plugin_marketing STATIC src/MarketingPlugin.cpp src/MarketingDao.cpp)
+target_include_directories(plugin_marketing PUBLIC include)
+target_link_libraries(plugin_marketing PUBLIC projectforge_business)

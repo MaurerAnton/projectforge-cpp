@@ -1,0 +1,3 @@
+add_library(plugin_skillmatrix STATIC src/SkillMatrixPlugin.cpp src/SkillMatrixDao.cpp)
+target_include_directories(plugin_skillmatrix PUBLIC include)
+target_link_libraries(plugin_skillmatrix PUBLIC projectforge_business)

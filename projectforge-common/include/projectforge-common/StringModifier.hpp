@@ -1,0 +1,9 @@
+/////////////////////////////////////////////////////////////////////////////
+// (C) 2001-2026 Micromata GmbH - GPL v3
+/////////////////////////////////////////////////////////////////////////////
+#pragma once
+#include <string>
+#include <functional>
+namespace org::projectforge::common {
+using StringModifier = std::function<std::string(const std::string&)>;
+}

@@ -1,0 +1,3 @@
+add_library(plugin_banking STATIC src/BankingPlugin.cpp src/BankingDao.cpp)
+target_include_directories(plugin_banking PUBLIC include)
+target_link_libraries(plugin_banking PUBLIC projectforge_business)
