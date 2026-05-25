@@ -5490,3 +5490,534 @@ events:
       CMAKE_SYSTEM_INCLUDE_PATH:
         - "/usr/include/X11"
 ...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-boost-json.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:14 (include)"
+    mode: "path"
+    variable: "BOOSTJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "boost/json.hpp"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-src/example/traits/boost/json/src.hpp/"
+    searched_directories:
+      - "/home/bym/.bun/bin/boost/json.hpp"
+      - "/home/bym/.sdkman/candidates/java/current/bin/boost/json.hpp"
+      - "/usr/local/sbin/boost/json.hpp"
+      - "/usr/local/bin/boost/json.hpp"
+      - "/usr/bin/boost/json.hpp"
+      - "/usr/lib/jvm/default/bin/boost/json.hpp"
+      - "/usr/bin/site_perl/boost/json.hpp"
+      - "/usr/bin/vendor_perl/boost/json.hpp"
+      - "/usr/bin/core_perl/boost/json.hpp"
+      - "/usr/lib/rustup/bin/boost/json.hpp"
+      - "/usr/local/include/boost/json.hpp"
+      - "/usr/local/boost/json.hpp"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-kazuho-picojson.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:26 (include)"
+    mode: "path"
+    variable: "PICOJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "picojson/picojson.h"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/bym/.bun/bin/picojson/picojson.h"
+      - "/home/bym/.sdkman/candidates/java/current/bin/picojson/picojson.h"
+      - "/usr/local/sbin/picojson/picojson.h"
+      - "/usr/local/bin/picojson/picojson.h"
+      - "/usr/bin/picojson/picojson.h"
+      - "/usr/lib/jvm/default/bin/picojson/picojson.h"
+      - "/usr/bin/site_perl/picojson/picojson.h"
+      - "/usr/bin/vendor_perl/picojson/picojson.h"
+      - "/usr/bin/core_perl/picojson/picojson.h"
+      - "/usr/lib/rustup/bin/picojson/picojson.h"
+      - "/usr/local/include/picojson/picojson.h"
+      - "/usr/local/picojson/picojson.h"
+      - "/usr/include/picojson/picojson.h"
+      - "/usr/picojson/picojson.h"
+      - "/include/picojson/picojson.h"
+      - "/usr/X11R6/include/picojson/picojson.h"
+      - "/usr/X11R6/picojson/picojson.h"
+      - "/usr/pkg/include/picojson/picojson.h"
+      - "/usr/pkg/picojson/picojson.h"
+      - "/opt/include/picojson/picojson.h"
+      - "/opt/picojson/picojson.h"
+      - "/usr/include/X11/picojson/picojson.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-boost-json.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:14 (include)"
+    mode: "path"
+    variable: "BOOSTJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "boost/json.hpp"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-src/example/traits/boost/json/src.hpp/"
+    searched_directories:
+      - "/home/bym/.bun/bin/boost/json.hpp"
+      - "/home/bym/.sdkman/candidates/java/current/bin/boost/json.hpp"
+      - "/usr/local/sbin/boost/json.hpp"
+      - "/usr/local/bin/boost/json.hpp"
+      - "/usr/bin/boost/json.hpp"
+      - "/usr/lib/jvm/default/bin/boost/json.hpp"
+      - "/usr/bin/site_perl/boost/json.hpp"
+      - "/usr/bin/vendor_perl/boost/json.hpp"
+      - "/usr/bin/core_perl/boost/json.hpp"
+      - "/usr/lib/rustup/bin/boost/json.hpp"
+      - "/usr/local/include/boost/json.hpp"
+      - "/usr/local/boost/json.hpp"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-kazuho-picojson.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:26 (include)"
+    mode: "path"
+    variable: "PICOJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "picojson/picojson.h"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/bym/.bun/bin/picojson/picojson.h"
+      - "/home/bym/.sdkman/candidates/java/current/bin/picojson/picojson.h"
+      - "/usr/local/sbin/picojson/picojson.h"
+      - "/usr/local/bin/picojson/picojson.h"
+      - "/usr/bin/picojson/picojson.h"
+      - "/usr/lib/jvm/default/bin/picojson/picojson.h"
+      - "/usr/bin/site_perl/picojson/picojson.h"
+      - "/usr/bin/vendor_perl/picojson/picojson.h"
+      - "/usr/bin/core_perl/picojson/picojson.h"
+      - "/usr/lib/rustup/bin/picojson/picojson.h"
+      - "/usr/local/include/picojson/picojson.h"
+      - "/usr/local/picojson/picojson.h"
+      - "/usr/include/picojson/picojson.h"
+      - "/usr/picojson/picojson.h"
+      - "/include/picojson/picojson.h"
+      - "/usr/X11R6/include/picojson/picojson.h"
+      - "/usr/X11R6/picojson/picojson.h"
+      - "/usr/pkg/include/picojson/picojson.h"
+      - "/usr/pkg/picojson/picojson.h"
+      - "/opt/include/picojson/picojson.h"
+      - "/opt/picojson/picojson.h"
+      - "/usr/include/X11/picojson/picojson.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-boost-json.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:14 (include)"
+    mode: "path"
+    variable: "BOOSTJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "boost/json.hpp"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+      - "/home/bym/projectforge-folder/projectforge-cpp/build/_deps/jwt-cpp-src/example/traits/boost/json/src.hpp/"
+    searched_directories:
+      - "/home/bym/.bun/bin/boost/json.hpp"
+      - "/home/bym/.sdkman/candidates/java/current/bin/boost/json.hpp"
+      - "/usr/local/sbin/boost/json.hpp"
+      - "/usr/local/bin/boost/json.hpp"
+      - "/usr/bin/boost/json.hpp"
+      - "/usr/lib/jvm/default/bin/boost/json.hpp"
+      - "/usr/bin/site_perl/boost/json.hpp"
+      - "/usr/bin/vendor_perl/boost/json.hpp"
+      - "/usr/bin/core_perl/boost/json.hpp"
+      - "/usr/lib/rustup/bin/boost/json.hpp"
+      - "/usr/local/include/boost/json.hpp"
+      - "/usr/local/boost/json.hpp"
+    found: "/usr/include/"
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "build/_deps/jwt-cpp-src/cmake/private-find-kazuho-picojson.cmake:6 (find_path)"
+      - "build/_deps/jwt-cpp-src/example/traits/CMakeLists.txt:26 (include)"
+    mode: "path"
+    variable: "PICOJSON_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "picojson/picojson.h"
+    candidate_directories:
+      - "/home/bym/.bun/bin/"
+      - "/home/bym/.sdkman/candidates/java/current/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/rustup/bin/"
+      - "/usr/local/include/"
+      - "/usr/local/"
+      - "/usr/include/"
+      - "/usr/"
+      - "/include/"
+      - "/usr/X11R6/include/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/include/"
+      - "/usr/pkg/"
+      - "/opt/include/"
+      - "/opt/"
+      - "/usr/include/X11/"
+    searched_directories:
+      - "/home/bym/.bun/bin/picojson/picojson.h"
+      - "/home/bym/.sdkman/candidates/java/current/bin/picojson/picojson.h"
+      - "/usr/local/sbin/picojson/picojson.h"
+      - "/usr/local/bin/picojson/picojson.h"
+      - "/usr/bin/picojson/picojson.h"
+      - "/usr/lib/jvm/default/bin/picojson/picojson.h"
+      - "/usr/bin/site_perl/picojson/picojson.h"
+      - "/usr/bin/vendor_perl/picojson/picojson.h"
+      - "/usr/bin/core_perl/picojson/picojson.h"
+      - "/usr/lib/rustup/bin/picojson/picojson.h"
+      - "/usr/local/include/picojson/picojson.h"
+      - "/usr/local/picojson/picojson.h"
+      - "/usr/include/picojson/picojson.h"
+      - "/usr/picojson/picojson.h"
+      - "/include/picojson/picojson.h"
+      - "/usr/X11R6/include/picojson/picojson.h"
+      - "/usr/X11R6/picojson/picojson.h"
+      - "/usr/pkg/include/picojson/picojson.h"
+      - "/usr/pkg/picojson/picojson.h"
+      - "/opt/include/picojson/picojson.h"
+      - "/opt/picojson/picojson.h"
+      - "/usr/include/X11/picojson/picojson.h"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.bun/bin"
+        - "/home/bym/.sdkman/candidates/java/current/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/rustup/bin"
+        - "/usr/lib/jvm/default/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_INCLUDE_PATH:
+        - "/usr/include/X11"
+...

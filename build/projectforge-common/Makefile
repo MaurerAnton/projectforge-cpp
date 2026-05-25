@@ -315,6 +315,30 @@ src/CanonicalFileUtils.cpp.s:
 	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cpp.s
 .PHONY : src/CanonicalFileUtils.cpp.s
 
+src/CommonImplementationsExpanded.o: src/CommonImplementationsExpanded.cpp.o
+.PHONY : src/CommonImplementationsExpanded.o
+
+# target to build an object file
+src/CommonImplementationsExpanded.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o
+.PHONY : src/CommonImplementationsExpanded.cpp.o
+
+src/CommonImplementationsExpanded.i: src/CommonImplementationsExpanded.cpp.i
+.PHONY : src/CommonImplementationsExpanded.i
+
+# target to preprocess a source file
+src/CommonImplementationsExpanded.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.i
+.PHONY : src/CommonImplementationsExpanded.cpp.i
+
+src/CommonImplementationsExpanded.s: src/CommonImplementationsExpanded.cpp.s
+.PHONY : src/CommonImplementationsExpanded.s
+
+# target to generate assembly for a file
+src/CommonImplementationsExpanded.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.s
+.PHONY : src/CommonImplementationsExpanded.cpp.s
+
 src/CommonUtilitiesExpanded.o: src/CommonUtilitiesExpanded.cpp.o
 .PHONY : src/CommonUtilitiesExpanded.o
 
@@ -675,6 +699,30 @@ src/StringHelper.cpp.s:
 	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.s
 .PHONY : src/StringHelper.cpp.s
 
+src/UtilsExt.o: src/UtilsExt.cpp.o
+.PHONY : src/UtilsExt.o
+
+# target to build an object file
+src/UtilsExt.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o
+.PHONY : src/UtilsExt.cpp.o
+
+src/UtilsExt.i: src/UtilsExt.cpp.i
+.PHONY : src/UtilsExt.i
+
+# target to preprocess a source file
+src/UtilsExt.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.i
+.PHONY : src/UtilsExt.cpp.i
+
+src/UtilsExt.s: src/UtilsExt.cpp.s
+.PHONY : src/UtilsExt.s
+
+# target to generate assembly for a file
+src/UtilsExt.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-common/CMakeFiles/projectforge_common.dir/build.make projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.s
+.PHONY : src/UtilsExt.cpp.s
+
 src/Version.o: src/Version.cpp.o
 .PHONY : src/Version.o
 
@@ -777,6 +825,9 @@ help:
 	@echo "... src/CanonicalFileUtils.o"
 	@echo "... src/CanonicalFileUtils.i"
 	@echo "... src/CanonicalFileUtils.s"
+	@echo "... src/CommonImplementationsExpanded.o"
+	@echo "... src/CommonImplementationsExpanded.i"
+	@echo "... src/CommonImplementationsExpanded.s"
 	@echo "... src/CommonUtilitiesExpanded.o"
 	@echo "... src/CommonUtilitiesExpanded.i"
 	@echo "... src/CommonUtilitiesExpanded.s"
@@ -822,6 +873,9 @@ help:
 	@echo "... src/StringHelper.o"
 	@echo "... src/StringHelper.i"
 	@echo "... src/StringHelper.s"
+	@echo "... src/UtilsExt.o"
+	@echo "... src/UtilsExt.i"
+	@echo "... src/UtilsExt.s"
 	@echo "... src/Version.o"
 	@echo "... src/Version.i"
 	@echo "... src/Version.s"

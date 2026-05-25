@@ -72,10 +72,38 @@ include projectforge-rest/CMakeFiles/projectforge_rest.dir/flags.make
 projectforge-rest/CMakeFiles/projectforge_rest.dir/codegen:
 .PHONY : projectforge-rest/CMakeFiles/projectforge_rest.dir/codegen
 
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/flags.make
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersExpanded.cpp
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o -MF CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o.d -o CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersExpanded.cpp
+
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersExpanded.cpp > CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.i
+
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersExpanded.cpp -o CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.s
+
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/flags.make
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersImpl.cpp
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o -MF CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o.d -o CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersImpl.cpp
+
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersImpl.cpp > CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.i
+
+projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestHandlersImpl.cpp -o CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.s
+
 projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/flags.make
 projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestModule.cpp
 projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o: projectforge-rest/CMakeFiles/projectforge_rest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o -MF CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o.d -o CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-rest/src/RestModule.cpp
 
 projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.i: cmake_force
@@ -88,15 +116,19 @@ projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.s: cmake_f
 
 # Object files for target projectforge_rest
 projectforge_rest_OBJECTS = \
+"CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o" \
+"CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o" \
 "CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o"
 
 # External object files for target projectforge_rest
 projectforge_rest_EXTERNAL_OBJECTS =
 
+projectforge-rest/libprojectforge_rest.a: projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o
+projectforge-rest/libprojectforge_rest.a: projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o
 projectforge-rest/libprojectforge_rest.a: projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o
 projectforge-rest/libprojectforge_rest.a: projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make
 projectforge-rest/libprojectforge_rest.a: projectforge-rest/CMakeFiles/projectforge_rest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libprojectforge_rest.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libprojectforge_rest.a"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && $(CMAKE_COMMAND) -P CMakeFiles/projectforge_rest.dir/cmake_clean_target.cmake
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-rest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectforge_rest.dir/link.txt --verbose=$(VERBOSE)
 

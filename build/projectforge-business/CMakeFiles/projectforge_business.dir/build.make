@@ -156,10 +156,38 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/BookDao.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_business.dir/src/BookDao.cpp.s"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BookDao.cpp -o CMakeFiles/projectforge_business.dir/src/BookDao.cpp.s
 
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessServicesExpanded.cpp
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o -MF CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessServicesExpanded.cpp
+
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessServicesExpanded.cpp > CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.i
+
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessServicesExpanded.cpp -o CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.s
+
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessSvcs.cpp
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o -MF CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessSvcs.cpp
+
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessSvcs.cpp > CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.i
+
+projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/BusinessSvcs.cpp -o CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.s
+
 projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/CalendarDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/CalendarDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.i: cmake_force
@@ -173,7 +201,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.s
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/ConfigurationDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/ConfigurationDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.i: cmake_force
@@ -187,7 +215,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.
 projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/DatevDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/DatevDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.i: cmake_force
@@ -201,7 +229,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.s: c
 projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/EmailService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/EmailService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/EmailService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.i: cmake_force
@@ -215,7 +243,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/EmailService.cpp.
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/GanttDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/GanttDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.i: cmake_force
@@ -229,7 +257,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/GanttDao.cpp.s: c
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/GroupDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/GroupDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.i: cmake_force
@@ -243,7 +271,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/GroupDao.cpp.s: c
 projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/HrDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/HrDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/HrDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.i: cmake_force
@@ -257,7 +285,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/HrDao.cpp.s: cmak
 projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/JobService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/JobService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/JobService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/JobService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.i: cmake_force
@@ -271,7 +299,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/JobService.cpp.s:
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/KontoDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/KontoDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.i: cmake_force
@@ -285,7 +313,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/KontoDao.cpp.s: c
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/KostDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/KostDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/KostDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.i: cmake_force
@@ -299,7 +327,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/KostDao.cpp.s: cm
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/LdapService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/LdapService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/LdapService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.i: cmake_force
@@ -313,7 +341,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/LdapService.cpp.s
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/LoginService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/LoginService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/LoginService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.i: cmake_force
@@ -327,7 +355,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/LoginService.cpp.
 projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/PollService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/PollService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/PollService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/PollService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.i: cmake_force
@@ -341,7 +369,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/PollService.cpp.s
 projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/RechnungDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/RechnungDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.i: cmake_force
@@ -355,7 +383,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/RechnungDao.cpp.s
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/ScriptingService.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o -MF CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/ScriptingService.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.cpp.i: cmake_force
@@ -369,7 +397,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/ScriptingService.
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TaskDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TaskDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.i: cmake_force
@@ -383,7 +411,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/TaskDao.cpp.s: cm
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TeamCalendarDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TeamCalendarDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.cpp.i: cmake_force
@@ -397,7 +425,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/TeamCalendarDao.c
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TimesheetDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/TimesheetDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.i: cmake_force
@@ -411,7 +439,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/TimesheetDao.cpp.
 projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/UserDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/UserDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/UserDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.i: cmake_force
@@ -425,7 +453,7 @@ projectforge-business/CMakeFiles/projectforge_business.dir/src/UserDao.cpp.s: cm
 projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/flags.make
 projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/VacationDao.cpp
 projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o: projectforge-business/CMakeFiles/projectforge_business.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o -MF CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o.d -o CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-business/src/VacationDao.cpp
 
 projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.i: cmake_force
@@ -444,6 +472,8 @@ projectforge_business_OBJECTS = \
 "CMakeFiles/projectforge_business.dir/src/AuftragDao.cpp.o" \
 "CMakeFiles/projectforge_business.dir/src/BaseDao.cpp.o" \
 "CMakeFiles/projectforge_business.dir/src/BookDao.cpp.o" \
+"CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o" \
+"CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o" \
 "CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o" \
 "CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o" \
 "CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o" \
@@ -474,6 +504,8 @@ projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFil
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/AuftragDao.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/BaseDao.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/BookDao.cpp.o
+projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o
+projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/CalendarDao.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/ConfigurationDao.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/DatevDao.cpp.o
@@ -496,7 +528,7 @@ projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFil
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/src/VacationDao.cpp.o
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/build.make
 projectforge-business/libprojectforge_business.a: projectforge-business/CMakeFiles/projectforge_business.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX static library libprojectforge_business.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX static library libprojectforge_business.a"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && $(CMAKE_COMMAND) -P CMakeFiles/projectforge_business.dir/cmake_clean_target.cmake
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-business && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectforge_business.dir/link.txt --verbose=$(VERBOSE)
 

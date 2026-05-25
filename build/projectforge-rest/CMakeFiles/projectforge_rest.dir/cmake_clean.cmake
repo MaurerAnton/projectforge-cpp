@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o"
+  "CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o.d"
+  "CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o"
+  "CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o.d"
   "CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o"
   "CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o.d"
   "libprojectforge_rest.a"

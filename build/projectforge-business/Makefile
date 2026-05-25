@@ -339,6 +339,54 @@ src/BookDao.cpp.s:
 	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BookDao.cpp.s
 .PHONY : src/BookDao.cpp.s
 
+src/BusinessServicesExpanded.o: src/BusinessServicesExpanded.cpp.o
+.PHONY : src/BusinessServicesExpanded.o
+
+# target to build an object file
+src/BusinessServicesExpanded.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.o
+.PHONY : src/BusinessServicesExpanded.cpp.o
+
+src/BusinessServicesExpanded.i: src/BusinessServicesExpanded.cpp.i
+.PHONY : src/BusinessServicesExpanded.i
+
+# target to preprocess a source file
+src/BusinessServicesExpanded.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.i
+.PHONY : src/BusinessServicesExpanded.cpp.i
+
+src/BusinessServicesExpanded.s: src/BusinessServicesExpanded.cpp.s
+.PHONY : src/BusinessServicesExpanded.s
+
+# target to generate assembly for a file
+src/BusinessServicesExpanded.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessServicesExpanded.cpp.s
+.PHONY : src/BusinessServicesExpanded.cpp.s
+
+src/BusinessSvcs.o: src/BusinessSvcs.cpp.o
+.PHONY : src/BusinessSvcs.o
+
+# target to build an object file
+src/BusinessSvcs.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.o
+.PHONY : src/BusinessSvcs.cpp.o
+
+src/BusinessSvcs.i: src/BusinessSvcs.cpp.i
+.PHONY : src/BusinessSvcs.i
+
+# target to preprocess a source file
+src/BusinessSvcs.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.i
+.PHONY : src/BusinessSvcs.cpp.i
+
+src/BusinessSvcs.s: src/BusinessSvcs.cpp.s
+.PHONY : src/BusinessSvcs.s
+
+# target to generate assembly for a file
+src/BusinessSvcs.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-business/CMakeFiles/projectforge_business.dir/build.make projectforge-business/CMakeFiles/projectforge_business.dir/src/BusinessSvcs.cpp.s
+.PHONY : src/BusinessSvcs.cpp.s
+
 src/CalendarDao.o: src/CalendarDao.cpp.o
 .PHONY : src/CalendarDao.o
 
@@ -852,6 +900,12 @@ help:
 	@echo "... src/BookDao.o"
 	@echo "... src/BookDao.i"
 	@echo "... src/BookDao.s"
+	@echo "... src/BusinessServicesExpanded.o"
+	@echo "... src/BusinessServicesExpanded.i"
+	@echo "... src/BusinessServicesExpanded.s"
+	@echo "... src/BusinessSvcs.o"
+	@echo "... src/BusinessSvcs.i"
+	@echo "... src/BusinessSvcs.s"
 	@echo "... src/CalendarDao.o"
 	@echo "... src/CalendarDao.i"
 	@echo "... src/CalendarDao.s"

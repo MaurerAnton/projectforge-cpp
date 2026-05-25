@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.o"
   "CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.o.d"
+  "CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o"
+  "CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o.d"
   "CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o"
   "CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o.d"
   "CMakeFiles/projectforge_model.dir/src/address_object.cpp.o"

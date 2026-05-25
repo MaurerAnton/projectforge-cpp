@@ -189,7 +189,9 @@ public:
         ts.startTime = nowMillis();
         ts.description = description;
         ts.bookingStatus = TimesheetBookingStatus::RUNNING;
-        ts.touch();
+        auto now = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
+        if (ts.created == 0) ts.created = now;
+        ts.lastUpdate = now;
         return save(ts);
     }
 
@@ -212,7 +214,7 @@ public:
         // Validate
         validateTimesheet(*ts);
 
-        ts->setLastUpdate();
+        ts->lastUpdate = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
         return save(*ts);
     }
 
@@ -260,7 +262,7 @@ public:
             auto ts = getById(id);
             if (ts.has_value()) {
                 ts->invoiced = true;
-                ts->setLastUpdate();
+                ts->lastUpdate = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
                 save(*ts);
             }
         }
@@ -316,7 +318,7 @@ public:
         for (auto& ts : all) {
             if (ts.userId == userId) {
                 ts.deleted = true;
-                ts.setLastUpdate();
+                ts.lastUpdate = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
                 save(ts);
             }
         }

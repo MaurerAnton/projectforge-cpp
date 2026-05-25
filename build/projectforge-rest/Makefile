@@ -195,6 +195,54 @@ projectforge_rest/fast:
 	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/build
 .PHONY : projectforge_rest/fast
 
+src/RestHandlersExpanded.o: src/RestHandlersExpanded.cpp.o
+.PHONY : src/RestHandlersExpanded.o
+
+# target to build an object file
+src/RestHandlersExpanded.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o
+.PHONY : src/RestHandlersExpanded.cpp.o
+
+src/RestHandlersExpanded.i: src/RestHandlersExpanded.cpp.i
+.PHONY : src/RestHandlersExpanded.i
+
+# target to preprocess a source file
+src/RestHandlersExpanded.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.i
+.PHONY : src/RestHandlersExpanded.cpp.i
+
+src/RestHandlersExpanded.s: src/RestHandlersExpanded.cpp.s
+.PHONY : src/RestHandlersExpanded.s
+
+# target to generate assembly for a file
+src/RestHandlersExpanded.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.s
+.PHONY : src/RestHandlersExpanded.cpp.s
+
+src/RestHandlersImpl.o: src/RestHandlersImpl.cpp.o
+.PHONY : src/RestHandlersImpl.o
+
+# target to build an object file
+src/RestHandlersImpl.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o
+.PHONY : src/RestHandlersImpl.cpp.o
+
+src/RestHandlersImpl.i: src/RestHandlersImpl.cpp.i
+.PHONY : src/RestHandlersImpl.i
+
+# target to preprocess a source file
+src/RestHandlersImpl.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.i
+.PHONY : src/RestHandlersImpl.cpp.i
+
+src/RestHandlersImpl.s: src/RestHandlersImpl.cpp.s
+.PHONY : src/RestHandlersImpl.s
+
+# target to generate assembly for a file
+src/RestHandlersImpl.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-rest/CMakeFiles/projectforge_rest.dir/build.make projectforge-rest/CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.s
+.PHONY : src/RestHandlersImpl.cpp.s
+
 src/RestModule.o: src/RestModule.cpp.o
 .PHONY : src/RestModule.o
 
@@ -234,6 +282,12 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... projectforge_rest"
+	@echo "... src/RestHandlersExpanded.o"
+	@echo "... src/RestHandlersExpanded.i"
+	@echo "... src/RestHandlersExpanded.s"
+	@echo "... src/RestHandlersImpl.o"
+	@echo "... src/RestHandlersImpl.i"
+	@echo "... src/RestHandlersImpl.s"
 	@echo "... src/RestModule.o"
 	@echo "... src/RestModule.i"
 	@echo "... src/RestModule.s"

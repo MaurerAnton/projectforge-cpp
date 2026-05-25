@@ -69,33 +69,4 @@ struct UserEntity {
     }
 };
 
-auto createUserTable() {
-    using namespace sqlite_orm;
-    return make_table("pf_user",
-        make_column("id", &UserEntity::id, primary_key().autoincrement()),
-        make_column("username", &UserEntity::username, unique()),
-        make_column("password_hash", &UserEntity::passwordHash),
-        make_column("salt", &UserEntity::salt),
-        make_column("first_name", &UserEntity::firstName),
-        make_column("last_name", &UserEntity::lastName),
-        make_column("email", &UserEntity::email),
-        make_column("phone", &UserEntity::phone),
-        make_column("mobile_phone", &UserEntity::mobilePhone),
-        make_column("description", &UserEntity::description),
-        make_column("organization", &UserEntity::organization),
-        make_column("position", &UserEntity::position),
-        make_column("locale", &UserEntity::locale),
-        make_column("local_user", &UserEntity::localUser),
-        make_column("restricted_user", &UserEntity::restrictedUser),
-        make_column("hr_planning", &UserEntity::hrPlanning),
-        make_column("deactivated", &UserEntity::deactivated),
-        make_column("stay_logged_in", &UserEntity::stayLoggedIn),
-        make_column("failed_login_attempts", &UserEntity::failedLoginAttempts),
-        make_column("last_login", &UserEntity::lastLogin),
-        make_column("password_changed", &UserEntity::passwordChanged),
-        make_column("created", &UserEntity::created),
-        make_column("last_update", &UserEntity::lastUpdate),
-        make_column("deleted", &UserEntity::deleted)
-    );
-}
-}
+} // namespace

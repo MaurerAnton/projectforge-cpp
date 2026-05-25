@@ -219,6 +219,30 @@ src/AbstractBaseObject.cpp.s:
 	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-model/CMakeFiles/projectforge_model.dir/build.make projectforge-model/CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.s
 .PHONY : src/AbstractBaseObject.cpp.s
 
+src/ModelHelpersExt.o: src/ModelHelpersExt.cpp.o
+.PHONY : src/ModelHelpersExt.o
+
+# target to build an object file
+src/ModelHelpersExt.cpp.o:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-model/CMakeFiles/projectforge_model.dir/build.make projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o
+.PHONY : src/ModelHelpersExt.cpp.o
+
+src/ModelHelpersExt.i: src/ModelHelpersExt.cpp.i
+.PHONY : src/ModelHelpersExt.i
+
+# target to preprocess a source file
+src/ModelHelpersExt.cpp.i:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-model/CMakeFiles/projectforge_model.dir/build.make projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.i
+.PHONY : src/ModelHelpersExt.cpp.i
+
+src/ModelHelpersExt.s: src/ModelHelpersExt.cpp.s
+.PHONY : src/ModelHelpersExt.s
+
+# target to generate assembly for a file
+src/ModelHelpersExt.cpp.s:
+	cd /home/bym/projectforge-folder/projectforge-cpp/build && $(MAKE) $(MAKESILENT) -f projectforge-model/CMakeFiles/projectforge_model.dir/build.make projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.s
+.PHONY : src/ModelHelpersExt.cpp.s
+
 src/abstract_base_object.o: src/abstract_base_object.cpp.o
 .PHONY : src/abstract_base_object.o
 
@@ -477,6 +501,9 @@ help:
 	@echo "... src/AbstractBaseObject.o"
 	@echo "... src/AbstractBaseObject.i"
 	@echo "... src/AbstractBaseObject.s"
+	@echo "... src/ModelHelpersExt.o"
+	@echo "... src/ModelHelpersExt.i"
+	@echo "... src/ModelHelpersExt.s"
 	@echo "... src/abstract_base_object.o"
 	@echo "... src/abstract_base_object.i"
 	@echo "... src/abstract_base_object.s"

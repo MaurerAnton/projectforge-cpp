@@ -142,10 +142,24 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cpp.s"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CanonicalFileUtils.cpp -o CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cpp.s
 
+projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
+projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonImplementationsExpanded.cpp
+projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o -MF CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonImplementationsExpanded.cpp
+
+projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonImplementationsExpanded.cpp > CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.i
+
+projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonImplementationsExpanded.cpp -o CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.s
+
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonUtilitiesExpanded.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o -MF CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CommonUtilitiesExpanded.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.i: cmake_force
@@ -159,7 +173,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpand
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ConfigHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ConfigHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.i: cmake_force
@@ -173,7 +187,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.s: c
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CryptoHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/CryptoHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.i: cmake_force
@@ -187,7 +201,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.s: c
 projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/DateHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/DateHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.i: cmake_force
@@ -201,7 +215,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/DateHelper.cpp.s: cma
 projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/FileHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/FileHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.i: cmake_force
@@ -215,7 +229,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/FileHelper.cpp.s: cma
 projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/I18nHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/I18nHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.i: cmake_force
@@ -229,7 +243,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/I18nHelper.cpp.s: cma
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/IdGenerator.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o -MF CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/IdGenerator.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.i: cmake_force
@@ -243,7 +257,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/IdGenerator.cpp.s: cm
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/IntegerHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/IntegerHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.i: cmake_force
@@ -257,7 +271,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/IntegerHelper.cpp.s: 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/Logging.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.o -MF CMakeFiles/projectforge_common.dir/src/Logging.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/Logging.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/Logging.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.i: cmake_force
@@ -271,7 +285,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/Logging.cpp.s: cmake_
 projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/LongHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/LongHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.i: cmake_force
@@ -285,7 +299,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/LongHelper.cpp.s: cma
 projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/MimeType.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o -MF CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/MimeType.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/MimeType.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.i: cmake_force
@@ -299,7 +313,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/MimeType.cpp.s: cmake
 projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/NumberHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/NumberHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.i: cmake_force
@@ -313,7 +327,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/NumberHelper.cpp.s: c
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ProjectForgeException.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o -MF CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ProjectForgeException.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.i: cmake_force
@@ -327,7 +341,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ProjectForgeVersion.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o -MF CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/ProjectForgeVersion.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.i: cmake_force
@@ -341,7 +355,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.c
 projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/StringHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/StringHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.i: cmake_force
@@ -352,10 +366,24 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.s"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/StringHelper.cpp -o CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.s
 
+projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
+projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/UtilsExt.cpp
+projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o -MF CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/UtilsExt.cpp
+
+projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/UtilsExt.cpp > CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.i
+
+projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/UtilsExt.cpp -o CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.s
+
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/Version.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o -MF CMakeFiles/projectforge_common.dir/src/Version.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/Version.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/Version.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.i: cmake_force
@@ -369,7 +397,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.s: cmake_
 projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/XmlHelper.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o -MF CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/XmlHelper.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.i: cmake_force
@@ -383,7 +411,7 @@ projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.s: cmak
 projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/flags.make
 projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/logging/LoggingFrameworkComplete.cpp
 projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o: projectforge-common/CMakeFiles/projectforge_common.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o -MF CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o.d -o CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-common/src/logging/LoggingFrameworkComplete.cpp
 
 projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.i: cmake_force
@@ -401,6 +429,7 @@ projectforge_common_OBJECTS = \
 "CMakeFiles/projectforge_common.dir/src/CSVParser.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/CSVWriter.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cpp.o" \
+"CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o" \
@@ -416,6 +445,7 @@ projectforge_common_OBJECTS = \
 "CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o" \
+"CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/Version.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o" \
 "CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o"
@@ -428,6 +458,7 @@ projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/pro
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CSVParser.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CSVWriter.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CanonicalFileUtils.cpp.o
+projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonImplementationsExpanded.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CommonUtilitiesExpanded.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/ConfigHelper.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/CryptoHelper.cpp.o
@@ -443,12 +474,13 @@ projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/pro
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeException.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/ProjectForgeVersion.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/StringHelper.cpp.o
+projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/UtilsExt.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/Version.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/XmlHelper.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/src/logging/LoggingFrameworkComplete.cpp.o
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/build.make
 projectforge-common/libprojectforge_common.a: projectforge-common/CMakeFiles/projectforge_common.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX static library libprojectforge_common.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX static library libprojectforge_common.a"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && $(CMAKE_COMMAND) -P CMakeFiles/projectforge_common.dir/cmake_clean_target.cmake
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectforge_common.dir/link.txt --verbose=$(VERBOSE)
 

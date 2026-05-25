@@ -86,10 +86,24 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.s"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/AbstractBaseObject.cpp -o CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.s
 
+projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
+projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/ModelHelpersExt.cpp
+projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o -MF CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/ModelHelpersExt.cpp
+
+projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.i"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/ModelHelpersExt.cpp > CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.i
+
+projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.s"
+	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/ModelHelpersExt.cpp -o CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.s
+
 projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/abstract_base_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/abstract_base_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.i: cmake_force
@@ -103,7 +117,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/address_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/address_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/address_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/address_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.i: cmake_force
@@ -117,7 +131,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.s: c
 projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/calendar_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/calendar_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.i: cmake_force
@@ -131,7 +145,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.s: 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/cost2_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/cost2_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.i: cmake_force
@@ -145,7 +159,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/cost2_object.cpp.s: cma
 projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/datetime_serialization.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o -MF CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/datetime_serialization.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.cpp.i: cmake_force
@@ -159,7 +173,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/datetime_serialization.
 projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/rest_paths.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o -MF CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/rest_paths.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.i: cmake_force
@@ -173,7 +187,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/rest_paths.cpp.s: cmake
 projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/task_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/task_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/task_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/task_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.i: cmake_force
@@ -187,7 +201,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/task_object.cpp.s: cmak
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/timesheet_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/timesheet_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.i: cmake_force
@@ -201,7 +215,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_object.cpp.s:
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/timesheet_template_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/timesheet_template_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_object.cpp.i: cmake_force
@@ -215,7 +229,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/timesheet_template_obje
 projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/flags.make
 projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o: /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/user_object.cpp
 projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o: projectforge-model/CMakeFiles/projectforge_model.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o -MF CMakeFiles/projectforge_model.dir/src/user_object.cpp.o.d -o CMakeFiles/projectforge_model.dir/src/user_object.cpp.o -c /home/bym/projectforge-folder/projectforge-cpp/projectforge-model/src/user_object.cpp
 
 projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.i: cmake_force
@@ -229,6 +243,7 @@ projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.s: cmak
 # Object files for target projectforge_model
 projectforge_model_OBJECTS = \
 "CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.o" \
+"CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o" \
 "CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o" \
 "CMakeFiles/projectforge_model.dir/src/address_object.cpp.o" \
 "CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o" \
@@ -244,6 +259,7 @@ projectforge_model_OBJECTS = \
 projectforge_model_EXTERNAL_OBJECTS =
 
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/AbstractBaseObject.cpp.o
+projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/ModelHelpersExt.cpp.o
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/abstract_base_object.cpp.o
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/address_object.cpp.o
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/calendar_object.cpp.o
@@ -256,7 +272,7 @@ projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projec
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/src/user_object.cpp.o
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/build.make
 projectforge-model/libprojectforge_model.a: projectforge-model/CMakeFiles/projectforge_model.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libprojectforge_model.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/bym/projectforge-folder/projectforge-cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libprojectforge_model.a"
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && $(CMAKE_COMMAND) -P CMakeFiles/projectforge_model.dir/cmake_clean_target.cmake
 	cd /home/bym/projectforge-folder/projectforge-cpp/build/projectforge-model && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectforge_model.dir/link.txt --verbose=$(VERBOSE)
 

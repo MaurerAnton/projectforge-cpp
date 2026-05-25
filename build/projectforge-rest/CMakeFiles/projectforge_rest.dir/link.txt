@@ -1,2 +1,2 @@
-/usr/bin/ar qc libprojectforge_rest.a CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o
+/usr/bin/ar qc libprojectforge_rest.a CMakeFiles/projectforge_rest.dir/src/RestHandlersExpanded.cpp.o CMakeFiles/projectforge_rest.dir/src/RestHandlersImpl.cpp.o CMakeFiles/projectforge_rest.dir/src/RestModule.cpp.o
 /usr/bin/ranlib libprojectforge_rest.a
